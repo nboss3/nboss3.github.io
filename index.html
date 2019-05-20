@@ -1,22 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>Nick Bosse</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
-    <link rel="stylesheet" type="text/css" href="index.css" media="screen"/>
-    <div class="topnav">
-        <a class="active" href="#home">Nick Bosse</a>
-        <a href="#focus">FOCUS</a>
-        <a href="#personal">PERSONAL</a>
-        <a href="#gumroad">STORE</a>
-        <a href="#blog">BLOG</a>
-        <a href="#tutorials">TUTORIALS</a>
-        <a href="#about">ABOUT</a>
-        <!--All the contact icons-->
-    </div>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 </head>
 <body>
-Artist and Engineering Student
+    <style>
+        html {
+            background: url(https://cdnb.artstation.com/p/assets/images/images/015/357/369/large/nick-bosse-chess.jpg?1548045190) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            font-family: arial;
+        }
+    </style>
+<div class="sidebar">
+    <b class="active" href="#home">Nick Bosse</b>
+    <p>
+        Electrical Engineering Student & Freelance Artist
+    </p>
+</div>
+    <div class="content">
+
+    </div>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(https://cdnb.artstation.com/p/assets/images/images/015/357/369/large/nick-bosse-chess.jpg?1548045190) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+         /* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    font-size: 120%;
+    float: left;
+    background-color: rgba(.2, .2, .2, .4);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+    display: block;
+    color: #919191;
+    padding: 16px;
+    background-color: rgba(.2, .2, .2, .4);
+    text-decoration: none;
+}
+
+.sidebar b {
+    display: block;
+    color: #f5faff;
+    padding: 1px 16px 1px 16px;
+    text-decoration: none;
+    background-color: rgba(.2, .2, .2, .4);
+}
+
+.sidebar p {
+    font-size: 80%;
+    color: #919191;
+    padding: 1px 16px;
+    background-color: rgba(.2, .2, .2, .4);
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+    margin-left: 15%;
+    height: 1000px;
+    background: url(https://cdnb.artstation.com/p/assets/images/images/015/357/369/large/nick-bosse-chess.jpg?1548045190) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: arial;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 500px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 500px) {
+  .sidebar a {
+    text-align: center;
+    float: left;
+  }
+}
+    </style>
 </body>
 </html>
