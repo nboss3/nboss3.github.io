@@ -1,2 +1,2 @@
 # nboss3.github.io
-## This is the title of the website?
+## General Purpose Website for Nick Bosse
