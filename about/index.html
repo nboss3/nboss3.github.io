@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Nick Bosse - About</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
 </head>
 <body>
     <style>
@@ -31,8 +31,10 @@
     <div class="content">
         <!--This can also be grid for the blog browser or something-->
         <div class="post">
-            <img src="https://avatars1.githubusercontent.com/u/40079451?s=460&v=4" alt="pfp"
+            <div class="pfp">
+                <img src="https://avatars1.githubusercontent.com/u/40079451?s=460&v=4" alt="pfp"
                  width="16%" height="16%">
+            </div>
             <div class="text">
                 <h2>Nick Bosse</h2>
                 <small>Electrical Engineering Student & Freelance Artist</small>
@@ -50,20 +52,32 @@
                 <p style="color:grey">Analog Circuit Design</p>
                 <p style="color:grey">Programming</p>
                 <h2>Proficiencies</h2>
-                <div class="columns">
-                    <div class="proficiencies">
-                    <h3 style="color:grey">Photoshop</h3>
-                    <h3 style="color:grey">Blender</h3>
-                    <h3 style="color:grey">Substance Painter</h3>
-                    <h3 style="color:grey">Substance Designer</h3>
+            <div class="columns">
+                <div class="photoshop">
+                    <img style="display:inline;" src="pslogo.png" alt="photoshop"/>
+                    <h3 style="color:grey; display: inline;">Photoshop</h3>
                 </div>
-                <div class="proficiencies">
-                    <h3 style="color:grey">Inventor</h3>
-                    <h3 style="color:grey">Fusion 360</h3>
-                    <h3 style="color:grey">Alias Design</h3>
-                    <h3 style="color:grey">Moi 3D</h3>
+                <div class="blender">
+                    <img style="display:inline;" src="blender.png" alt="blender"/>
+                    <h3 style="color:grey; display: inline;">Blender</h3>
                 </div>
+                <div class="inventor">
+                    <img style="display:inline;" src="inventor.png" alt="inventor"/>
+                    <h3 style="color:grey; display: inline;">Inventor</h3>
                 </div>
+                <div class="sbsdesign">
+                    <img style="display:inline;" src="sbsdesigner.png" alt="designer"/>
+                    <h3 style="color:grey; display: inline;">Substance Designer</h3>
+                </div>
+                <div class="sbspaint">
+                    <img style="display:inline;" src="sbspaint.png" alt="painter"/>
+                    <h3 style="color:grey; display: inline;">Substance Painter</h3>
+                </div>
+                <div class="moi">
+                    <img style="display:inline;" src="moi.jpeg" alt="moi"/>
+                    <h3 style="color:grey; display: inline;">Moi3D</h3>
+                </div>
+            </div>
             </div>
         </div>
     </div>
@@ -108,7 +122,7 @@
     font-family: arial;
 }
 
-.content img {
+.pfp img {
     border-radius: 60%;
     padding: 2%;
 }
@@ -119,26 +133,6 @@
     color: coral;
     z-index: 1;
     background-color: rgba(.1, .1, .1, .85);
-}
-
-.proficiencies h3::before {
-    display: grid;
-    float: left;
-    width: 50%;
-    height: 10px;
-    content: url("pslogo.png");
-    transform: scale(.05);
-}
-
-.proficiencies{
-    width: 50%;
-    float: left;
-}
-
-.columns::after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 .text {
@@ -167,6 +161,105 @@
 .text a:hover {
     text-decoration: underline;
 }
+
+.columns {
+    align-self: center;
+    display: grid;
+    vertical-align: center;
+    background-color: transparent;
+    text-align: left;
+    z-index: 1;
+    height: auto;
+    margin-left: 14%;
+}
+
+.photoshop {
+    grid-column: 2;
+    grid-row: 1;
+    float: left;
+}
+
+.photoshop img {
+    height: 70px;
+    width: 70px;
+    vertical-align: middle;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 5%;
+}
+
+.blender {
+    grid-column: 1;
+    grid-row: 1;
+    float: left;
+}
+
+.blender img {
+    height: 70px;
+    width: 70px;
+    vertical-align: middle;
+    padding-right: 8%;
+    padding-bottom: 5%;
+}
+
+.sbspaint {
+    grid-column: 1;
+    grid-row: 2;
+    float: left;
+}
+
+.sbspaint img {
+    height: 70px;
+    width: 70px;
+    vertical-align: middle;
+    padding-right: 8%;
+    padding-bottom: 5%;
+}
+
+.sbsdesign {
+    grid-column: 2;
+    grid-row: 2;
+    float: left;
+}
+
+.sbsdesign img {
+    height: 70px;
+    width: 70px;
+    vertical-align: middle;
+    padding-right: 8%;
+    padding-left: 10%;
+    padding-bottom: 5%;
+}
+
+.moi {
+    grid-column: 2;
+    grid-row: 3;
+    float: left;
+}
+
+.moi img {
+    height: 70px;
+    width: 70px;
+    vertical-align: middle;
+    padding-right: 8%;
+    padding-left: 10%;
+    padding-bottom: 5%;
+}
+
+.inventor {
+    grid-column: 1;
+    grid-row: 3;
+    float: left;
+}
+
+.inventor img {
+    height: 70px;
+    width: 70px;
+    vertical-align: middle;
+    padding-right: 8%;
+    padding-bottom: 5%;
+}
+
 
 /*
 top right bottom left
