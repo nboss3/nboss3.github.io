@@ -7,11 +7,12 @@
 </head>
 <body>
     <div class="sidebar">
-        <p>Focus Blender 2.8 Addon Manual</p>
         <div class="banner">
-            <img src="banner.png" alt="Focus Banner">
+            <p>Focus Blender 2.8 Addon Manual</p>
+            <a href="../focus/">
+                <img src="bannerlink.png" alt="Focus Banner">
+            </a>
         </div>
-        <a href="../focus/">Changelog</a>
         <a href="beginner.html">Getting Started</a>
         <a href="ui.html">UI Toolkit</a>
         <a href="modelling.html">Modelling Toolkit</a>
@@ -19,8 +20,41 @@
     </div>
 </div>
     <div class="content">
-        <p>Welcome to Focus 1.0.6!</p>
-        <p>1.0.6 Changelog: <br>- Added Smart Subdivide Modal <- make that a link.</p>
+        <h1>Focus 1.0.6 Reference Manual</h1>
+        <p>Welcome to Focus! The ultimate Blender addon for immersion and distraction-free
+        work.</p>
+        <h2>1.0.6 Changelog</h2>
+        <p>Added:<br>&emsp;- Menu categories in the user preferences for easier UI management<br>
+	&emsp;- Overhauled modifier popup for stability and ease of use<br>
+	&emsp;- Added unwrap by texture set functions for easy batch unwrapping<br>
+	&emsp;- Modifier batch operations added natively to the modifier popup<br>
+	&emsp;- Added strip adjustments to the VSE view tools pie menu<br>
+	&emsp;- Added grease pencil and light probe objects to add object pie<br>
+	&emsp;- Merge edge and merge face tools added to the merge pie menu<br>
+	&emsp;- Hide pie menu to allow much more control over how boolean cutter<br>
+            &emsp; objects are handled in the scene as well as general options<br>
+	&emsp;- Added Smart Subdivide modal operator to the modifier pie menu<br>
+	&emsp;- Added "add with targets", "copy" and "clear" to the constraints popup</p>
+        <p>Fixed:<br>&emsp;- Updated popups and pie menus to squash bugs and keep the menus up<br>
+            &emsp;to date with the current Blender UI and feature set<br>
+            &emsp;
+            - Optimised the "from texture set" functions so they run at nearly 10x the <br>
+            &emsp;speed as the originals<br>
+            &emsp;
+	        - Fixed addon enabling and disabling issues<br>
+            &emsp;
+	        - Fixed issue where the shader couldn't be changed from the materials menu<br>
+            &emsp;
+	        - Optimised the Substance Shader's layout to be more streamlined and light<br>
+            &emsp;
+	        - Proportional editing errors from the pie menu<br>
+            &emsp;
+	        - Transform popup in the view tools pie can now handle bone transforms<br>
+            &emsp;
+	        - The HDRI asset manager now supports JPG images in its library</p>
+        <p>Known Issues:<br>&emsp;- Particular Workbench popups are not linked to the actual
+            settings<br> &emsp; and won't change the actual Workbench settings in Blender </p>
+
     </div>
     <style>
         .content {
@@ -32,7 +66,7 @@
        .sidebar {
            font-family: arial;
            margin: 0;
-           width: 15%;
+           width: auto;
            font-size: 100%;
            float: left;
            background-color: #919191;
@@ -45,26 +79,45 @@
         }
 
        .sidebar a {
-          padding: 6px 8px 6px 16px;
-          text-decoration: none;
-          font-size: 25px;
-          color: #818181;
-          display: block;
+           font-family: arial;
+           padding: 6px 8px 6px 16px;
+           text-decoration: none;
+           font-size: 25px;
+           color: #bbbbbb;
+           display: block;
         }
 
        .sidebar p {
-           padding: 16px 16px 6px 6px;
+           padding: 16px 16px 6px 16px;
            text-align: center;
         }
 
+       .banner {
+           background-color: #0093ca;
+       }
+
        .banner img {
-           width: 300px;
+           width: 250px;
            height: auto;
+           align-items: center;
         }
+
+       .banner p {
+           background-color: #0093ca;
+       }
 
         .sidebar a:hover {
             color: #f1f1f1;
             background-color: #cccccc;
+        }
+
+        .banner a {
+            padding: 0 0 0 8px;
+            background-color: #0093ca;
+        }
+
+        .banner a:hover {
+            background-color: #0093ca;
         }
 
     </style>
