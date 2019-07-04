@@ -14,6 +14,7 @@
             </a>
         </div>
         <a href="beginner.html">Getting Started</a>
+        <a href="keymap.html">Hotkey Guide</a>
         <a href="ui.html">UI Toolkit</a>
         <a href="modelling.html">Modelling Toolkit</a>
         <a href="substance.html">Substance Toolkit</a>
@@ -21,55 +22,92 @@
 </div>
     <div class="content">
         <h1>Focus 1.0.6 Reference Manual</h1>
-        <p>Welcome to Focus! The ultimate Blender addon for immersion and distraction-free
-        work.</p>
+        <hr>
+        <h2>Power to the Artist</h2>
+        <p>Focus is an interface addon for Blender 2.8, providing an immersive environment for
+            3D work. Replacing panels and docked editors with pie menus, the new interface is
+            simple and distraction-free, just you, and the art</p>
+        <p>The addon is split into three main categories, the UI Toolkit, Modelling Toolkit and
+            the Substance Toolkit. Each one is a collection of pie menus catering to that
+            workflow. The UI Toolkit is for general Blender functions and navigation, the
+            Modelling toolkit for specialised mesh and modifier menus and functions, with the
+            Substance Toolkit containing functions and menus for Substance Painter integration
+            with Blender.</p>
+        <hr>
+        <h2>Installation Instructions</h2>
+        <ol>
+            <li>In Blender, go to Edit -> Preferences in the top bar</li>
+            <li>Switch to the Addons tab and click Install</li>
+            <li>Navigate to the downloaded zip file, select it and click Install</li>
+            <li>Enable the add-on by ticking the check box next to the add-on's name</li>
+            <li>[Optional] Set the paths for your HDRI library, kitbash library and Substance
+                Painter program</li>
+            <li>Either click Enable All, or click a combination of the menu categories and
+                individual pie menus to register them</li>
+            <li>Click Save Preferences</li>
+        </ol>
+        <hr>
         <h2>1.0.6 Changelog</h2>
-        <p>Added:<br>&emsp;- Menu categories in the user preferences for easier UI management<br>
-	&emsp;- Overhauled modifier popup for stability and ease of use<br>
-	&emsp;- Added unwrap by texture set functions for easy batch unwrapping<br>
-	&emsp;- Modifier batch operations added natively to the modifier popup<br>
-	&emsp;- Added strip adjustments to the VSE view tools pie menu<br>
-	&emsp;- Added grease pencil and light probe objects to add object pie<br>
-	&emsp;- Merge edge and merge face tools added to the merge pie menu<br>
-	&emsp;- Hide pie menu to allow much more control over how boolean cutter<br>
-            &emsp; objects are handled in the scene as well as general options<br>
-	&emsp;- Added Smart Subdivide modal operator to the modifier pie menu<br>
-	&emsp;- Added "add with targets", "copy" and "clear" to the constraints popup</p>
-        <p>Fixed:<br>&emsp;- Updated popups and pie menus to squash bugs and keep the menus up<br>
-            &emsp;to date with the current Blender UI and feature set<br>
-            &emsp;
-            - Optimised the "from texture set" functions so they run at nearly 10x the <br>
-            &emsp;speed as the originals<br>
-            &emsp;
-	        - Fixed addon enabling and disabling issues<br>
-            &emsp;
-	        - Fixed issue where the shader couldn't be changed from the materials menu<br>
-            &emsp;
-	        - Optimised the Substance Shader's layout to be more streamlined and light<br>
-            &emsp;
-	        - Proportional editing errors from the pie menu<br>
-            &emsp;
-	        - Transform popup in the view tools pie can now handle bone transforms<br>
-            &emsp;
-	        - The HDRI asset manager now supports JPG images in its library</p>
-        <p>Known Issues:<br>&emsp;- Particular Workbench popups are not linked to the actual
-            settings<br> &emsp; and won't change the actual Workbench settings in Blender </p>
-
+        <p>Added:</p>
+        <ul>
+            <li>Menu categories in the user preferences for easier UI management</li>
+            <li>Overhauled modifier popup for stability and ease of use</li>
+            <li>Added unwrap by texture set functions for easy batch unwrapping</li>
+            <li>Modifier batch operations added natively to the modifier popup</li>
+            <li>Added strip adjustments to the VSE view tools pie menu</li>
+            <li>Added grease pencil and light probe objects to add object pie</li>
+            <li>Merge edge and merge face tools added to the merge pie menu</li>
+            <li>Hide pie menu to allow much more control over how boolean cutter objects<br>are
+                    handled in the scene as well as general options</li>
+            <li>Added Smart Subdivide modal operator to the modifier pie menu</li>
+            <li>Added "add with targets", "copy" and "clear" to the constraints popup</li>
+        </ul>
+        <p>Fixed:</p>
+        <ul>
+            <li>Updated popups and pie menus to squash bugs and keep the menus up to<br>date with
+                the current Blender UI and feature set</li>
+            <li>Optimised the "from texture set" functions so they run at nearly 10x the<br>speed of
+                the originals</li>
+            <li>Fixed addon enabling and disabling issues</li>
+            <li>Fixed issue where the shader couldn't be changed from the materials menu</li>
+            <li>Optimised the Substance Shader's layout to be more streamlined and light</li>
+            <li>Proportional editing errors from the pie menu</li>
+            <li>Transform popup in the view tools pie can now handle bone transforms</li>
+            <li>The HDRI asset manager now supports JPG images in its library</li>
+        </ul>
+        <p>Known Issues:</p>
+        <ul>
+            <li>Particular Workbench popups are not linked to the actual settings<br> and won't
+                change the actual Workbench settings in Blender</li>
+        </ul>
+        <hr>
+        <h2>Focus Media</h2>
+        <ul>
+            <li><a href="https://www.youtube.com/user/starwarsissick">Youtube</a></li>
+            <li><a href="https://blendermarket.com/products/focus-blender-ui-suite">Blender Market</a></li>
+            <li><a href="https://gumroad.com/l/focussuite">Gumroad</a></li>
+        </ul>
     </div>
     <style>
+        body {
+            background-color: #3c3c3c;
+        }
+
         .content {
             padding: 0px 10px;
-            margin-left: 15%;
+            margin-left: 300px;
             font-family: arial;
+            background-color: #3c3c3c;
+            color: whitesmoke;
         }
 
        .sidebar {
            font-family: arial;
            margin: 0;
-           width: auto;
+           width: 300px;
            font-size: 100%;
            float: left;
-           background-color: #919191;
+           background-color: #2c2c2c;
            position: fixed;
            height: 100%;
            overflow: auto;
@@ -89,7 +127,7 @@
 
        .sidebar p {
            padding: 16px 16px 6px 16px;
-           text-align: center;
+
         }
 
        .banner {
@@ -104,11 +142,12 @@
 
        .banner p {
            background-color: #0093ca;
+           color: white;
        }
 
         .sidebar a:hover {
             color: #f1f1f1;
-            background-color: #cccccc;
+            background-color: #666666;
         }
 
         .banner a {
