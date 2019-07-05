@@ -15,7 +15,7 @@
         </div>
         <a style="color: #f1f1f1; background-color:#666666;" href="beginner.html">Getting
             Started</a>
-        <a href="ui.html">UI Toolkit</a>
+        <a href="ui.html">UX Toolkit</a>
         <a href="modelling.html">Modelling Toolkit</a>
         <a href="substance.html">Substance Toolkit</a>
     </div>
@@ -30,7 +30,8 @@ environment. The pie menus span across multiple editors in Blender and contains 
 functions and panels as well as special Focus functions. These pie menus can be individually turned
 off to suit your workflow and preference.</p>
         <h3>Modelling</h3>
-        <p>Focus contains edit-mode, object-mode tools to speed up your modeling and workflow. Including custom
+        <p>Focus contains edit-mode and object-mode tools to speed up your modeling and workflow.
+            Including custom
 mesh, object adding, modifier, rigging and asset management functions. These range from mesh tool
 utilities to fast boolean operations to separate popups for kitbashing. </p>
         <h3>Substance Painter Integration</h3>
@@ -39,23 +40,320 @@ in mind. Instantly create ID Maps, UV Atlases and Texture sets using simple Focu
 instant exporting and a plug'n'play Substance Shader, Blender integration is easier than ever.</p>
         <hr>
         <h2>Addon Keymap</h2>
-        <p>Materials Pie - Ctrl+Shift+V</p>
+        <p>Most of these menus are called from within the 3D view. Some like the UV, VSE and
+            Node view tools are only available in their respective editors. It should also be
+            noted that some menus have context requirements, i.e. an object must be in the scene
+            and selected for the pie menu to appear correctly.</p>
+        <div class="row">
+            <div class="column">
+                <h3>UX Toolkit</h3>
+                <table id="uxkeymap">
+            <tr>
+                <th>Pie Menu</th>
+                <th>Context</th>
+                <th>Keymap</th>
+            </tr>
+            <tr>
+                <td>Animation</td>
+                <td>General 3D View</td>
+                <td>Shift+Space</td>
+            </tr>
+            <tr>
+                <td>Apply</td>
+                <td>General 3D View</td>
+                <td>Ctrl+A</td>
+            </tr>
+            <tr>
+                <td>Brush Tools</td>
+                <td>Sculpt Mode</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Cursor</td>
+                <td>General 3D View</td>
+                <td>Shift+S</td>
+            </tr>
+            <tr>
+                <td>Editor Switch</td>
+                <td>Anywhere in Blender</td>
+                <td>Ctrl+Alt+S</td>
+            </tr>
+            <tr>
+                <td>Main Properties</td>
+                <td>General 3D View</td>
+                <td>P</td>
+            </tr>
+            <tr>
+                <td>Mode Switch</td>
+                <td>Active Object</td>
+                <td>Ctrl+Tab</td>
+            </tr>
+            <tr>
+                <td>Node Editor Tools</td>
+                <td>Node Editor</td>
+                <td>N</td>
+            </tr>
+            <tr>
+                <td>Origin</td>
+                <td>General 3D View</td>
+                <td>Shift+Alt+C</td>
+            </tr>
+            <tr>
+                <td>Rigidbody</td>
+                <td>General 3D View</td>
+                <td>Ctrl+R</td>
+            </tr>
+            <tr>
+                <td>Save/Open</td>
+                <td>General 3D View</td>
+                <td>Ctrl+S</td>
+            </tr>
+            <tr>
+                <td>Sculpt Brushes</td>
+                <td>Sculpt Mode</td>
+                <td>W</td>
+            </tr>
+            <tr>
+                <td>Select</td>
+                <td>General 3D View</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Shading</td>
+                <td>General 3D View</td>
+                <td>Z</td>
+            </tr>
+            <tr>
+                <td>Snap Element</td>
+                <td>General 3D View</td>
+                <td>Shift+Tab</td>
+            </tr>
+            <tr>
+                <td>Toolshelf</td>
+                <td>General 3D View</td>
+                <td>T</td>
+            </tr>
+            <tr>
+                <td>UV/Image Editor Tools</td>
+                <td>UV/Image Editor</td>
+                <td>N</td>
+            </tr>
+            <tr>
+                <td>VSE Tools</td>
+                <td>Video Sequence Editor</td>
+                <td>N</td>
+            </tr>
+            <tr>
+                <td>View Tools</td>
+                <td>General 3D View</td>
+                <td>N</td>
+            </tr>
+            <tr>
+                <td>Viewport Gizmos</td>
+                <td>General 3D View</td>
+                <td>Ctrl+Space</td>
+            </tr>
+        </table>
+            </div>
+            <div class="column">
+                <h3>Modelling Toolkit</h3>
+                <table id="modkeymap">
+                    <tr>
+                        <th>Pie Menu</th>
+                        <th>Context</th>
+                        <th>Keymap</th>
+                    </tr>
+                    <tr>
+                        <td>Add Object</td>
+                        <td>General 3D View</td>
+                        <td>Ctrl+Shift+Alt+A</td>
+                    </tr>
+                    <tr>
+                        <td>Bridge/Merge</td>
+                        <td>Edit Mode</td>
+                        <td>M</td>
+                    </tr>
+                    <tr>
+                        <td>Edit Align</td>
+                        <td>Edit Mode</td>
+                        <td>Alt+X</td>
+                    </tr>
+                    <tr>
+                        <td>Edit Delete</td>
+                        <td>Edit Mode</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>Edit Mode Select</td>
+                        <td>Edit Mode</td>
+                        <td>Ctrl+Shift+C</td>
+                    </tr>
+                    <tr>
+                        <td>Focus</td>
+                        <td>General 3D View</td>
+                        <td>F</td>
+                    </tr>
+                    <tr>
+                        <td>Hide</td>
+                        <td>General 3D View</td>
+                        <td>H</td>
+                    </tr>
+                    <tr>
+                        <td>Mesh Edges</td>
+                        <td>Edit Mode</td>
+                        <td>Ctrl+E</td>
+                    </tr>
+                    <tr>
+                        <td>Mesh Faces</td>
+                        <td>Edit Mode</td>
+                        <td>Ctrl+F</td>
+                    </tr>
+                    <tr>
+                        <td>Mesh Options</td>
+                        <td>Edit Mode</td>
+                        <td>Alt+C</td>
+                    </tr>
+                    <tr>
+                        <td>Mesh Tools</td>
+                        <td>Edit Mode</td>
+                        <td>Ctrl+Shift+X</td>
+                    </tr>
+                    <tr>
+                        <td>Mesh Vertices</td>
+                        <td>Edit Mode</td>
+                        <td>Ctrl+V</td>
+                    </tr>
+                    <tr>
+                        <td>Proportional Edit</td>
+                        <td>General 3D View</td>
+                        <td>O</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <h3>Substance Toolkit</h3>
+        <table id="sbskeymap">
+            <tr>
+                <th>Pie Menu</th>
+                <th>Context</th>
+                <th>Keymap</th>
+            </tr>
+            <tr>
+                <td>Materials</td>
+                <td>General 3D View</td>
+                <td>Ctrl+Shift+V</td>
+            </tr>
+            <tr>
+                <td>UV Unwrap</td>
+                <td>Edit Mode</td>
+                <td>U</td>
+            </tr>
+        </table>
     </div>
     <style>
         body {
             background-color: #3c3c3c;
         }
 
+        #uxkeymap {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: auto;
+        }
+
+        #uxkeymap td, #uxkeymap th {
+            border: 1px solid #ababab;
+            padding: 8px;
+            color: black;
+        }
+
+        #uxkeymap tr:nth-child(even){background-color: #c9c9c9;}
+
+        #uxkeymap tr:nth-child(odd){background-color: #efefef;}
+
+        #uxkeymap tr:hover {background-color: #a0a0a0;}
+
+        #uxkeymap th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #0093ca;
+            color: white;
+        }
+
+        #modkeymap {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: auto;
+        }
+
+        #modkeymap td, #modkeymap th {
+            border: 1px solid #ababab;
+            padding: 8px;
+            color: black;
+        }
+
+        #modkeymap tr:nth-child(even){background-color: #c9c9c9;}
+
+        #modkeymap tr:nth-child(odd){background-color: #efefef;}
+
+        #modkeymap tr:hover {background-color: #a0a0a0;}
+
+        #modkeymap th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #0093ca;
+            color: white;
+        }
+
+        #sbskeymap {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: auto;
+        }
+
+        #sbskeymap td, #sbskeymap th {
+            border: 1px solid #ababab;
+            padding: 8px;
+            color: black;
+        }
+
+        #sbskeymap tr:nth-child(even){background-color: #c9c9c9;}
+
+        #sbskeymap tr:nth-child(odd){background-color: #efefef;}
+
+        #sbskeymap tr:hover {background-color: #a0a0a0;}
+
+        #sbskeymap th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #0093ca;
+            color: white;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
         .content {
             padding: 0 10px;
             margin-left: 300px;
-            font-family: arial;
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
             background-color: #3c3c3c;
             color: whitesmoke;
         }
 
        .sidebar {
-           font-family: arial;
+           font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
            margin: 0;
            width: 300px;
            font-size: 100%;
@@ -70,7 +368,7 @@ instant exporting and a plug'n'play Substance Shader, Blender integration is eas
         }
 
        .sidebar a {
-           font-family: arial;
+           font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
            padding: 6px 8px 6px 16px;
            text-decoration: none;
            font-size: 25px;
