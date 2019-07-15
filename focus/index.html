@@ -17,6 +17,9 @@
         <a href="ux.html">UX Toolkit</a>
         <a href="modelling.html">Modelling Toolkit</a>
         <a href="substance.html">Substance Toolkit</a>
+        <div class="notice">
+            <h4>&copy; All rights reserved</h4>
+        </div>
     </div>
 </div>
     <div class="content">
@@ -82,6 +85,11 @@
             <li>The HDRI asset manager now supports JPG images in its library</li>
             <li>(a Hotfix) Fixed bug in the "Create Material Sets" function where all materials
             would be assigned to one object only</li>
+            <li>(b Hotfix) Fixed issue where merge edges at first would actually be last and
+                vice versa</li>
+            <li>(b Hotfix) Made the default outer miter setting in the bevel of Smart Subdivide
+            be Patch instead of Sharp for better subdivision quality</li>
+            <li>(b Hotfix) Added Modifier menu to Modelling Toolkit</li>
         </ul>
         <p>Known Issues:</p>
         <ul>
@@ -111,6 +119,7 @@
 
         .content a {
             color: #009ed6;
+            text-decoration: none;
         }
 
        .sidebar {
@@ -136,6 +145,15 @@
            color: #bbbbbb;
            display: block;
         }
+
+       .notice {
+           padding-top: 0;
+           color: white;
+           position: fixed;
+           text-align: left;
+           bottom: 0;
+           left: 1%;
+       }
 
        .sidebar p {
            padding: 16px 16px 6px 16px;
