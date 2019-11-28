@@ -36,33 +36,97 @@
             <li><a href="#smprjct">Smart Project</a></li>
             <li><a href="#unwpall">Unwrap All...</a></li>
             <ul>
-                <li><a href="#cat">Menu Item 1 Test</a></li>
+                <li><a href="#unwpall">Pack Unwrap All</a></li>
+                <li><a href="#unwpall">Sharp Unwrap All</a></li>
+                <li><a href="#unwpall">Cube Pack All</a></li>
+                <li><a href="#unwpall">Sphere Pack All</a></li>
+                <li><a href="#unwpall">Cylinder Pack All</a></li>
             </ul>
             <li><a href="#unwptextset">Unwrap By Texture Sets...</a></li>
             <ul>
-                <li><a href="#cat">Menu Item 2 Test</a></li>
+                <li><a href="#unwptextset">Pack Unwrap by Texture Set</a></li>
+                <li><a href="#unwptextset">Sharp Unwrap by Texture Set</a></li>
+                <li><a href="#unwptextset">Cube Unwrap by Texture Set</a></li>
+                <li><a href="#unwptextset">Sphere Unwrap by Texture Set</a></li>
+                <li><a href="#unwptextset">Cylinder Unwrap by Texture Set</a></li>
             </ul>
             <li><a href="#unwpshrp">Unwrap Sharp</a></li>
             <li><a href="#uvmppng">UV Mapping...</a></li>
-            <ul>
-                <li><a href="#cat">Menu Item 3 Test</a></li>
-            </ul>
             <li><a href="#uvpjctpck">UV Project Pack...</a></li>
             <ul>
-                <li><a href="#cat">Menu Item 4 Test</a></li>
+                <li><a href="#uvpjctpck">Cube Pack Projection</a></li>
+                <li><a href="#uvpjctpck">Sphere Pack Projection</a></li>
+                <li><a href="#uvpjctpck">Cylinder Pack Projection</a></li>
             </ul>
             <li><a href="#unwp">Unwrap</a></li>
             <li><a href="#pkunwp">Pack Unwrap</a></li>
         </ul>
         <hr>
         <h3 id="smprjct">Smart Project</h3>
-        <p>Functions exactly the same as the default Smart Project function in Blender.</p>
+        <p>Functions exactly the same as the default Smart UV Project function in Blender.</p>
         <p>Also see: <a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/uv/unwrapping/mapping_types.html#smart-uv-project">Blender Manual</a></p>
         <hr>
-        <h3 id="#unwpall">Unwrap All Menu</h3>
+        <h3 id="unwpall">Unwrap All Menu</h3>
         <p>Unwraps all objects in the scene using the specified unwrap method.</p>
-        <h4>Pack Unwrap All</h4>
-        <p>Unwraps using the <a href="Pack Unwrap">Pack Unwrap</a>method.</p>
+        <div class="menu">
+            <h4>Pack Unwrap All</h4>
+            <p>Unwraps all objects using the <a href="#pkunwp">Pack Unwrap</a> method.</p>
+            <h4>Sharp Unwrap All</h4>
+            <p>Unwraps all objects using the <a href="#unwpshrp">Sharp Unwrap</a> method.</p>
+            <h4>Cube Pack All</h4>
+            <p>Unwraps all objects using the <a href="#cbpk">Cube Pack</a> method.</p>
+            <h4>Sphere Pack All</h4>
+            <p>Unwraps all objects using the <a href="#sppk">Sphere Pack</a> method.</p>
+            <h4>Cylinder Pack All</h4>
+            <p>Unwraps all objects using the <a href="#cypk">Cylinder Pack</a> method.</p>
+        </div>
+        <hr>
+        <h3 id="unwptextset">Unwrap by Texture Set Menu</h3>
+        <p>Unwraps visible mesh objects in groups based on their material. Objects with the same material will be
+            unwrapped onto the same UV map. To exclude objects from this process, simply hide them.</p>
+        <div class="menu">
+            <h4>Pack Unwrap by Texture Set</h4>
+            <p>Unwraps by texture set with the <a href="#pkunwp">Pack Unwrap</a> method.</p>
+            <h4>Sharp Unwrap by Texture Set</h4>
+            <p>Unwraps by texture set with the <a href="#unwpshrp">Sharp Unwrap</a> method.</p>
+            <h4>Cube Unwrap by Texture Set</h4>
+            <p>Unwraps by texture set with the <a href="#cbpk">Cube Pack</a> method.</p>
+            <h4>Sphere Unwrap by Texture Set</h4>
+            <p>Unwraps by texture set with the <a href="#sppk">Sphere Pack</a> method.</p>
+            <h4>Cylinder Unwrap by Texture Set</h4>
+            <p>Unwraps by texture set with the <a href="#cypk">Cylinder Pack</a> method.</p>
+        </div>
+        <hr>
+        <h3 id="unwpshrp">Unwrap Sharp</h3>
+        <p>Marks UV seams on sharp edges of object. Unwraps the object and packs UV islands</p>
+        <hr>
+        <h3 id="uvmppng">UV Mapping Menu</h3>
+        <p>Same as the UV menu in the 3D Viewport in Blender.</p>
+        <p>Also see: <a href="https://docs.blender.org/manual/en/2.80/modeling/meshes/editing/uv/unwrapping/mapping_types.html">Blender Manual</a></p>
+        <hr>
+        <h3 id="uvpjctpck">UV Project Pack Menu</h3>
+        <p>Unwraps objects using the specified UV projection method and packs UV islands.</p>
+        <div class="menu">
+            <h4 id="cbpk">Cube Pack Projection</h4>
+            <p>UV Projects with the cube projection method then packs UV islands.</p>
+            <p>Also see: <a
+                    href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/uv/unwrapping/mapping_types.html#cube-projection">Blender Manual</a></p>
+            <h4 id="sppk">Sphere Pack Projection</h4>
+            <p>UV Projects with the sphere projection method then packs UV islands.</p>
+            <p>Also see: <a
+                    href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/uv/unwrapping/mapping_types.html#cylinder-and-sphere-projection">Blender Manual</a></p>
+            <h4 id="cypk">Cylinder Pack Projection</h4>
+            <p>UV Projects with the cylinder projection method then packs UV islands.</p>
+            <p>Also see: <a
+                    href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/uv/unwrapping/mapping_types.html#cylinder-and-sphere-projection">Blender Manual</a></p>
+        </div>
+        <hr>
+        <h3 id="unwp">Unwrap</h3>
+        <p>The same function as the default Blender unwrap</p>
+        <p>Also see: <a href=https://docs.blender.org/manual/en/2.80/modeling/meshes/editing/uv/unwrapping/mapping_types.html#unwrap">Blender Manual</a></p>
+        <hr>
+        <h3 id="pkunwp">Pack Unwrap</h3>
+        <p>Unwraps the mesh and packs the UV islands.</p>
     </div>
 <style>
     body {
@@ -96,7 +160,7 @@
             color: #009ed6;
             padding-top: 5px;
             padding-bottom: 5px;
-            font-size: 120%;
+            font-size: 100%;
         }
 
        .submenu {
@@ -111,6 +175,10 @@
            font-size: 25px;
            color: #bbbbbb;
            display: block;
+        }
+
+        .menu {
+            margin-left: 40px;
         }
 
        .sidebar p {
