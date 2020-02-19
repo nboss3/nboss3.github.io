@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Modelling Toolkit - Focus</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico"/>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="banner">
+            <p>Focus Blender 2.8 Addon Manual</p>
+            <a href="..">
+                <img src="../bannerlink.png" alt="Focus Banner">
+            </a>
+        </div>
+        <a href="../beginner.html">Getting Started</a>
+        <a href="../ux.html">UX Toolkit</a>
+        <a style="color: #f1f1f1; background-color:#666666;" href="../modelling.html">Modelling Toolkit</a>
+        <div class="submenu">
+            <a style="color:black; font-size: 110%" href="add.html">Add Object</a>
+            <a style="color:black; font-size: 110%" href="merge.html">Bridge/Merge</a>
+            <a style="color:black; font-size: 110%" href="align.html">Edit Align</a>
+            <a style="color:black; font-size: 110%" href="delete.html">Edit Delete</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Edit Select</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Focus</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Hide</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Mesh Edges</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Mesh Faces</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Mesh Options</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Mesh Tools</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Mesh Vertices</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Modifier Menu</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Proportional Edit</a>
+        </div>
+        <a href="../substance.html">Substance Toolkit</a>
+        <div class="notice">
+            <h4>&copy; All rights reserved</h4>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Hide Menu</h1>
+        <p>Hotkey: H</p>
+        <p>Many of the functions in this menu reference "cutters", a "cutter" object is an
+            object with display mode set to wire. This happens when an object is used to perform
+            boolean operations in <a href="focus.html#bmd">Boolean Mode (ND)</a> in the Focus menu.</p>
+        <img src="hidetrans.png" alt="a software menu">
+        <hr>
+        <h2>Functions / Table of Contents</h2>
+        <ul>
+            <li><a href="#hcr">Hide Cutters on Relations</a></li>
+            <li><a href="#ua">Unhide All</a></li>
+            <li><a href="#hac">Hide All Cutters</a></li>
+            <li><a href="#uc">Unhide Cutters</a></li>
+            <li><a href="#hcs">Hide Cutters on Selected</a></li>
+            <li><a href="#uabc">Unhide All But Cutters</a></li>
+            <li><a href="#hs">Hide Selected</a></li>
+            <li><a href="#hbt">Hide by Type...</a></li>
+        </ul>
+        <hr>
+        <h3 id="hcr">Hide Cutters on Relations</h3>
+        <p>Hides objects parented to parents and children of selected objects that are displayed as wire.</p>
+        <hr>
+        <h3 id="ua">Unhide All</h3>
+        <p>Reveals all objects in the viewport that were previously hidden.</p>
+        <p>Also see: <a href="https://docs.blender.org/manual/en/latest/movie_clip/masking/selecting_editing.html#show-hide">Blender Manual</a></p>
+        <hr>
+        <h3 id="hac">Hide All Cutters</h3>
+        <p>Hides all objects in view layer that are displayed as wire.</p>
+        <hr>
+        <h3 id="uc">Unhide Cutters</h3>
+        <p>Unhides all objects in scene that are displayed as wire.</p>
+        <hr>
+        <h3 id="hcs">Hide Cutters on Selected</h3>
+        <p>Hides objects parented to selected objects that are displayed as wire.</p>
+        <hr>
+        <h3 id="uabc">Unhide All But Cutters</h3>
+        <p>Unhides all objects in scene except those that are displayed as wire.</p>
+        <hr>
+        <h3 id="hs">Hide Selected</h3>
+        <p>Hides selected object in the viewport, functions exactly the same as the default hide function.</p>
+        <p>Also see: <a href="https://docs.blender.org/manual/en/latest/movie_clip/masking/selecting_editing.html#show-hide">Blender Manual</a></p>
+        <hr>
+        <h3 id="hbt">Hide by Type...</h3>
+        <p>Switches to the blender collections and object type visibility settings menu. Where individual collections and object types can be hidden.</p>
+        <p>Also see: <a href="https://docs.blender.org/manual/en/latest/editors/3dview/controls/visibility.html">Blender Manual</a></p>
+        <hr>
+    </div>
+<style>
+    body {
+        background-color: #3c3c3c;
+    }
+
+    .content {
+        padding: 0 10px;
+        margin-left: 300px;
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        background-color: #3c3c3c;
+        color: whitesmoke;
+    }
+
+    .content a {
+        text-decoration: none;
+        color: #009ed6;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 100%;
+    }
+
+    .sidebar {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        margin: 0;
+        width: 300px;
+        float: left;
+        background-color: #2c2c2c;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .submenu {
+        background-color: #b1b1b1;
+        padding-left: 10%;
+    }
+
+    .sidebar p {
+        padding: 16px 16px 6px 16px;
+    }
+
+    .sidebar a {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #bbbbbb;
+        display: block;
+    }
+
+    .sidebar a:hover {
+        color: #f1f1f1;
+        background-color: #666666;
+    }
+
+    .banner {
+        background-color: #0093ca;
+    }
+
+    .banner img {
+        width: 250px;
+        height: auto;
+        align-items: center;
+    }
+
+    .banner p {
+        background-color: #0093ca;
+        color: white;
+    }
+
+    .banner a {
+        padding: 0 0 0 8px;
+        color: white;
+    }
+
+    .banner a:hover {
+        background-color: #0093ca;
+    }
+
+    .notice {
+        padding-top: 0;
+        color: white;
+        position: fixed;
+        text-align: left;
+        bottom: 0;
+        left: 1%;
+    }
+
+    @media screen and (max-width: 800px) {
+          .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+          }
+          .sidebar a {
+              float: left;
+              font-size: 90%;
+              background-color: #2c2c2c;
+          }
+          .banner {
+              background-color: #2c2c2c;
+          }
+          .banner p {
+              background-color: #2c2c2c;
+          }
+          .banner a:hover {
+              background-color: #2c2c2c;
+          }
+          div.content {margin-left: 0;}
+          .banner img {
+              width: 150px;
+              background-color: #2c2c2c;
+          }
+        }
+</style>
+</body>
+</html>

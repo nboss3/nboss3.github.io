@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Modelling Toolkit - Focus</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico"/>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="banner">
+            <p>Focus Blender 2.8 Addon Manual</p>
+            <a href="..">
+                <img src="../bannerlink.png" alt="Focus Banner">
+            </a>
+        </div>
+        <a href="../beginner.html">Getting Started</a>
+        <a href="../ux.html">UX Toolkit</a>
+        <a style="color: #f1f1f1; background-color:#666666;" href="../modelling.html">Modelling Toolkit</a>
+        <div class="submenu">
+            <a style="color:black; font-size: 110%" href="add.html">Add Object</a>
+            <a style="color:black; font-size: 110%" href="merge.html">Bridge/Merge</a>
+            <a style="color:black; font-size: 110%" href="align.html">Edit Align</a>
+            <a style="color:black; font-size: 110%" href="delete.html">Edit Delete</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Edit Select</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Focus</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Hide</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Mesh Edges</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Mesh Faces</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Mesh Options</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Mesh Tools</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Mesh Vertices</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Modifier Menu</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Proportional Edit</a>
+        </div>
+        <a href="../substance.html">Substance Toolkit</a>
+        <div class="notice">
+            <h4>&copy; All rights reserved</h4>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Mesh Tools Menu</h1>
+        <p>Hotkey: Ctrl+Shift+X</p>
+        <img src="edittoolstrans.png" alt="a software menu">
+        <hr>
+        <h2>Functions / Table of Contents</h2>
+        <ul>
+            <li><a href="#dgrknrl">45 Degree Knurl</a></li>
+            <li><a href="#spcvrts">Space Vertices</a></li>
+            <li><a href="#rlxvrts">Relax Vertices</a></li>
+            <li><a href="#knrlfcs">Knurl Face</a></li>
+            <li><a href="#lftmd">Loft Mode</a></li>
+            <li><a href="#45dgrsubdvd">45 Degree Subdivide</a></li>
+            <li><a href="#vrtxcrcl">Vertex Circle</a></li>
+            <li><a href="#crtgrt">Create Grate</a></li>
+            <li><a href="#flttnfcs">Flatten Faces</a></li>
+        </ul>
+        <hr>
+        <h3 id="dgrknrl">45 Degree Knurl</h3>
+        <p>Subdivides faces at a 45 degree angle then creates a knurl pattern in the selected faces.</p>
+        <hr>
+        <h3 id="spcvrts">Space Vertices</h3>
+        <p>Spaces the selected vertices to an even interval.</p>
+        <hr>
+        <h3 id="rlxvrts">Relax Vertices</h3>
+        <p>Smooths out selected vertices to give a less jagged look.</p>
+        <hr>
+        <h3 id="knrlfcs">Knurl Face</h3>
+        <p>Creates a knurl pattern in the selected faces. The center vertices of the knurl pattern are then selected so extruding the knurl is easy.</p>
+        <hr>
+        <h3 id="lftmd">Loft Mode</h3>
+        <p>Enters into a mode where you can interpolate geometry between faces.</p>
+        <hr>
+        <h3 id="45dgrsubdvd">45 Degree Subdivide</h3>
+        <p>Subdivides selected faces at a 45 degree angle. This creates a criss-cross pattern in the faces.</p>
+        <hr>
+        <h3 id="vrtxcrcl">Vertex Circle</h3>
+        <p>Creates a circle for each vertex selected on a mesh. The circles' origins are centred on the selected vertices. First the function enters a mode where the resolution of the circle is set, then the size.</p>
+        <hr>
+        <h3 id="crtgrt">Create Grate</h3>
+        <p>Creates an inset grid pattern in the selected faces. Useful for extruding square holes in the mesh to create a grate or mesh.</p>
+        <hr>
+        <h3 id="flttnfcs">Flatten Faces</h3>
+        <p>Flattens selected faces to a common plane, the plane is determined automatically.</p>
+        <hr>
+    </div>
+<style>
+    body {
+        background-color: #3c3c3c;
+    }
+
+    .content {
+        padding: 0 10px;
+        margin-left: 300px;
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        background-color: #3c3c3c;
+        color: whitesmoke;
+    }
+
+    .content a {
+        text-decoration: none;
+        color: #009ed6;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 100%;
+    }
+
+    .sidebar {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        margin: 0;
+        width: 300px;
+        float: left;
+        background-color: #2c2c2c;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .submenu {
+        background-color: #b1b1b1;
+        padding-left: 10%;
+    }
+
+    .sidebar p {
+        padding: 16px 16px 6px 16px;
+    }
+
+    .sidebar a {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #bbbbbb;
+        display: block;
+    }
+
+    .sidebar a:hover {
+        color: #f1f1f1;
+        background-color: #666666;
+    }
+
+    .banner {
+        background-color: #0093ca;
+    }
+
+    .banner img {
+        width: 250px;
+        height: auto;
+        align-items: center;
+    }
+
+    .banner p {
+        background-color: #0093ca;
+        color: white;
+    }
+
+    .banner a {
+        padding: 0 0 0 8px;
+        color: white;
+    }
+
+    .banner a:hover {
+        background-color: #0093ca;
+    }
+
+    .notice {
+        padding-top: 0;
+        color: white;
+        position: fixed;
+        text-align: left;
+        bottom: 0;
+        left: 1%;
+    }
+
+    @media screen and (max-width: 800px) {
+          .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+          }
+          .sidebar a {
+              float: left;
+              font-size: 90%;
+              background-color: #2c2c2c;
+          }
+          .banner {
+              background-color: #2c2c2c;
+          }
+          .banner p {
+              background-color: #2c2c2c;
+          }
+          .banner a:hover {
+              background-color: #2c2c2c;
+          }
+          div.content {margin-left: 0;}
+          .banner img {
+              width: 150px;
+              background-color: #2c2c2c;
+          }
+        }
+</style>
+</body>
+</html>

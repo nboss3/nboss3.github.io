@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Modelling Toolkit - Focus</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico"/>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="banner">
+            <p>Focus Blender 2.8 Addon Manual</p>
+            <a href="..">
+                <img src="../bannerlink.png" alt="Focus Banner">
+            </a>
+        </div>
+        <a href="../beginner.html">Getting Started</a>
+        <a href="../ux.html">UX Toolkit</a>
+        <a style="color: #f1f1f1; background-color:#666666;" href="../modelling.html">Modelling Toolkit</a>
+        <div class="submenu">
+            <a style="color:black; font-size: 110%" href="add.html">Add Object</a>
+            <a style="color:black; font-size: 110%" href="merge.html">Bridge/Merge</a>
+            <a style="color:black; font-size: 110%" href="align.html">Edit Align</a>
+            <a style="color:black; font-size: 110%" href="delete.html">Edit Delete</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Edit Select</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Focus</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Hide</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Mesh Edges</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Mesh Faces</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Mesh Options</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Mesh Tools</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Mesh Vertices</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Modifier Menu</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Proportional Edit</a>
+        </div>
+        <a href="../substance.html">Substance Toolkit</a>
+        <div class="notice">
+            <h4>&copy; All rights reserved</h4>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Add Object Menu</h1>
+        <p>Hotkey: Ctrl+Shift+Alt+A</p>
+        <img src="Addtrans.png" alt="a software menu">
+        <hr>
+        <h2>Functions / Table of Contents</h2>
+        <ul>
+            <li><a href="#prim">Primitives</a></li>
+            <li><a href="#nurbs">NURBS Surfaces</a></li>
+            <li><a href="#spec">Specialty Objects</a></li>
+            <li><a href="#phys">Physics Force Fields</a></li>
+            <li><a href="#light">Light Sources, Probes and Image Objects</a></li>
+            <li><a href="#meta">Meta-balls</a></li>
+            <li><a href="#curve">Bezier Curves and Grease Objects</a></li>
+            <li><a href="#mod">Modified Objects</a></li>
+        </ul>
+        <hr>
+        <h3 id="prim">Primitives</h3>
+        <p>Contains all mesh primitives in a button grid.</p>
+        <p>Also see: <a href="https://docs.blender.org/manual/en/latest/modeling/meshes/primitives.html">Blender Manual</a></p>
+        <hr>
+        <h3 id="nurbs">NURBS Surfaces</h3>
+        <p>Contains all NURBS curves and surfaces in a button grid.</p>
+        <p>Also see: <a href="https://docs.blender.org/manual/en/latest/modeling/surfaces/primitives.html">Blender Manual</a></p>
+        <hr>
+        <h3 id="spec">Specialty Objects</h3>
+        <p>Contains objects that are not strictly categorised; namely Text, Camera, Lattice, Armature, Speaker and Empty.</p>
+        <hr>
+        <h3 id="phys">Physics Force Fields</h3>
+        <p>Contains all force field types in a button grid.</p>
+        <p>Also see: <a href="https://docs.blender.org/manual/en/latest/physics/forces/force_fields/index.html">Blender Manual</a></p>
+        <hr>
+        <h3 id="light">Light Sources, Probes and Image Objects</h3>
+        <p>Contains all light-related objects with light probes and sources. As well as background and reference images in a button grid.</p>
+        <p>Also see: <a href="https://docs.blender.org/manual/en/latest/render/lights/light_object.html">Light Objects</a>, <a href="https://docs.blender.org/manual/en/latest/render/eevee/lightprobes/index.html">Light Probes</a>, <a href="https://docs.blender.org/manual/en/latest/modeling/empties.html">Image Objects</a></p>
+        <hr>
+        <h3 id="meta">Meta-balls</h3>
+        <p>Contains all meta-ball primitives in a button grid.</p>
+        <p>Also see: <a href="https://docs.blender.org/manual/en/latest/modeling/metas/primitives.html">Blender Manual</a></p>
+        <hr>
+        <h3 id="curve">Bezier Curves and Grease Objects</h3>
+        <p>Contains all bezier curve primitives with the draw tool as well as grease pencil primitives in a button grid.</p>
+        <p>Also see: <a href="https://docs.blender.org/manual/en/latest/modeling/curves/primitives.html">Curves</a>, <a href="https://docs.blender.org/manual/en/latest/grease_pencil/primitives.html">Grease Objects</a></p>
+        <hr>
+        <h3 id="mod">Modified Objects</h3>
+        <p>The functions from left to right;</p><ul>
+        <li>Top Row</li>
+        <li>Adds a plane mirrored on the x-axis</li>
+        <li>Adds an 8-sided cylinder</li>
+        <li>Adds a 16-sided cylinder</li>
+        <li>Adds a 32-sided cylinder</li>
+        <li>Adds a cube mirrored on the x-axis with a bevel modifier</li>
+        <li>Bottom Row</li>
+        <li>Adds a cube transformed to sphere with 1 subdivision</li>
+        <li>Adds a cube transformed to sphere with 3 subdivisions</li>
+        <li>Adds a cube transformed to sphere with 7 subdivisions</li>
+        <li>Adds a single vertex</li>
+        <li>Adds a cylinder with an extruded hole through it</li></ul>
+        <hr>
+    </div>
+<style>
+    body {
+        background-color: #3c3c3c;
+    }
+
+    .content {
+        padding: 0 10px;
+        margin-left: 300px;
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        background-color: #3c3c3c;
+        color: whitesmoke;
+    }
+
+    .content a {
+        text-decoration: none;
+        color: #009ed6;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 100%;
+    }
+
+    .sidebar {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        margin: 0;
+        width: 300px;
+        float: left;
+        background-color: #2c2c2c;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .submenu {
+        background-color: #b1b1b1;
+        padding-left: 10%;
+    }
+
+    .sidebar p {
+        padding: 16px 16px 6px 16px;
+    }
+
+    .sidebar a {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #bbbbbb;
+        display: block;
+    }
+
+    .sidebar a:hover {
+        color: #f1f1f1;
+        background-color: #666666;
+    }
+
+    .banner {
+        background-color: #0093ca;
+    }
+
+    .banner img {
+        width: 250px;
+        height: auto;
+        align-items: center;
+    }
+
+    .banner p {
+        background-color: #0093ca;
+        color: white;
+    }
+
+    .banner a {
+        padding: 0 0 0 8px;
+        color: white;
+    }
+
+    .banner a:hover {
+        background-color: #0093ca;
+    }
+
+    .notice {
+        padding-top: 0;
+        color: white;
+        position: fixed;
+        text-align: left;
+        bottom: 0;
+        left: 1%;
+    }
+
+    @media screen and (max-width: 800px) {
+          .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+          }
+          .sidebar a {
+              float: left;
+              font-size: 90%;
+              background-color: #2c2c2c;
+          }
+          .banner {
+              background-color: #2c2c2c;
+          }
+          .banner p {
+              background-color: #2c2c2c;
+          }
+          .banner a:hover {
+              background-color: #2c2c2c;
+          }
+          div.content {margin-left: 0;}
+          .banner img {
+              width: 150px;
+              background-color: #2c2c2c;
+          }
+        }
+</style>
+</body>
+</html>

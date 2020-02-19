@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Modelling Toolkit - Focus</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico"/>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="banner">
+            <p>Focus Blender 2.8 Addon Manual</p>
+            <a href="..">
+                <img src="../bannerlink.png" alt="Focus Banner">
+            </a>
+        </div>
+        <a href="../beginner.html">Getting Started</a>
+        <a href="../ux.html">UX Toolkit</a>
+        <a style="color: #f1f1f1; background-color:#666666;" href="../modelling.html">Modelling Toolkit</a>
+        <div class="submenu">
+            <a style="color:black; font-size: 110%" href="add.html">Add Object</a>
+            <a style="color:black; font-size: 110%" href="merge.html">Bridge/Merge</a>
+            <a style="color:black; font-size: 110%" href="align.html">Edit Align</a>
+            <a style="color:black; font-size: 110%" href="delete.html">Edit Delete</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Edit Select</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Focus</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Hide</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Mesh Edges</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Mesh Faces</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Mesh Options</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Mesh Tools</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Mesh Vertices</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Modifier Menu</a>
+            <a style="color:black; font-size: 110%" href="../modelling.html">Proportional Edit</a>
+        </div>
+        <a href="../substance.html">Substance Toolkit</a>
+        <div class="notice">
+            <h4>&copy; All rights reserved</h4>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Modifier Menu</h1>
+        <p>Hotkey: Ctrl+X</p>
+        <img src="modifiertrans.png" alt="a software menu">
+        <hr>
+        <h2>Functions / Table of Contents</h2>
+        <ul>
+            <li><a href="#orgnmrr">Origin Mirror</a></li>
+            <li><a href="#blnmdd">Boolean Mode (D)</a></li>
+            <li><a href="#clrntshrp">Clear Not Sharp</a></li>
+            <li><a href="#smrtsbdvd">Smart Subdivide</a></li>
+            <li><a href="#symmtrz">Symmetrize</a></li>
+            <li><a href="#crclarry">Circle Array</a></li>
+            <li><a href="#crvarry">Curve Array</a></li>
+            <li><a href="#arry">Array</a></li>
+            <li><a href="#smrtbvl">Smart Bevel</a></li>
+            <li><a href="#mdfrmn">Modifier Menu</a></li>
+        </ul>
+        <hr>
+        <h3 id="orgnmrr">Origin Mirror</h3>
+        <p>Moves the origin of the selected object to the 3D Cursor, then the popup appears. All settings for the mirror
+            modifier besides bisect, flip, UV offset and merge limit are available in the popup with hotkeys. Once you
+            click or press enter the settings are confirmed and the popup disappears.</p>
+        <p>Also see: <a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/mirror.html">Blender Manual</a></p>
+        <hr>
+        <h3 id="blnmdd">Boolean Mode (D)</h3>
+        <p>Enters the destructive boolean mode. It temporarily removes all modifiers from the selected object and
+            creates a duplicate backup. This allows you to create and apply booleans on the selected objects without
+            interference from other modifiers. Whilst in boolean mode, the function changes to exit boolean mode in the
+            pie menu. Activating this will then add all the previous modifiers back onto the object.</p>
+        <p>Also see: <a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/booleans.html">Blender Manual</a></p>
+        <hr>
+        <h3 id="clrntshrp">Clear Not Sharp</h3>
+        <p>Analyses the selected mesh for edges that are marked as sharp but do not meet the required face angles to be
+            considered sharp. If they do not meet requirements, those edges are no longer marked sharp, then all
+            non-sharp edges have their bevel weight removed. This function is to clean up models when they have been
+            edited after adding a bevel modifier, and some parts of the mesh are no longer sharp.</p>
+        <p>Also see: <a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/edges.html#mark-sharp-and-clear-sharp">Blender Manual</a></p>
+        <hr>
+        <h3 id="smrtsbdvd">Smart Subdivide</h3>
+        <p>This function operates similarly to the <a href="#smrtbvl">Smart Bevel</a> function. This function, however, is for a Subdivision
+            Surface workflow rather than the non-subdivision workflow smart bevel was built for. The function adds a
+            bevel and subdivision surface modifier to create a subdivided mesh with hard edges. This function is best
+            used for a hard surface model that requires subdivision. The popup will not allow you to edit any of the
+            bevel settings except the width and clamp overlap toggle, this is because the other settings need to be set automatically for best
+            results. Subdivision setting such as levels (viewport, render and quality level settings can be switched
+            between), the optimal display toggle and the use creases toggle. If a bevel is already on the selected
+            object, a new one will be added, but if a subdivision is already on the object, the existing modifier will
+            be used.</p>
+        <p>Also see: <a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/subdivision_surface.html">Blender Manual</a></p>
+        <hr>
+        <h3 id="symmtrz">Symmetrize</h3>
+        <p>This function does exactly what blender's default symmetrize function does, however, the popup allow you to
+            select the axis in real time and symmetrize on multiple axes at once.</p>
+        <p>Also see: <a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/basics/symmetry.html#symmetrize">Blender Manual</a></p>
+        <hr>
+        <h3 id="crclarry">Circle Array</h3>
+        <p>Functions exactly like the <a href="#arry">Array</a> function, however this allows you to use an object as
+            the array's origin. This means the array becomes radial around the object chosen as the origin. In one
+            function you can form a circle of objects very quickly.</p>
+        <p>Also see: <a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/array.html">Blender Manual</a></p>
+        <hr>
+        <h3 id="crvarry">Curve Array</h3>
+        <p>Functions exactly like the <a href="#arry">Array</a> function, however this allows you to use a curve to
+            which the object being arrayed is constrained to. A curve modifier is automatically added to the array
+            object to </p>
+        <p>Also see: <a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/array.html">Blender Manual</a></p>
+        <hr>
+        <h3 id="arry">Array</h3>
+        <p></p>
+        <p>Also see: <a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/array.html">Blender Manual</a></p>
+        <hr>
+        <h3 id="smrtbvl">Smart Bevel</h3>
+        <p></p>
+        <p>Also see: <a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/bevel.html">Blender Manual</a></p>
+        <hr>
+        <h3 id="mdfrmn">Modifier Menu</h3>
+        <img src="modifiermenutrans.png" alt="a software menu">
+        <p></p>
+        <p>Also see: <a href="">Blender Manual</a></p>
+        <hr>
+    </div>
+<style>
+    body {
+        background-color: #3c3c3c;
+    }
+
+    .content {
+        padding: 0 10px;
+        margin-left: 300px;
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        background-color: #3c3c3c;
+        color: whitesmoke;
+    }
+
+    .content a {
+        text-decoration: none;
+        color: #009ed6;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 100%;
+    }
+
+    .sidebar {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        margin: 0;
+        width: 300px;
+        float: left;
+        background-color: #2c2c2c;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .submenu {
+        background-color: #b1b1b1;
+        padding-left: 10%;
+    }
+
+    .sidebar p {
+        padding: 16px 16px 6px 16px;
+    }
+
+    .sidebar a {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #bbbbbb;
+        display: block;
+    }
+
+    .sidebar a:hover {
+        color: #f1f1f1;
+        background-color: #666666;
+    }
+
+    .banner {
+        background-color: #0093ca;
+    }
+
+    .banner img {
+        width: 250px;
+        height: auto;
+        align-items: center;
+    }
+
+    .banner p {
+        background-color: #0093ca;
+        color: white;
+    }
+
+    .banner a {
+        padding: 0 0 0 8px;
+        color: white;
+    }
+
+    .banner a:hover {
+        background-color: #0093ca;
+    }
+
+    .notice {
+        padding-top: 0;
+        color: white;
+        position: fixed;
+        text-align: left;
+        bottom: 0;
+        left: 1%;
+    }
+
+    @media screen and (max-width: 800px) {
+          .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+          }
+          .sidebar a {
+              float: left;
+              font-size: 90%;
+              background-color: #2c2c2c;
+          }
+          .banner {
+              background-color: #2c2c2c;
+          }
+          .banner p {
+              background-color: #2c2c2c;
+          }
+          .banner a:hover {
+              background-color: #2c2c2c;
+          }
+          div.content {margin-left: 0;}
+          .banner img {
+              width: 150px;
+              background-color: #2c2c2c;
+          }
+        }
+</style>
+</body>
+</html>

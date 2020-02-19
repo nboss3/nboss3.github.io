@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Organ Project</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
+</head>
+<body>
+<div class="top">
+    <p>Organ Project</p>
+</div>
+<div class="navbar">
+    <a href="#concept_heading">Concept</a>
+    <a href="#design_heading">Design</a>
+    <a href="#build_heading">Manufacturing</a>
+    <a href="#result_heading">Result</a>
+</div>
+<div class="intro_heading">
+    <p>Introduction</p>
+</div>
+<div class="intro">
+    <p>This is the journey from constructing simple audio circuits to building an electronic MIDI organ console.</p>
+    <p>In high school, I built a set of stereo bookshelf speakers as my end of year engineering project:</p>
+    <section class="cards">
+        <div class="row">
+            <div class="column">
+                <figure>
+                    <img src="speakers1.jpg" alt="Bookshelf Speakers">
+                    <figcaption>Completed speakers on their own</figcaption>
+                </figure>
+            </div>
+            <div class="column">
+                <figure>
+                    <img src="speakers3.jpg" alt="Bookshelf Speakers">
+                    <figcaption>Speakers set up in environment</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <figure>
+                    <img src="speakers2.jpg" alt="Bookshelf Speakers">
+                    <figcaption>Crossover circuitry for the speaker cabinet</figcaption>
+                </figure>
+            </div>
+            <div class="column">
+                <figure>
+                    <img src="speakers6.jpg" alt="Bookshelf Speakers">
+                    <figcaption>Mounting the drivers in the front plate</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <figure>
+                    <img src="speakers5.jpg" alt="Bookshelf Speakers">
+                    <figcaption>Finishing and sealing the assembled cabinet</figcaption>
+                </figure>
+            </div>
+            <div class="column">
+                <figure>
+                    <img src="speakers4.jpg" alt="Bookshelf Speakers">
+                    <figcaption>Attaching the wire mount and back plate</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <div class="rest">
+        <p>This was my first major step into the world of audio electronics. About a year later, I began learning about
+            synthesizers and constructing the basic circuits involved with them. After deciding to build one fully, I
+        had the problem of deciding which kind I wanted to build, as there were several types.</p>
+        <p>When I completed a design draft for the synthesizer of the complexity and versatility I wanted, I found that
+        it would cost hundreds of dollars to construct. Considering the limited sound palette of any one synthesizer,
+        I didn't feel it was worth the financial and time investment. Nevertheless, I decided to start step by step,
+        doing everything in stages so if it becomes too expensive I can settle for a simpler instrument.</p>
+        <figure>
+            <img src="Keyboards.jpg" alt="A disassembled electronic keyboard">
+            <figcaption>Top: The first step in the process; a keyboard, Bottom: the MIDI keyboard I bought later on</figcaption>
+        </figure>
+        <p>I bought a old casio keyboard with missing keys from my music store to use as the base for the project and to
+        control the electronics with. In the process of working with it, I managed to get the original keyboard
+        electronics working again. The keyboard seemed to have a wide sound palette so I decided to play it for a while
+        instead of stripping out the electronics. Working with the acoustic and orchestral emulations on the keyboard
+        made me prefer them over the synthesized sounds; especially the organ. Over time, I became more partial to
+        building something for samples, rather than a synthesizer, bringing to life the idea to build a virtual organ.</p>
+    </div>
+</div>
+<div id="concept_heading">
+    <p>Concept</p>
+</div>
+<div class="concept">
+    <p>Instead of a synthesizer, I was going to build a virtual organ console, which meany lots of software. I wanted to
+        use Ableton Live Lite which came with my launchpads. It had the capabilities for both samplers and synthesizers.</p>
+    <p>The parts of an organ console I needed were two keyboards (or manuals), some expression (swell) pedals,
+        a pedal-board, stop and piston buttons, a stool, a music stand and a sound system.</p>
+    <h2>Pedalboard</h2>
+    <p>After searching online; I realised that if I wanted a pedalboard and for less than $500 AUD, I would have to build my own.</p>
+    <p>I went through several plans and designs but many were either weren't clear enough to build from or were beyond
+        my woodworking skills. I found inspiration for a simple and cheap design from <a href="https://www.youtube.com/watch?v=skIXdKvqTZk">this link</a>.</p>
+</div>
+
+<style>
+    html, body {
+        font-family: "Segoe UI", sans-serif;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("organ.jpg");
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 40px;
+    }
+
+    .column {
+        flex: 25%;
+        max-width: 50%;
+        padding: 0 40px;
+    }
+
+    .column img {
+        margin: 20px 0;
+        vertical-align: middle;
+        width: 100%;
+        border-radius: 60px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    }
+
+    .top {
+        font-size: 400%;
+        color: white;
+        text-shadow: 4px 4px 8px rgba(0,0,0,0.75);
+        text-align: center;
+        padding-bottom: 5%;
+        padding-top: 5%;
+        margin: 0;
+        width: 100%;
+    }
+
+    .navbar {
+        color: black;
+        background-color: #e2e2e2;
+        width: 100%;
+        margin: 0;
+        text-decoration: none;
+        text-align: center;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+        border-bottom-style: solid;
+        border-top-style: solid;
+        border-width: 2px;
+        padding: 0.25%;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        padding-right: 1%;
+        padding-left: 1%;
+        color: #6c757d;
+        text-shadow: 1px 1px 3px rgba(0,0,0,.25);
+        font-size: 125%;
+    }
+
+    .navbar a:hover {
+        color: black;
+    }
+
+    .intro_heading p {
+        background-color: white;
+        background-size: cover;
+        margin: 0;
+        text-align: center;
+        text-shadow: 2px 2px 6px rgba(0,0,0,.25);
+        font-size: 300%;
+        padding: 2%;
+    }
+
+    .intro p {
+        background-color: white;
+        padding: .5%;
+        margin: 0;
+        text-align: center;
+        text-shadow: 1px 1px 3px rgba(0,0,0,.2);
+        font-size: 120%;
+    }
+
+    #concept_heading {
+        background-color: white;
+        padding: 0;
+        background-size: cover;
+    }
+
+    #concept_heading p {
+        margin: 0;
+        text-align: center;
+        text-shadow: 2px 2px 6px rgba(0,0,0,.25);
+        font-size: 300%;
+        padding: 2%;
+    }
+
+    .concept {
+        background-color: white;
+        text-align: center;
+    }
+
+    .concept p {
+        margin: 0;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .cards {
+        background-color: white;
+    }
+
+    .card_left img {
+        border-radius: 60px;
+        padding: 10px;
+        width: 580px;
+    }
+
+    .card_right img {
+        border-radius: 60px;
+        padding: 10px;
+        width: 580px;
+    }
+
+    .rest {
+        clear: both;
+        word-wrap: break-spaces;
+        background-color: white;
+        text-align: center;
+    }
+
+    .rest p {
+        margin-left: 15%;
+        margin-right: 15%;
+        text-align: center;
+    }
+
+    .rest img {
+        border-radius: 60px;
+        width: 580px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    }
+</style>
+</body>
+</html>
