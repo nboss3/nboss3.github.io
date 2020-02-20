@@ -94,7 +94,7 @@
         <p>Also see: <a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/basics/symmetry.html#symmetrize">Blender Manual</a></p>
         <hr>
         <h3 id="crclarry">Circle Array</h3>
-        <p>Functions exactly like the <a href="#arry">Array</a> function, however this allows you to use an object as
+        <p>Functions similarly to the <a href="#arry">Array</a> function, however this allows you to use an object as
             the array's origin. This means the array becomes radial around the object chosen as the origin. In one
             function you can form a circle of objects very quickly.</p>
         <p>Also see: <a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/array.html">Blender Manual</a></p>
@@ -106,17 +106,26 @@
         <p>Also see: <a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/array.html">Blender Manual</a></p>
         <hr>
         <h3 id="arry">Array</h3>
-        <p></p>
+        <p>Adds an array modifier with real-time adjustable parameters. Relative offset is controlled by mouse movement,
+        the x, y and z keys can be pressed to selected which axis to adjust, pressing the shift key and then x, y or z
+        will lock all other offsets to zero and only adjust the selected axis. The array count can be adjusted with the
+        scroll wheel. The popup allows you to add and remove array modifiers, and the name of the current array modifier
+            you are editing is displayed in the popup.</p>
         <p>Also see: <a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/array.html">Blender Manual</a></p>
         <hr>
         <h3 id="smrtbvl">Smart Bevel</h3>
-        <p></p>
+        <p>Adds a bevel with adjustable parameters. Bevel width can be adjusted with mouse movement, the scroll wheel
+            controls the segment count on bevelled edges. The mouse movement can toggle between adjusting the edge width
+        or the profile of the bevel. The clamp overlap, limit type, offset type and vertex mode can be toggled. The
+            popup allows you to add multiple bevels on one object, or remove bevel modifiers on the object.</p>
         <p>Also see: <a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/bevel.html">Blender Manual</a></p>
         <hr>
         <h3 id="mdfrmn">Modifier Menu</h3>
         <img src="modifiermenutrans.png" alt="a software menu">
-        <p></p>
-        <p>Also see: <a href="">Blender Manual</a></p>
+        <p>Allows for modifiers to be added, removed, edited and arranged in a simple popup rather than in the
+        properties editor. Modifiers attached to the selected object are displayed in a list and can be moved up or
+        down. The list functions allow you to remove the selected modifier, remove all modifiers and apply all
+            modifiers. The modifiers can be hidden from view or from render in the list also.</p>
         <hr>
     </div>
 <style>
