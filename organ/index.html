@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<meta charset="UTF-8">
+<p>Under development</p>
+<!--<head>
     <meta charset="UTF-8">
     <title>Organ Project</title>
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
@@ -89,8 +91,19 @@
     <p>Concept</p>
 </div>
 <div class="concept">
-    <p>Instead of a synthesizer, I was going to build a virtual organ console, which meany lots of software. I wanted to
-        use Ableton Live Lite which came with my launchpads. It had the capabilities for both samplers and synthesizers.</p>
+    <p>Instead of a synthesizer, I was going to build a virtual organ console, which meant lots of different samples
+        rather than creating my sounds. I wanted to use Ableton Live Lite which came with my launchpads as the main
+        software. It had the capabilities for both samplers and synthesizers, however, once the 100+ samples and all the
+    organ features were setup, my computer couldn't handle the load without distorting the final audio and having high
+        latency.</p>
+    This should be in manufacturing or summit
+    <p>Since Ableton was not going to work as my primary software I investigated virtual organ software packages like
+        <a href="https://www.hauptwerk.com/">Hauptwerk</a>. Although it could easily handle the samples, it required a
+    payment plan which I was not willing to subscribe to, and furthermore, I had no guarantee that my launchpads or
+    other console components I had built would work with it. I continued to search for alternatives, when I discovered
+    <a href="http://jorgan-home.de/mediawiki_en/index.php?title=Home">jOrgan</a>. jOrgan is a MIDI processor, it allows you to use any samples or soundfonts you like to create
+    a virtual organ console. I was able to program my launchpads into it and connect all my arduino MIDI devices.</p>
+
     <p>The parts of an organ console I needed were two keyboards (or manuals), some expression (swell) pedals,
         a pedal-board, stop and piston buttons, a stool, a music stand and a sound system.</p>
     <h2>Pedalboard</h2>
@@ -98,7 +111,12 @@
     <p>I went through several plans and designs but many were either weren't clear enough to build from or were beyond
         my woodworking skills. I found inspiration for a simple and cheap design from <a href="https://www.youtube.com/watch?v=skIXdKvqTZk">this link</a>.</p>
 </div>
-
+<div id="design_heading">
+    <p>Design</p>
+</div>
+<div class="design">
+    <p>The pedalboard was too wide so I widened the desk then shortened the pedalboard and it fit.</p>
+</div>
 <style>
     html, body {
         font-family: "Segoe UI", sans-serif;
@@ -189,13 +207,13 @@
         font-size: 120%;
     }
 
-    #concept_heading {
+    #concept_heading, #design_heading {
         background-color: white;
         padding: 0;
         background-size: cover;
     }
 
-    #concept_heading p {
+    #concept_heading, #design_heading p {
         margin: 0;
         text-align: center;
         text-shadow: 2px 2px 6px rgba(0,0,0,.25);
@@ -206,6 +224,10 @@
     .concept {
         background-color: white;
         text-align: center;
+    }
+
+    .concept a {
+        text-decoration: none;
     }
 
     .concept p {
@@ -249,5 +271,5 @@
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     }
 </style>
-</body>
+</body>-->
 </html>
