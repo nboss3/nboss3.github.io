@@ -61,23 +61,19 @@
             <li><a href="#imprtfbx">Import FBX</a></li>
         </ul>
         <hr>
-        <h3 id="xprtobj">Export OBJ</h3>
-        <p>Also see: <a href="https://docs.blender.org/manual/en/latest/addons/import_export/scene_obj.html#wavefront-obj">Blender Manual</a></p>
-        <hr>
-        <h3 id="xprtfbx">Export FBX</h3>
-        <p>Also see: <a href="https://docs.blender.org/manual/en/latest/addons/import_export/scene_fbx.html#fbx">Blender Manual</a></p>
-        <hr>
         <h3 id="sbsfbx">Export SBSFBX</h3>
+        <p>Creates an fbx and sbs file for the selected objects. The sbs file is then opened in Substance Painter.
+            This can be a very intensive action. The substance painter project uses OpenGL normals. The function checks
+        whether selected objects have UV data, materials and if the the blender project has been saved. If an object
+        does not have UV or material data, it is selected.</p>
         <hr>
         <h3 id="xprtobjs">Export Objects</h3>
+        <p>Exports selected objects as individual FBX files.</p>
         <hr>
         <h3 id="xprtgps">Export Groups</h3>
-        <hr>
-        <h3 id="imprtobj">Import OBJ</h3>
-        <p>Also see: <a href="https://docs.blender.org/manual/en/latest/addons/import_export/scene_obj.html#wavefront-obj">Blender Manual</a></p>
-        <hr>
-        <h3 id="imprtfbx">Import FBX</h3>
-        <p>Also see: <a href="https://docs.blender.org/manual/en/latest/addons/import_export/scene_fbx.html#fbx">Blender Manual</a></p>
+        <p>For each object that is selected, its collection is exported as its own FBX file. If three objects are
+        selected but two of the are in the same collection, only two FBX files are created. This function is to allow
+        you to make mesh groups to kitbash with and export them quickly.</p>
         <hr>
     </div>
 <style>
