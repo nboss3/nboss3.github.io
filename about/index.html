@@ -17,15 +17,16 @@
         Engineering Student
     </p>
     <div class="active">
-        <a href="https://www.artstation.com/nickbosse">PORTFOLIO</a>
+        <!--a class="active" href="personal">PERSONAL</a-->
         <!--a href="#videos">VIDEOS</a-->
-        <a href="https://gumroad.com/bossedigital">STORE</a>
-        <a href="../focus/">FOCUS PROJECT</a>
-        <a href="../organ/">ORGAN PROJECT</a>
-        <!--a href="#synth">SYNTH PROJECT</a-->
-        <a class="active" href="../about/">ABOUT</a>
         <!--a href="#videos">BLOG</a-->
-
+        <a href="https://www.artstation.com/nickbosse">PORTFOLIO</a>
+        <a href="https://blendermarket.com/products/focus-blender-ui-suite">STORE</a>
+        <a href="../focus/">FOCUS DOCS</a>
+        <a href="../speakers/">SPEAKERS PROJECT</a>
+        <a href="../organ/">ORGAN PROJECT</a>
+        <a href="../about/">ABOUT</a>
+        <!--a href="#synth">SYNTHESIZER PROJECT</a-->
     </div>
 </div>
     <div class="content">
@@ -51,39 +52,6 @@
                         exploring digital solutions to problems. Lately however, I have been intrigued by how traditional analog electronics can solve problems in science, engineering and art. Building analog computing modules and synthesizer circuits to create art and solve problems in a very interesting way.</p>
                     <p><a style="color: coral" href="../focus/">Check out my Blender plugin!</a></p>
                 </div>
-                <h2>Skills</h2>
-                <p style="color:grey">Hard Surface Modeling</p>
-                <p style="color:grey">Texturing</p>
-                <p style="color:grey">Concept Design</p>
-                <p style="color:grey">Analog Circuit Design</p>
-                <p style="color:grey">Programming</p>
-                <h2>Proficiencies</h2>
-            <div class="columns">
-                <div class="photoshop">
-                    <img style="display:inline;" src="pslogo.png" alt="photoshop"/>
-                    <h3 style="color:grey; display: inline;">Photoshop</h3>
-                </div>
-                <div class="blender">
-                    <img style="display:inline;" src="blender.png" alt="blender"/>
-                    <h3 style="color:grey; display: inline;">Blender</h3>
-                </div>
-                <div class="inventor">
-                    <img style="display:inline;" src="inventor.png" alt="inventor"/>
-                    <h3 style="color:grey; display: inline;">Inventor</h3>
-                </div>
-                <div class="sbsdesign">
-                    <img style="display:inline;" src="sbsdesigner.png" alt="designer"/>
-                    <h3 style="color:grey; display: inline;">Substance Designer</h3>
-                </div>
-                <div class="sbspaint">
-                    <img style="display:inline;" src="sbspaint.png" alt="painter"/>
-                    <h3 style="color:grey; display: inline;">Substance Painter</h3>
-                </div>
-                <div class="moi">
-                    <img style="display:inline;" src="moi.jpeg" alt="moi"/>
-                    <h3 style="color:grey; display: inline;">Moi3D</h3>
-                </div>
-            </div>
             </div>
         </div>
     </div>
@@ -101,7 +69,7 @@
 .sidebar {
     margin: 0;
     padding: 0;
-    width: 15%;
+    width: 14%;
     font-size: 120%;
     float: left;
     background-color: rgba(.25, .25, .25, .4);
@@ -121,11 +89,11 @@
     text-align: center;
     align-content: center;
     vertical-align: center;
-    display: block;
+    height: 100%;
     left: 0;
     right: 0;
     z-index: 1;
-    font-family: arial;
+    font-family: arial sans-serif;
 }
 
 .pfp img {
@@ -139,6 +107,8 @@
     color: coral;
     z-index: 1;
     background-color: rgba(.1, .1, .1, .85);
+    height: 100vh;
+    overflow: auto;
 }
 
 .text {
@@ -148,14 +118,14 @@
     vertical-align: center;
     display: block;
     margin: auto;
-    /*margin-left: 25%;*/
-    /*margin-right: 25%;*/
     color: white;
     z-index: 1;
-    background-color: transparent;
+    background-color: rgba(.1, .1, .1 .85);
     width: 50%;
     word-break: break-word;
     white-space: normal;
+    height: 100%;
+    overflow: auto;
 }
 
 .text a {
@@ -168,112 +138,6 @@
     color: white;
 }
 
-.columns {
-    align-self: center;
-    display: grid;
-    vertical-align: center;
-    background-color: transparent;
-    text-align: left;
-    z-index: 1;
-    height: auto;
-    margin-left: 14%;
-}
-
-.photoshop {
-    grid-column: 2;
-    grid-row: 1;
-    float: left;
-}
-
-.photoshop img {
-    height: 70px;
-    width: 70px;
-    vertical-align: middle;
-    padding-right: 10%;
-    padding-left: 10%;
-    padding-bottom: 5%;
-}
-
-.blender {
-    grid-column: 1;
-    grid-row: 1;
-    float: left;
-}
-
-.blender img {
-    height: 70px;
-    width: 70px;
-    vertical-align: middle;
-    padding-right: 8%;
-    padding-bottom: 5%;
-}
-
-.sbspaint {
-    grid-column: 1;
-    grid-row: 2;
-    float: left;
-}
-
-.sbspaint img {
-    height: 70px;
-    width: 70px;
-    vertical-align: middle;
-    padding-right: 8%;
-    padding-bottom: 5%;
-}
-
-.sbsdesign {
-    grid-column: 2;
-    grid-row: 2;
-    float: left;
-}
-
-.sbsdesign img {
-    height: 70px;
-    width: 70px;
-    vertical-align: middle;
-    padding-right: 8%;
-    padding-left: 10%;
-    padding-bottom: 5%;
-}
-
-.moi {
-    grid-column: 2;
-    grid-row: 3;
-    float: left;
-}
-
-.moi img {
-    height: 70px;
-    width: 70px;
-    vertical-align: middle;
-    padding-right: 8%;
-    padding-left: 10%;
-    padding-bottom: 5%;
-}
-
-.inventor {
-    grid-column: 1;
-    grid-row: 3;
-    float: left;
-}
-
-.inventor img {
-    height: 70px;
-    width: 70px;
-    vertical-align: middle;
-    padding-right: 8%;
-    padding-bottom: 5%;
-}
-
-
-/*
-top right bottom left
-*/
-
-/* Sidebar links */
-/* IMAGE MARGIN = 15%
-TEXT MARGIN = 30%*/
 .sidebar a {
     display: block;
     background-color: transparent;
@@ -310,7 +174,7 @@ TEXT MARGIN = 30%*/
 }
 
 .active a {
-    color: #919191;
+    color: #b4b4b4;
     padding: 20px 32px 12px 24px;
 }
 
@@ -323,7 +187,7 @@ TEXT MARGIN = 30%*/
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
-    margin-left: 15%;
+    margin-left: 14%;
     background: url(https://cdnb.artstation.com/p/assets/images/images/015/357/369/large/nick-bosse-chess.jpg?1548045190) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;

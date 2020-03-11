@@ -27,6 +27,7 @@
         <a href="https://www.artstation.com/nickbosse">PORTFOLIO</a>
         <a href="https://blendermarket.com/products/focus-blender-ui-suite">STORE</a>
         <a href="../focus/">FOCUS DOCS</a>
+        <a href="../speakers/">SPEAKERS PROJECT</a>
         <a href="../organ/">ORGAN PROJECT</a>
         <a href="../about/">ABOUT</a>
         <!--a href="#synth">SYNTHESIZER PROJECT</a-->
@@ -40,14 +41,14 @@
             <h1>STORE</h1>
         </div></a>
         <a href="../focus/"><div class="third-block">
-            <h1>FOCUS</h1>
+            <h1>FOCUS DOCUMENTATION</h1>
         </div></a>
-        <!--<div class="fourth-block">
-            <h1>SPEAKER PROJECT</h1>
-        </div>
-        <div class="fifth-block">
+        <a href="../speakers/"><div class="fourth-block">
+            <h1>SPEAKERS PROJECT</h1>
+        </div></a>
+        <a href="../organ/"><div class="fifth-block">
             <h1>ORGAN PROJECT</h1>
-        </div>-->
+        </div></a>
     </div>
     <style>
         body {
@@ -75,18 +76,14 @@
     z-index: 1;
 }
 
-/*
-top right bottom left
-*/
-
-
 .first-block {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
-    background: url(blendermarket.PNG) no-repeat left, white;
+    background: url(blendermarket.PNG) no-repeat left;
+    background-size: 102%;
     margin-top: 1%;
     border: 10px solid transparent;
 }
@@ -111,8 +108,8 @@ top right bottom left
 }
 .second-block h1 {
     font-size: 400%;
-    color: black;
-    text-shadow: 2px 2px 3px white;
+    color: white;
+    text-shadow: 2px 2px 3px black;
 }
 .second-block:hover {
     border: 10px solid coral
@@ -124,15 +121,14 @@ top right bottom left
     justify-content: center;
     align-items: center;
     align-content: center;
-    background: url(../focus/bannerlink.png) no-repeat left, grey;
-    background-size: 60%;
+    background: url(viewport.PNG) no-repeat left;
     margin-top: 1%;
     border: 10px solid transparent;
 }
 .third-block h1 {
     font-size: 400%;
-    color: black;
-    text-shadow: 2px 2px 3px white;
+    color: white;
+    text-shadow: 2px 2px 3px black;
 }
 .third-block:hover {
     border: 10px solid coral;
@@ -145,8 +141,18 @@ top right bottom left
     justify-content: center;
     align-items: center;
     align-content: center;
-    background: red;
+    background: url(speaker.jpg) no-repeat left;
+    background-size: 102%;
     margin-top: 1%;
+    border: 10px solid transparent;
+}
+.fourth-block h1 {
+    font-size: 400%;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+.fourth-block:hover {
+    border: 10px solid coral;
 }
 
 .fifth-block {
@@ -155,18 +161,17 @@ top right bottom left
     justify-content: center;
     align-items: center;
     align-content: center;
-    background: yellow;
+    background: url("prgan.jpg") no-repeat left;
     margin-top: 1%;
+    border: 10px solid transparent;
 }
-
-.sixth-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    background: hotpink;
-    margin-top: 1%;
+.fifth-block h1 {
+    font-size: 400%;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+.fifth-block:hover {
+    border: 10px solid coral;
 }
 
 /* Sidebar links */
@@ -186,21 +191,6 @@ top right bottom left
 
 .sidebar:active {
     color: coral;
-}
-
-.center-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    outline-style: solid;
-    outline-color: coral;
-}
-
-.image-blocks {
-    text-align: center;
-    position: relative;
 }
 
 .top {
