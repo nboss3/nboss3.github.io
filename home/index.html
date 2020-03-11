@@ -8,7 +8,6 @@
 <body>
     <style>
         html {
-            background: url(https://cdnb.artstation.com/p/assets/images/images/015/357/369/large/nick-bosse-chess.jpg?1548045190) no-repeat center center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -26,15 +25,29 @@
         <!--a href="#videos">VIDEOS</a-->
         <!--a href="#videos">BLOG</a-->
         <a href="https://www.artstation.com/nickbosse">PORTFOLIO</a>
-        <a href="https://gumroad.com/bossedigital">STORE</a>
-        <a href="../focus/">FOCUS PROJECT</a>
+        <a href="https://blendermarket.com/products/focus-blender-ui-suite">STORE</a>
+        <a href="../focus/">FOCUS DOCS</a>
         <a href="../organ/">ORGAN PROJECT</a>
         <a href="../about/">ABOUT</a>
-        <!--a href="#synth">SYNTH PROJECT</a-->
+        <!--a href="#synth">SYNTHESIZER PROJECT</a-->
     </div>
 </div>
     <div class="content">
-
+        <a href="https://www.artstation.com/nickbosse"><div class="second-block">
+            <h1>PORTFOLIO</h1>
+        </div></a>
+        <a href="https://blendermarket.com/products/focus-blender-ui-suite"><div class="first-block">
+            <h1>STORE</h1>
+        </div></a>
+        <a href="../focus/"><div class="third-block">
+            <h1>FOCUS</h1>
+        </div></a>
+        <!--<div class="fourth-block">
+            <h1>SPEAKER PROJECT</h1>
+        </div>
+        <div class="fifth-block">
+            <h1>ORGAN PROJECT</h1>
+        </div>-->
     </div>
     <style>
         body {
@@ -50,7 +63,7 @@
 .sidebar {
     margin: 0;
     padding: 0;
-    width: 15%;
+    width: 14%;
     font-size: 120%;
     float: left;
     background-color: rgba(.2, .2, .2, .4);
@@ -65,6 +78,96 @@
 /*
 top right bottom left
 */
+
+
+.first-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: url(blendermarket.PNG) no-repeat left, white;
+    margin-top: 1%;
+    border: 10px solid transparent;
+}
+.first-block:hover {
+    border: 10px solid coral;
+}
+.first-block h1 {
+    font-size: 400%;
+    text-shadow: 2px 2px 3px white;
+    color: black;
+}
+
+.second-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: url(botinabox.jpg) no-repeat left;
+    margin-bottom: 1%;
+    border: 10px solid transparent;
+}
+.second-block h1 {
+    font-size: 400%;
+    color: black;
+    text-shadow: 2px 2px 3px white;
+}
+.second-block:hover {
+    border: 10px solid coral
+}
+
+.third-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: url(../focus/bannerlink.png) no-repeat left, grey;
+    background-size: 60%;
+    margin-top: 1%;
+    border: 10px solid transparent;
+}
+.third-block h1 {
+    font-size: 400%;
+    color: black;
+    text-shadow: 2px 2px 3px white;
+}
+.third-block:hover {
+    border: 10px solid coral;
+}
+
+
+.fourth-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: red;
+    margin-top: 1%;
+}
+
+.fifth-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: yellow;
+    margin-top: 1%;
+}
+
+.sixth-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: hotpink;
+    margin-top: 1%;
+}
 
 /* Sidebar links */
 .sidebar a {
@@ -85,6 +188,21 @@ top right bottom left
     color: coral;
 }
 
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    outline-style: solid;
+    outline-color: coral;
+}
+
+.image-blocks {
+    text-align: center;
+    position: relative;
+}
+
 .top {
     display: block;
     color: #f5faff;
@@ -103,31 +221,36 @@ top right bottom left
 }
 
 .active a {
-    color: #919191;
+    color: #b4b4b4;
     padding: 20px 32px 12px 24px;
 }
 
 .subtext {
     font-size: 80%;
-    color: #919191;
+    color: #b4b4b4;
     padding: 0 32px 0 24px;
     background-color: transparent;
 }
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
-    margin-left: 15%;
-    height: 1000px;
+    margin-left: 14%;
+    /*-height: 1000px;-->*/
     background: url(https://cdnb.artstation.com/p/assets/images/images/015/357/369/large/nick-bosse-chess.jpg?1548045190) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     font-family: arial, sans-serif;
+    padding: 2%;
 }
 
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
+.content a {
+    text-decoration: none;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a top bar */
+@media screen and (max-width: 1000px) {
   .sidebar {
     width: 100%;
     height: auto;
@@ -135,14 +258,17 @@ div.content {
   }
   .sidebar a {float: left;}
   div.content {margin-left: 0;}
+  div.first-block {background: url(blendermarket.PNG) no-repeat left}
 }
 
 /* On screens that are less than 500px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
   .sidebar a {
     text-align: center;
     float: left;
   }
+      div.first-block {background: url(blendermarket.PNG) no-repeat left}
+
 }
     </style>
 </body>
