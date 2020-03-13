@@ -49,13 +49,25 @@
         </div>
         <div class="intro">
             <p>This is the journey from constructing simple audio circuits to building an electronic MIDI organ console.</p>
-            <p>In high school, I built a set of bookshelf speakers as my end of year engineering project:</p>
+            <p>In high school, I built a set of bookshelf speakers as my end of year engineering project.</p>
+            <p>I bought an old Casio keyboard with missing keys from my local music store to use as the base for the
+                project. In the process of working with it, I managed to get the keyboard electronics working again. The
+                keyboard had a wide sound palette, so I decided to play it for a while instead of stripping it out.
+                Working with the acoustic and orchestral emulations on the keyboard made me prefer them over the
+                synthesized sounds; especially the organ. Over time, I became more partial to building something for
+                samples, rather than a synthesizer, bringing to life the idea to build a virtual organ.</p>
         <div>
         <div id="concept_heading">
             <p>Concept</p>
         </div>
         <div class="concept">
-            <p>concept stuff</p>
+            <p>Most virtual organ consoles I have seen use two keyboards, a stop control system and a pedalboard. Only
+                one of my keyboards had a USB connector so I needed to install one in the one bought from the music
+                store. I also needed a way to control the organ stops and pistons, as well as a pedalboard.</p>
+            <figure>
+                <img src="anatomy.jpg" alt="A pipe organ console">
+                <figcaption>Fig. 1 - Anatomy of an organ console</figcaption>
+            </figure>
         </div>
         <div id="design_heading">
             <p>Design</p>
@@ -113,7 +125,27 @@
             justify-content: center;
             align-items: center;
             align-content: center;
-            background grey;
+            background: grey;
+            text-align: center;
+            max-width: 100%;
+            position: relative;
+        }
+
+        .concept figure {
+            align-items: center;
+            align-content: center;
+            text-align: center;
+            size: auto;
+            background: white;
+            max-width: 100%;
+        }
+
+        .concept img {
+            max-width: 100%;
+        }
+
+        .concept figcaption {
+            text-shadow: 1px 1px 3px rgba(0,0,0,.2);
         }
 
         .title p {
@@ -121,6 +153,11 @@
             text-shadow: 3px 3px 4px black;
             color: white;
             background: grey;
+            text-align: center;
+            max-width: 100%;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
         }
 
         .sidebar {
@@ -238,6 +275,27 @@
             background-size: cover;
             font-family: arial, sans-serif;
         }
+
+        @media screen and (max-width: 1000px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 500px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 1000px) {
+  .sidebar a {
+    text-align: center;
+    float: left;
+  }
+    .title {
+        width:100%;
+    }
+}
     </style>
 </body>
 </html>
