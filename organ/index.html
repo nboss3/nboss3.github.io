@@ -1,274 +1,692 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
 <head>
     <meta charset="UTF-8">
     <title>Organ Project</title>
-    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 </head>
 <body>
-<div class="top">
-    <p>Organ Project</p>
-</div>
-<div class="navbar">
-    <a href="#concept_heading">Concept</a>
-    <a href="#design_heading">Design</a>
-    <a href="#build_heading">Manufacturing</a>
-    <a href="#result_heading">Result</a>
-</div>
-<div class="intro_heading">
-    <p>Introduction</p>
-</div>
-<div class="intro">
-    <p>This is the journey from constructing simple audio circuits to building an electronic MIDI organ console.</p>
-    <p>In high school, I built a set of stereo bookshelf speakers as my end of year engineering project:</p>
-    <section class="cards">
-        <div class="row">
-            <div class="column">
-                <figure>
-                    <img src="speakers1.jpg" alt="Bookshelf Speakers">
-                    <figcaption>Completed speakers on their own</figcaption>
-                </figure>
-            </div>
-            <div class="column">
-                <figure>
-                    <img src="speakers3.jpg" alt="Bookshelf Speakers">
-                    <figcaption>Speakers set up in environment</figcaption>
-                </figure>
-            </div>
-        </div>
-        <div class="row">
-            <div class="column">
-                <figure>
-                    <img src="speakers2.jpg" alt="Bookshelf Speakers">
-                    <figcaption>Crossover circuitry for the speaker cabinet</figcaption>
-                </figure>
-            </div>
-            <div class="column">
-                <figure>
-                    <img src="speakers6.jpg" alt="Bookshelf Speakers">
-                    <figcaption>Mounting the drivers in the front plate</figcaption>
-                </figure>
-            </div>
-        </div>
-        <div class="row">
-            <div class="column">
-                <figure>
-                    <img src="speakers5.jpg" alt="Bookshelf Speakers">
-                    <figcaption>Finishing and sealing the assembled cabinet</figcaption>
-                </figure>
-            </div>
-            <div class="column">
-                <figure>
-                    <img src="speakers4.jpg" alt="Bookshelf Speakers">
-                    <figcaption>Attaching the wire mount and back plate</figcaption>
-                </figure>
-            </div>
-        </div>
-    </section>
-    <div class="rest">
-        <p>This was my first major step into the world of audio electronics. About a year later, I began learning about
-            synthesizers and constructing the basic circuits involved with them. After deciding to build one fully, I
-        had the problem of deciding which kind I wanted to build, as there were several types.</p>
-        <p>When I completed a design draft for the synthesizer of the complexity and versatility I wanted, I found that
-        it would cost hundreds of dollars to construct. Considering the limited sound palette of any one synthesizer,
-        I didn't feel it was worth the financial and time investment. Nevertheless, I decided to start step by step,
-        doing everything in stages so if it becomes too expensive I can settle for a simpler instrument.</p>
-        <figure>
-            <img src="Keyboards.jpg" alt="A disassembled electronic keyboard">
-            <figcaption>Top: The first step in the process; a keyboard, Bottom: the MIDI keyboard I bought later on</figcaption>
-        </figure>
-        <p>I bought a old casio keyboard with missing keys from my music store to use as the base for the project and to
-        control the electronics with. In the process of working with it, I managed to get the original keyboard
-        electronics working again. The keyboard seemed to have a wide sound palette so I decided to play it for a while
-        instead of stripping out the electronics. Working with the acoustic and orchestral emulations on the keyboard
-        made me prefer them over the synthesized sounds; especially the organ. Over time, I became more partial to
-        building something for samples, rather than a synthesizer, bringing to life the idea to build a virtual organ.</p>
+    <style>
+        html {
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            font-family: arial, sans-serif;
+        }
+    </style>
+<div class="sidebar">
+    <a class="top" href="../home/">Nick Bosse</a>
+    <p class="subtext">
+        Engineering Student
+    </p>
+    <div class="active">
+        <!--a class="active" href="personal">PERSONAL</a-->
+        <!--a href="#videos">VIDEOS</a-->
+        <!--a href="#videos">BLOG</a-->
+        <a href="https://www.artstation.com/nickbosse">PORTFOLIO</a>
+        <a href="https://gumroad.com/bossedigital">STORE</a>
+        <a href="../focus/">FOCUS DOCS</a>
+        <a href="../speakers/">SPEAKERS PROJECT</a>
+        <a href="../organ/">ORGAN PROJECT</a>
+        <a href="../about/">ABOUT</a>
+        <!--a href="#synth">SYNTHESIZER PROJECT</a-->
     </div>
 </div>
-<div id="concept_heading">
-    <p>Concept</p>
+<div class="content">
+    <div class="title">
+        <p>Organ Project</p>
+    </div>
+    <div class="page">
+       <div class="navbar">
+            <a href="#concept_heading">Concept</a>
+            <a href="#design_heading">Design</a>
+            <a href="#build_heading">Manufacturing</a>
+            <a href="#result_heading">Result</a>
+        </div>
+        <div class="intro_heading">
+            <p>Introduction</p>
+        </div>
+        <div class="intro">
+            <p>In high school, I built a set of <a href="../speakers/">bookshelf speakers</a> as my end of year
+                engineering project.</p>
+            <p>I bought an old Casio keyboard with missing keys from my local music store to use as the base for the
+                project. In the process of working with it, I managed to get the keyboard electronics working again. The
+                keyboard had a wide sound palette, so I decided to play it for a while instead of stripping it out.
+                Working with the acoustic and orchestral emulations on the keyboard made me prefer them over the
+                synthesized sounds; especially the organ. I became more partial to building something for
+                samples, rather than a synthesizer, bringing to life the idea to build a virtual organ.</p>
+        </div>
+        <div id="concept_heading">
+            <p>Concept</p>
+        </div>
+        <div class="concept">
+            <p>Most virtual organ consoles I have seen use two keyboards, a stop control system and a pedalboard. Only
+                one of my keyboards had a USB connector so I needed to install one in the one bought from the music
+                store. I also needed a way to control the organ stops and pistons, as well as a pedalboard.</p>
+            <figure>
+                <img src="anatomy.jpg" alt="A pipe organ console">
+                <figcaption>Fig. 1 - Anatomy of an organ console</figcaption>
+            </figure>
+            <p>For the keyboard, I decided to use an Arduino microcontroller to scan the keyboard keys and then send the
+                signal over its USB. I discovered through looking at other peoples’ organ projects, that Novation
+                Launchpads could be used to control stops so I decided to use them.</p>
+            <p>I couldn’t buy a pedalboard as they were too expensive, and I didn’t know of anyone getting rid of their
+                organ console, so I was going to have to build it from scratch.</p>
+            <p>I found a rough design from <a href="https://www.youtube.com/watch?v=skIXdKvqTZk">this link</a>, after
+                reviewing their dimensions it became apparent that my desk was not wide enough for the pedals to fit
+                under it. I didn’t have room for another desk, so I needed to modify it to allow enough clearance.</p>
+            <p>Many of the notes on organ pedals are not played often, so in the spirit of decreasing the width of the
+                board, I omitted all notes from D# to F# in the high octave. With 10cm off the width I 3D modelled a
+                rough concept (notice that the highest note is D now);</p>
+            <figure>
+                <img src="pedals%20concept.png" alt="A 3D model of an organ pedalboard">
+                <figcaption>Fig. 2 - The initial 3D concept for the pedalboard</figcaption>
+            </figure>
+            <figure>
+                <img src="hardware%20flowchart.png" alt="A flowchart">
+                <figcaption>Fig. 3 - Hardware flowchart for the organ console</figcaption>
+            </figure>
+        </div>
+        <div id="design_heading">
+            <p>Design</p>
+        </div>
+        <div class="design">
+            <h2>MIDI</h2>
+            <p>Starting with the MIDI interfaces, I based the design on one done by Evan Kale found
+                <a href="https://www.instructables.com/id/Add-MIDI-port-to-Keyboard/">here</a>. Most of it was software
+                based, only requiring some resistors and diodes for stabilising the inputs as hardware. All the main
+                hardware was already done on the keyboards’ circuit board.</p>
+            <h2>Software</h2>
+            <p>The software selection was difficult as I didn’t want to spend money on licenses (although I was
+                willing to buy samples). I created this criteria matrix for software selection;</p>
+            <figure>
+                <table cellpadding="5" style="width: 75%">
+                    <tr>
+                        <th>Criteria</th>
+                        <th>Hauptwerk</th>
+                        <th>Ableton Live</th>
+                        <th>jOrgan</th>
+                    </tr>
+                    <tr>
+                        <td>Can my computer run an organ with this software?</td>
+                        <td style="background-color: orange">Maybe</td>
+                        <td style="background-color: #d60000; color: white">No</td>
+                        <td style="background-color: limegreen">Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Is it free?</td>
+                        <td style="background-color: #d60000; color: white">No</td>
+                        <td style="background-color: limegreen">Yes</td>
+                        <td style="background-color: limegreen">Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Is it compatible with my console?</td>
+                        <td style="background-color: #d60000; color: white">No</td>
+                        <td style="background-color: orange">Maybe</td>
+                        <td style="background-color: limegreen">Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Does it have preset sounds?</td>
+                        <td style="background-color: limegreen">Yes</td>
+                        <td style="background-color: limegreen">Yes</td>
+                        <td style="background-color: #d60000; color: white">No</td>
+                    </tr>
+                </table>
+                <figcaption>Fig. 4 - Criteria analysis for software packages</figcaption>
+            </figure>
+            <p>After trying out the different solutions it was clear jOrgan was the only viable option. Although it
+                meant I had to find my own sample packs and set up the virtual console myself.</p>
+            <p>Luckily, the jOrgan website had peoples’ project files available to download, I used the ACO-104 project
+                file (Aeolian Skinner Cinema Organ – 104 Stops) as a starting point. I found harpsichord, orchestral and
+                synthesized sound-fonts (sample packs) and added those in too. I ended up with about 120 stops.</p>
+            <h2>Pedalboard</h2>
+            <p>Full pedalboard schematics are rare as only professionals really build them. I used my concept model for
+                the basic dimensions, but the rest was up to me. Seeing as I was going to need a lot of timber, I
+                based my dimensions around standard timber sizes. Most of the dressed pine at my hardware store was
+                19mm thick, with widths of 42mm, 64mm, 89mm, 140mm etc.</p>
+            <figure>
+                <table cellpadding="5">
+                    <tr>
+                        <th>Component</th>
+                        <th>Timber Size</th>
+                    </tr>
+                    <tr>
+                        <td>'Black' pedal base</td>
+                        <td>18x18mm Dressed All Round Pine</td>
+                    </tr>
+                    <tr>
+                        <td>'Black' pedal top</td>
+                        <td>19x64mm Pine</td>
+                    </tr>
+                    <tr>
+                        <td>'White' pedal</td>
+                        <td>19x42mm Dressed Pine</td>
+                    </tr>
+                    <tr>
+                        <td>Wood spring supports</td>
+                        <td>4mm MDF sheet</td>
+                    </tr>
+                    <tr>
+                        <td>Sides</td>
+                        <td>19x140mm Dressed Pine</td>
+                    </tr>
+                    <tr>
+                        <td>Rear top</td>
+                        <td>19x140mm Dressed Pine</td>
+                    </tr>
+                    <tr>
+                        <td>Rear base</td>
+                        <td>19x89mm Dressed Pine</td>
+                    </tr>
+                    <tr>
+                        <td>Front top</td>
+                        <td>19x89mm Dressed Pine</td>
+                    </tr>
+                    <tr>
+                        <td>Front base</td>
+                        <td>19x140mm Dressed Pine</td>
+                    </tr>
+                </table>
+                <figcaption>Fig. 5 - Initial timber sizes for the components fo the pedalboard</figcaption>
+            </figure>
+            <p>For the mechanics, I used ‘wood springs’ for the back support and steel springs as the front
+                support. The wood springs would be thin MDF strips. Other pedalboard projects use music wire and are
+                bent to be springs, I bought 3mm music wire from eBay to become a 360° torsion spring;</p>
+            <figure>
+                <img src="torsionspring.jpg" alt="A 360&#176 torsion spring">
+                <figcaption>Fig. 6 - An example of a 360&#176 torsion spring</figcaption>
+            </figure>
+        </div>
+        <div id="build_heading">
+            <p>Manufacturing</p>
+        </div>
+        <div class="manufacturing">
+            <h2>Desk Extension</h2>
+            <p>To get the timber size for extending the desk legs, I measured the diameter of the leg brackets
+                and the screw depth and bought a piece of Tasmanian Oak of that size. When cut to size, the offcuts
+                placed under the back legs so the table would remain level.</p>
+            <h2>MIDI</h2>
+            <p>The MIDI interface was a simple build. I used Serial communication to send MIDI signals and
+                some resistors to keep the signal stable. I used a method of debouncing to stop misfires, unless a note
+                is held for at least 20 milliseconds, the signal is not sent.</p>
+            <figure>
+                <img src="pedalboardinterface.jpg" alt="An electronic circuit board">
+                <figcaption>Fig. 7 - The MIDI interface setup on the pedalboard</figcaption>
+            </figure>
+            <h2>Software</h2>
+            <p>I got much more from jOrgan than what I bargained for. jOrgan has virtually no video tutorials and a
+                small amount of documentation so I had to figure it out for myself. After a few weeks of
+                scratching my head; I was able to get all my sound-fonts installed and working. I made a custom console
+                to sort them into their stops and started assigning them to my launchpads.</p>
+            <figure>
+                <img src="launchpad.jpg" alt="A novation launchpad">
+                <figcaption>Fig. 8 - The stops were labelled and lighting up, different stop types were given different light colours</figcaption>
+            </figure>
+            <p>jOrgan allowed you to choose what colour a stop button had, this made it much easier for laying out the
+                stops on the grid. Each division (Pedals, Keyboard 1, Keyboard 2) and instrument type had a different
+                colour, hence, I didn’t have to worry about which buttons were for which controls, etc.</p>
+            <h2>Pedalboard</h2>
+            <p>I started with making a test jig to see if my MDF spring idea would work. A single layer would either
+            deform or snap so I layered two together and I got a working system;</p>
+            <figure>
+                <img src="spring%20test.jpg" alt="Two planks connected via a thin piece of wood">
+                <figcaption>Fig. 9 - The jig for testing the MDF spring theory</figcaption>
+            </figure>
+            <p>With working supports; I assembled the 'black' pedals and connected springs to all the pedals. They then
+            could be screwed into the base.</p>
+            <figure>
+                <img src="sharps.jpg" alt="Planks of wood">
+                <figcaption>Fig. 10 - The 'black' keys assembled, I made the pedals that were further away from me
+                longer so they would be easier to reach when playing</figcaption>
+            </figure>
+            <figure>
+                <img src="springswood.jpg" alt="MDF strips">
+                <figcaption>Fig. 11 - The MDF springs drilled ready for attachment</figcaption>
+            </figure>
+            <figure>
+                <img src="completedkeys.jpg" alt="Planks of wood">
+                <figcaption>Fig. 12 - The pedals with attached MDF supports</figcaption>
+            </figure>
+            <figure>
+                <img src="basestart.jpg" alt="Planks of wood">
+                <figcaption>Fig. 13 - Defining the spacing between pedals/keys</figcaption>
+            </figure>
+            <figure>
+                <img src="basefinish.jpg" alt="Planks of wood">
+                <figcaption>Fig. 14 - All pedals attached to the base, the white pedals have been rounded.</figcaption>
+            </figure>
+            <figure>
+                <img src="sidesstart.jpg" alt="Planks of wood">
+                <figcaption>Fig. 15 - The sides and back attached, I added another plank to the base so no screws would
+                    collide</figcaption>
+            </figure>
+            <figure>
+                <img src="frontbase.jpg" alt="Planks of wood">
+                <figcaption>Fig. 16 - The front base plank screwed in</figcaption>
+            </figure>
+            <figure>
+                <img src="rearattached.jpg" alt="Planks of wood">
+                <figcaption>Fig. 17 - A small wedge was required in the corner for the top as I wanted to use an offcut
+                instead of a new length of timber</figcaption>
+            </figure>
+            <figure>
+                <img src="woodfinished.jpg" alt="Planks of wood">
+                <figcaption>Fig. 18 - The completed pedalboard without the mechanical or electronic components</figcaption>
+            </figure>
+            <h2>Pedalboard Mechanics / Electronics</h2>
+            <p>I didn’t have a vise, strong pliers or a metal jig to bend the wire so I just had to keep breaking screws
+                and shredding pine blocks until all of them were shaped. I used an aluminium sliding bevel handle to
+                work the steel with. I removed the slider out of the sliding bevel and the gap was just right for the
+                steel rod to fit into.</p>
+            <figure>
+                <img src="firstspring.jpg" alt="A spring mounted in pine planks">
+                <figcaption>Fig. 19 - Initially the springs worked fine, but when I tested stepping on them, the pine
+                base began to creak. A few more springs drilled into the base, and the springs went right through the
+                base, requiring a hardwood replacement</figcaption>
+            </figure>
+            <figure>
+                <img src="jig.jpg" alt="Screws in a pine plank with wire">
+                <figcaption>Fig. 20 - The carnage of the first set of screws can be seen on the left</figcaption>
+            </figure>
+            <figure>
+                <img src="finishedsprings.jpg" alt="Steel torsion springs">
+                <figcaption>Fig. 21 - 28 springs bent up, I only needed 27 but I wanted some spare as these were a
+                literal pain to bend up</figcaption>
+            </figure>
+            <figure>
+                <img src="hardwoodbase.jpg" alt="Springs mounted in an oak plank">
+                <figcaption>Fig. 22 - All springs mounted in the new Tasmanian Oak plank after the pine one snapped</figcaption>
+            </figure>
+            <figure>
+                <img src="switchboard.jpg" alt="Several switches on circuit boards wired together">
+                <figcaption>Fig. 23 - Switchboard which you can see mounted in figure 7</figcaption>
+            </figure>
+            <p>The circuit boards were mounted with little M3 screws which held up quite well. There was no room left
+                for the actual controller board, so I mounted it upside down on the top panel.</p>
+            <h2>Stool and Music Stand</h2>
+            <p></p>
+            <figure>
+                <img src="offcuts.jpg" alt="Wood offcuts">
+                <figcaption>Fig. 24 - The offcuts left over from the pedalboard</figcaption>
+            </figure>
+            <figure>
+                <img src="legs.jpg" alt="Wood screwed together">
+                <figcaption>Fig. 25 - The leg panels weren't wide enough to support the stool so I added some planks at
+                    the bottom</figcaption>
+            </figure>
+            <figure>
+                <img src="joined.jpg" alt="A wood stool frame">
+                <figcaption>Fig. 26 - The cross beams needed to be bought but everything else was offcuts</figcaption>
+            </figure>
+            <figure>
+                <img src="crossbar.jpg" alt="A wood stool frame">
+                <figcaption>Fig. 27 - The foot rest added to the frame</figcaption>
+            </figure>
+            <figure>
+                <img src="top.jpg" alt="A large wood plank">
+                <figcaption>Fig. 28 - The offcuts were oriented and then screwed onto a central hardwood plank to be the
+                top of the stool, I upholstered the stool so laminating and sanding was unnecessary</figcaption>
+            </figure>
+            <figure>
+                <img src="stoolfinished.jpg" alt="A wooden stool for an organ">
+                <figcaption>Fig. 29 - The completed stool, yet to be upholstered</figcaption>
+            </figure>
+            <p>The music stand I use was screwed together from some bits of wood found in a box in the backyard, it’s
+                about as stable as an actual music stand.</p>
+        </div>
+        <div id="result_heading">
+            <p>Result</p>
+        </div>
+        <div class="result">
+            <p>In the end I was happy with the outcome despite the blood and sweat put into it. Everything worked as I
+                wanted it to, and the hardware and software were more than capable.</p>
+            <figure>
+                <img src="finished.jpg" alt="A homemade organ console">
+                <figcaption>Fig. 30 - The completed organ console</figcaption>
+            </figure>
+            <p>In hindsight, I wouldn’t use the Oak as a desk extender, pine would have been more than enough for the
+                job.</p>
+            <p>The Arduino MIDI interfaces worked perfectly, I had to use the
+                <a href="https://www.softpedia.com/get/System/System-Miscellaneous/Hairless-MIDI-to-Serial-Bridge.shtml">
+                    Hairless Serial-MIDI Interface</a> to use them with software but it worked great.</p>
+            <p>The microswitches slipped off the pedals at first but they were reoriented and now they work just fine.
+                One of the microswitches wasn’t working at all so that had to be replaced, thankfully the screw mounts
+                were easy to remove.</p>
+            <p>The stool legs had planks screwed in at the bottom, these were much weaker than I thought. I had to fix
+                them later as the screws were damaging the planks.</p>
+            <p>The software took some time as in jOrgan, a keyboard must be manually linked to the sample it plays, the
+                stops that apply to it, as well as the couplers and pistons affecting those stops. It was an involved
+                process, many times I thought I was finished but find that one stop hadn’t been referenced.</p>
+            <figure>
+                <img src="organscreenshot.JPG" alt="A software window">
+                <figcaption>Fig. 31 - The completed jOrgan console</figcaption>
+            </figure>
+            <p>Overall, the project was much easier but more expensive than I originally anticipated. If I had a good
+                supply of timber the cost would have been quite low. I made the mistake of buying timber from Bunnings
+                and it cost me about $200 in timber to make the pedalboard. Although my pedalboard was a fifth of the
+                price of an actual one, it could be made even cheaper, don’t make the mistake I did and buy hardware
+                store timber for the project.</p>
+            <figure>
+                <table cellpadding="5">
+                    <tr>
+                        <th>Component</th>
+                        <th>Cost</th>
+                    </tr>
+                    <tr>
+                        <td>Hardwood Desk Extension</td>
+                        <td>$66.20</td>
+                    </tr>
+                    <tr>
+                        <td>Replacement Hardwood Base for Springs</td>
+                        <td>$26.12</td>
+                    </tr>
+                    <tr>
+                        <td>Dresssed Pine Timber</td>
+                        <td>$124</td>
+                    </tr>
+                    <tr>
+                        <td>Expression Pedals</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>Swell Keyboard</td>
+                        <td>$50</td>
+                    </tr>
+                    <tr>
+                        <td>Great Keyboard</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>Launchpads</td>
+                        <td>$201.35</td>
+                    </tr>
+                    <tr>
+                        <td>Arduino Microcontrollers</td>
+                        <td>$14.32</td>
+                    </tr>
+                    <tr>
+                        <td>Microswitches</td>
+                        <td>$26.58</td>
+                    </tr>
+                    <tr>
+                        <td>USB Hub</td>
+                        <td>$11.5</td>
+                    </tr>
+                    <tr>
+                        <td>USB Extenders</td>
+                        <td>$29.85</td>
+                    </tr>
+                    <tr>
+                        <td>Music Wire 8 metres</td>
+                        <td>$35.98</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>$785.9</td>
+                    </tr>
+                </table>
+                <figcaption>Fig. 32 - The final cost analysis for the project</figcaption>
+            </figure>
+        </div>
+    </div>
 </div>
-<div class="concept">
-    <p>Instead of a synthesizer, I was going to build a virtual organ console, which meant lots of different samples
-        rather than creating my sounds. I wanted to use Ableton Live Lite which came with my launchpads as the main
-        software. It had the capabilities for both samplers and synthesizers, however, once the 100+ samples and all the
-    organ features were setup, my computer couldn't handle the load without distorting the final audio and having high
-        latency.</p>
-    This should be in manufacturing or summit
-    <p>Since Ableton was not going to work as my primary software I investigated virtual organ software packages like
-        <a href="https://www.hauptwerk.com/">Hauptwerk</a>. Although it could easily handle the samples, it required a
-    payment plan which I was not willing to subscribe to, and furthermore, I had no guarantee that my launchpads or
-    other console components I had built would work with it. I continued to search for alternatives, when I discovered
-    <a href="http://jorgan-home.de/mediawiki_en/index.php?title=Home">jOrgan</a>. jOrgan is a MIDI processor, it allows you to use any samples or soundfonts you like to create
-    a virtual organ console. I was able to program my launchpads into it and connect all my arduino MIDI devices.</p>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(https://cdnb.artstation.com/p/assets/images/images/015/357/369/large/nick-bosse-chess.jpg?1548045190) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
 
-    <p>The parts of an organ console I needed were two keyboards (or manuals), some expression (swell) pedals,
-        a pedal-board, stop and piston buttons, a stool, a music stand and a sound system.</p>
-    <h2>Pedalboard</h2>
-    <p>After searching online; I realised that if I wanted a pedalboard and for less than $500 AUD, I would have to build my own.</p>
-    <p>I went through several plans and designs but many were either weren't clear enough to build from or were beyond
-        my woodworking skills. I found inspiration for a simple and cheap design from <a href="https://www.youtube.com/watch?v=skIXdKvqTZk">this link</a>.</p>
-</div>
-<div id="design_heading">
-    <p>Design</p>
-</div>
-<div class="design">
-    <p>The pedalboard was too wide so I widened the desk then shortened the pedalboard and it fit.</p>
-</div>
-<style>
-    html, body {
-        font-family: "Segoe UI", sans-serif;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("organ.jpg");
-        background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        margin: 0;
-        padding: 0;
+        .content img {
+            max-width: 75%;
+        }
+
+        h2 {
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0,0,0,.3);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .content {
+            font-family: "Segoe UI", sans-serif;
+            background-color: grey;
+        }
+
+        .page {
+            background: white;
+            height: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+        }
+
+        table {
+            text-align: center;
+            align-content: center;
+            align-self: center;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .intro_heading p {
+            background: white;
+            font-size: 200%;
+        }
+
+        #concept_heading p, #design_heading p, #build_heading p, #result_heading p {
+            font-size: 300%;
+            text-shadow: 2px 2px 4px rgba(0,0,0,.4);
+            text-align: center;
+            max-width: 100%;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        .title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            background: grey;
+            text-align: center;
+            max-width: 100%;
+            position: relative;
+        }
+
+        .concept figure, .design figure, .manufacturing figure, .result figure {
+            align-items: center;
+            align-content: center;
+            text-align: center;
+            size: auto;
+            background: white;
+            max-width: 100%;
+            margin: 0;
+            padding: 2%;
+        }
+
+        .concept img {
+            max-width: 100%;
+        }
+
+        .concept figcaption, .design figcaption, .manufacturing figcaption, .result figcaption {
+            text-shadow: 1px 1px 3px rgba(0,0,0,.2);
+        }
+
+        .title p {
+            font-size: 400%;
+            text-shadow: 3px 3px 4px black;
+            color: white;
+            background: grey;
+            text-align: center;
+            max-width: 100%;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        .sidebar {
+            margin: 0;
+            padding: 0;
+            width: 14%;
+            font-size: 120%;
+            float: left;
+            background-color: rgba(.2, .2, .2, .4);
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .sidebar a {
+            display: block;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            color: coral;
+        }
+
+        .sidebar a:focus {
+            outline: none;
+        }
+
+        .sidebar:active {
+            color: coral;
+        }
+
+        .intro_heading p {
+            background-color: white;
+            background-size: cover;
+            margin: 0;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,.4);
+            font-size: 300%;
+            padding: 2%;
+        }
+
+        .intro p, .concept p, .design p, .manufacturing p, .result p {
+            background-color: white;
+            padding: .5%;
+            margin-left: 8%;
+            margin-right: 8%;
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0,0,0,.25);
+            font-size: 110%;
+            text-decoration: none;
+            color: black;
+        }
+
+        .concept a {
+            text-decoration: none;
+        }
+
+        .top {
+            display: block;
+            color: #f5faff;
+            font-size: 140%;
+            padding: 64px 32px 0 24px;
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        .top:hover {
+            color: #919191;
+        }
+
+        .top:focus {
+            outline: none;
+        }
+
+        .active a {
+            color: #b4b4b4;
+            padding: 20px 32px 12px 24px;
+        }
+
+        .subtext {
+            font-size: 80%;
+            color: #b4b4b4;
+            padding: 0 32px 0 24px;
+            background-color: transparent;
+        }
+
+        .navbar {
+            color: black;
+            background-color: #e2e2e2;
+            width: 100%;
+            margin: 0;
+            text-decoration: none;
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+            border-bottom-style: solid;
+            border-top-style: solid;
+            border-width: 2px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            padding-right: 1%;
+            padding-left: 1%;
+            color: #6c757d;
+            text-shadow: 1px 1px 3px rgba(0,0,0,.25);
+            font-size: 125%;
+        }
+
+        .navbar a:hover {
+            color: black;
+        }
+
+        div.content {
+            margin-left: 14%;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            font-family: arial, sans-serif;
+        }
+
+        @media screen and (max-width: 1000px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  .sidebar p {
+      display: none;
+  }
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 500px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 1000px) {
+    .sidebar a {
+    text-align: center;
+    float: left;
+    }
+    .sidebar p {
+        display: none;
     }
 
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 40px;
+    .title {
+        width:100%;
     }
-
-    .column {
-        flex: 25%;
-        max-width: 50%;
-        padding: 0 40px;
-    }
-
-    .column img {
-        margin: 20px 0;
-        vertical-align: middle;
-        width: 100%;
-        border-radius: 60px;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-    }
-
-    .top {
-        font-size: 400%;
-        color: white;
-        text-shadow: 4px 4px 8px rgba(0,0,0,0.75);
-        text-align: center;
-        padding-bottom: 5%;
-        padding-top: 5%;
-        margin: 0;
-        width: 100%;
-    }
-
-    .navbar {
-        color: black;
-        background-color: #e2e2e2;
-        width: 100%;
-        margin: 0;
-        text-decoration: none;
-        text-align: center;
-        text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
-        border-bottom-style: solid;
-        border-top-style: solid;
-        border-width: 2px;
-        padding: 0.25%;
-    }
-
-    .navbar a {
-        text-decoration: none;
-        padding-right: 1%;
-        padding-left: 1%;
-        color: #6c757d;
-        text-shadow: 1px 1px 3px rgba(0,0,0,.25);
-        font-size: 125%;
-    }
-
-    .navbar a:hover {
-        color: black;
-    }
-
-    .intro_heading p {
-        background-color: white;
-        background-size: cover;
-        margin: 0;
-        text-align: center;
-        text-shadow: 2px 2px 6px rgba(0,0,0,.25);
-        font-size: 300%;
-        padding: 2%;
-    }
-
-    .intro p {
-        background-color: white;
-        padding: .5%;
-        margin: 0;
-        text-align: center;
-        text-shadow: 1px 1px 3px rgba(0,0,0,.2);
-        font-size: 120%;
-    }
-
-    #concept_heading, #design_heading {
-        background-color: white;
-        padding: 0;
-        background-size: cover;
-    }
-
-    #concept_heading, #design_heading p {
-        margin: 0;
-        text-align: center;
-        text-shadow: 2px 2px 6px rgba(0,0,0,.25);
-        font-size: 300%;
-        padding: 2%;
-    }
-
-    .concept {
-        background-color: white;
-        text-align: center;
-    }
-
-    .concept a {
-        text-decoration: none;
-    }
-
-    .concept p {
-        margin: 0;
-        margin-left: 15%;
-        margin-right: 15%;
-    }
-
-    .cards {
-        background-color: white;
-    }
-
-    .card_left img {
-        border-radius: 60px;
-        padding: 10px;
-        width: 580px;
-    }
-
-    .card_right img {
-        border-radius: 60px;
-        padding: 10px;
-        width: 580px;
-    }
-
-    .rest {
-        clear: both;
-        word-wrap: break-spaces;
-        background-color: white;
-        text-align: center;
-    }
-
-    .rest p {
-        margin-left: 15%;
-        margin-right: 15%;
-        text-align: center;
-    }
-
-    .rest img {
-        border-radius: 60px;
-        width: 580px;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-    }
-</style>
-</body>-->
+}
+    </style>
+</body>
 </html>
