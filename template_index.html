@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Organ Project</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <style>
+        html {
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            font-family: arial, sans-serif;
+        }
+    </style>
+<div class="sidebar">
+    <a class="top" href="../home/">Nick Bosse</a>
+    <p class="subtext">
+        Engineering Student
+    </p>
+    <div class="active">
+        <a href="https://www.artstation.com/nickbosse">PORTFOLIO</a>
+        <a href="https://gumroad.com/bossedigital">STORE</a>
+        <a href="../focus/">FOCUS DOCS</a>
+        <a href="../speakers/">SPEAKERS PROJECT</a>
+        <a href="../organ/" style="color: coral">ORGAN PROJECT</a>
+        <a href="../about/">ABOUT</a>
+        <!--a href="#synth">SYNTHESIZER PROJECT</a-->
+    </div>
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+<div class="content">
+</div>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(https://cdnb.artstation.com/p/assets/images/images/015/357/369/large/nick-bosse-chess.jpg?1548045190) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        a {
+            text-decoration: none;
+            content: "\f177";
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #e2e2e2;
+            color: black;
+            cursor: pointer;
+            padding: 15px;
+            font-size: 18px;
+            box-shadow: 2px 2px 3px black;
+        }
+
+        #myBtn:hover {
+            background-color: grey;
+        }
+
+        .sidebar {
+            margin: 0;
+            padding: 0;
+            width: 14%;
+            font-size: 120%;
+            float: left;
+            background-color: rgba(.2, .2, .2, .4);
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .sidebar a {
+            display: block;
+            background-color: transparent;
+            text-decoration: none;
+            transition-duration: 500ms;
+            transition-timing-function: ease;
+            transition-property: color;
+        }
+
+        .sidebar a:hover {
+            color: coral;
+        }
+
+        .sidebar a:focus {
+            outline: none;
+        }
+
+        .sidebar:active {
+            color: coral;
+        }
+
+        .top {
+            display: block;
+            color: #f5faff;
+            font-size: 140%;
+            padding: 64px 32px 0 24px;
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        .top:hover {
+            color: #919191;
+        }
+
+        .top:focus {
+            outline: none;
+        }
+
+        .active a {
+            color: #b4b4b4;
+            padding: 20px 32px 12px 24px;
+        }
+
+        .subtext {
+            font-size: 80%;
+            color: #b4b4b4;
+            padding: 0 32px 0 24px;
+            background-color: transparent;
+        }
+
+        div.content {
+            margin-left: 14%;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            font-family: arial, sans-serif;
+        }
+
+        @media screen and (max-width: 1000px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  .sidebar p {
+      display: none;
+  }
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 500px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 1000px) {
+    .sidebar a {
+    text-align: center;
+    float: left;
+    }
+    .sidebar p {
+        display: none;
+    }
+
+    .title {
+        width:100%;
+    }
+
+    #myBtn {
+        font-size: 12px;
+    }
+}
+    </style>
+    <script>
+        mybutton = document.getElementById("myBtn")
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+</body>
+</html>
