@@ -11,7 +11,7 @@
     <p class="subtext">
         Engineering Student
     </p>
-    <div class="active">
+    <div class="active" id="active">
         <a href="https://www.artstation.com/nickbosse">PORTFOLIO</a>
         <a href="https://gumroad.com/bossedigital">STORE</a>
         <a href="../focus/">FOCUS DOCS</a>
@@ -22,6 +22,10 @@
     </div>
 </div>
 <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<a href="javascript:void(0);" class="icon" id="button" onclick="menuFunction()">
+    <i class="fa fa-bars"></i>
+</a>
 <div class="content">
     <div class="title">
         <p>Bookshelf Speakers</p>
@@ -209,6 +213,24 @@
     h1 {
         text-align: center;
         color: coral;
+    }
+
+    .icon {
+        display: none;
+        position: absolute;
+        background-color: transparent;
+        z-index: 1;
+        top: 8px;
+        right: 8px;
+    }
+
+    .icon i {
+        font-size: 220%;
+        color: coral;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        border-width: 0;
     }
 
     #myBtn {
@@ -405,6 +427,7 @@
     .active a {
         color: #b4b4b4;
         padding: 20px 32px 12px 24px;
+        display: block;
     }
 
     .subtext {
@@ -416,14 +439,31 @@
 
     @media screen and (max-width: 1000px) {
         .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-        }
-        .sidebar a {float: left;}
-        .sidebar p {
-          display: none;
-        }
+            width: 100%;
+            height: auto;
+            position: relative;
+          }
+          .sidebar {
+              background-color: rgba(.2, .2, .2, .8);
+              padding-top: 0.5%;
+          }
+          .sidebar p, .active {
+              display: none;
+          }
+
+          .active a {
+              text-align: center;
+              padding-top: 4%;
+              padding-bottom: 4%;
+          }
+
+          .top {
+              padding: 1%;
+          }
+
+          div.content {
+              margin-left: 0;
+          }
         .title {
         width:100%;
     }
@@ -432,13 +472,9 @@
     @media screen and (max-width: 1000px) {
         .sidebar a {
         text-align: center;
-        float: left;
         }
-        .sidebar p {
-            display: none;
-        }
-        .content {
-            margin-left: 0;
+        #myBtn {
+            font-size: 12px;
         }
     }
 </style>
@@ -460,6 +496,32 @@
         document.documentElement.scrollTop = 0;
     }
 
+    // Functions for managing the hamburger menu
+    var x = document.getElementById("active");
+
+    function menuFunction() {
+        if (x.style.display === 'block') {
+            x.style.display = 'none';
+        } else {
+            x.style.display = 'block';
+        }
+    }
+
+    var ham = document.getElementById('button');
+    window.onresize = function() {hamburgerFunction()};
+    window.onload = function () {
+        hamburgerFunction()
+    };
+    function hamburgerFunction() {
+        if (window.innerWidth >= 1000) {
+            if (x.style.display === 'none') {
+                x.style.display = 'block';
+            }
+            ham.style.display = 'none';
+        } else {
+            ham.style.display = 'block';
+        }
+    }
 </script>
 </body>
 </html>

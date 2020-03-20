@@ -21,7 +21,7 @@
     <p class="subtext">
         Engineering Student
     </p>
-    <div class="active">
+    <div class="active" id="active">
         <a href="https://www.artstation.com/nickbosse">PORTFOLIO</a>
         <a href="https://gumroad.com/bossedigital">STORE</a>
         <a href="../focus/">FOCUS DOCS</a>
@@ -31,16 +31,19 @@
         <a href="../about/">ABOUT</a>
     </div>
 </div>
-<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="arrow up"></i></button>
+    <div class="topbutton">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="up arrow"></i></button>
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <a href="javascript:void(0);" class="icon" id="button" onclick="menuFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
 <div class="content">
     <h1>Synthesizer Project</h1>
     <p>Jupiter-6i; a Roland Jupiter inspired polyphonic synthesizer</p>
     <div class="buttons">
         <a href="#github">Github Project</a>
     </div>
-<!--    <a href="javascript:void(0);" class="button" id="button" onclick="menuFunction()">-->
-<!--        <img src="menu.png" alt="">-->
-<!--    </a>-->
     <div class="table" id="navbar">
         <div class="row1">
             <div class="nav_circles1">
@@ -154,6 +157,7 @@
     <div class="border">
     </div>
     <p>Ah yes excellent</p>
+    <p>Currently in prwogress</p>
     <p>Currently in progress</p>
     <p>Currently in progress</p>
     <p>Currently in progress</p>
@@ -161,8 +165,7 @@
     <p>Currently in progress</p>
     <p>Currently in progress</p>
     <p>Currently in progress</p>
-    <p>Currently in progress</p>
-    <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    <div class="footer">Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 </div>
     <style>
         body {
@@ -175,6 +178,21 @@
             background-size: cover;
         }
 
+        .footer a {
+            color: lightgray;
+        }
+
+        .content p {
+            font-family: 'Raleway', sans-serif;
+            font-size: 120%;
+        }
+
+        .footer {
+            color: lightgray;
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+        }
+
         .buttons {
             text-align: center;
             margin: 0 auto;
@@ -182,7 +200,7 @@
         }
 
         .buttons a {
-            border: #D8304A solid 2px;
+            border: #59AED8 solid 2px;
             color: #292929;
             padding: 1% 5% 1% 5%;
             margin: 0 auto;
@@ -193,7 +211,7 @@
 
         .buttons a:hover {
             color: white;
-            background-color: #D8304A;
+            background-color: #59aed8;
         }
 
         a {
@@ -206,11 +224,22 @@
             font-size: 100%;
         }
 
-        .button img {
-            width: 75px;
-            height: auto;
-            right: 10px;
-            top: 45%;
+        .icon {
+            display: none;
+            position: absolute;
+            background-color: transparent;
+            z-index: 1;
+            top: 8px;
+            right: 8px;
+        }
+
+        .icon i {
+            font-size: 220%;
+            color: coral;
+            background-color: transparent;
+            padding: 0;
+            margin: 0;
+            border-width: 0;
         }
 
         .sticky-table {
@@ -240,7 +269,7 @@
             line-height: 130px;
             text-align: center;
             border-width: 2px;
-            border-color: #D8304A;
+            border-color: #59AED8;
             border-style: solid;
             border-radius: 50%;
             margin: auto;
@@ -257,7 +286,7 @@
         }
 
         .icon-sticky1:hover, .icon-sticky2:hover, .icon-sticky3:hover, .icon-sticky4:hover, .icon-sticky5:hover, .icon-sticky6:hover {
-            background-color: #D8304A;
+            background-color: #59AED8;
             transition-property: background-color;
             transition-duration: 0.5s;
             transition-timing-function: ease;
@@ -300,7 +329,7 @@
             line-height: 130px;
             text-align: center;
             border-width: 2px;
-            border-color: #D8304A;
+            border-color: #59AED8;
             border-style: solid;
             border-radius: 50%;
             margin: auto;
@@ -312,7 +341,7 @@
         }
 
         .icon-round1:hover, .icon-round2:hover, .icon-round3:hover, .icon-round4:hover, .icon-round5:hover, .icon-round6:hover {
-            background-color: #D8304A;
+            background-color: #59AED8;
             transition-property: background-color;
             transition-duration: 0.5s;
             transition-timing-function: ease;
@@ -388,19 +417,19 @@
         .border {
             width: 40px;
             height: 5px;
-            background: #D8304A;
+            background: #59AED8;
             position: relative;
             margin: 0 auto;
             margin-top: 1%;
             margin-bottom: 1%;
         }
 
-        i {
+        .topbutton i {
             border: solid white;
             border-width: 0 5px 5px 0;
             display: inline-block;
             padding: 3px;
-            background: #D8304A;
+            background: #59AED8;
         }
 
         .up {
@@ -410,7 +439,7 @@
 
         .content {
             background-color: white;
-            color: #BBBCBD;
+            color: #7f8081;
         }
 
         .content h2, h1 {
@@ -432,7 +461,7 @@
             z-index: 99;
             border: none;
             outline: none;
-            background-color: #D8304A;
+            background-color: #59AED8;
             color: black;
             cursor: pointer;
             padding: 15px;
@@ -496,6 +525,7 @@
         .active a {
             color: #b4b4b4;
             padding: 20px 32px 12px 24px;
+            display: block;
         }
 
         .subtext {
@@ -515,75 +545,105 @@
         }
 
     @media screen and (max-width: 1000px) {
-          .sidebar {
-            width: 100%;
-            height: auto;
-            position: relative;
-          }
-          .sidebar a {float: left;}
-          .sidebar p {
-              display: none;
-          }
-          div.content {margin-left: 0;}
+        .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        }
 
-          .sticky-table {
-              margin: auto;
-          }
+        .sidebar {
+        background-color: rgba(.2, .2, .2, .8);
+            padding-top: 0.5%;
+        }
+
+        .sidebar p, .active {
+          display: none;
+        }
+
+        .active a {
+          text-align: center;
+          padding-top: 4%;
+          padding-bottom: 4%;
+        }
+
+        .top {
+            padding: 1%;
+        }
+
+        div.content {
+            margin-left: 0;
+        }
+
+        .sticky-table {
+            margin: auto;
+        }
     }
 
-/* On screens that are less than 500px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 1000px) {
-    .sidebar a {
-    text-align: center;
-    float: left;
-    }
-    .sidebar p {
-        display: none;
-    }
+    /* On screens that are less than 500px, display the bar vertically, instead of horizontally */
+    @media screen and (max-width: 1000px) {
+        .sidebar a {
+            text-align: center;
+        }
 
-    #myBtn {
-        font-size: 12px;
+        #myBtn {
+            font-size: 12px;
+        }
+
     }
-}
     </style>
     <script>
         mybutton = document.getElementById("myBtn");
 
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
+        window.onscroll = function() {myFunction()};
 
         function topFunction() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
 
-        // When the user scrolls the page, execute myFunction
-        window.onscroll = function() {myFunction()};
-
-        // Get the navbar
         var navbar = document.getElementById("navbar");
 
         var stickybar = document.getElementById("stickybar");
 
-        // Get the offset position of the navbar
-        var sticky = navbar.offsetTop;
-
-        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
         function myFunction() {
-          if (window.pageYOffset >= 600) {
-            stickybar.style.opacity = '1';
-            navbar.style.opacity = '0';
-          } else {
-            stickybar.style.opacity = '0';
-            navbar.style.opacity = '1';
-          }
+            if (window.pageYOffset > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+            if (window.pageYOffset >= 600) {
+                stickybar.style.opacity = '1';
+                navbar.style.opacity = '0';
+              } else {
+                stickybar.style.opacity = '0';
+                navbar.style.opacity = '1';
+              }
+        }
+
+        var x = document.getElementById("active");
+
+        function menuFunction() {
+            if (x.style.display === 'block') {
+                x.style.display = 'none';
+            } else {
+                x.style.display = 'block';
+            }
+        }
+
+        var ham = document.getElementById('button');
+        window.onresize = function() {hamburgerFunction()};
+        window.onload = function () {
+            hamburgerFunction()
+        };
+        function hamburgerFunction() {
+            if (window.innerWidth >= 1000) {
+                if (x.style.display === 'none') {
+                    x.style.display = 'block';
+                }
+                ham.style.display = 'none';
+            } else {
+                ham.style.display = 'block';
+            }
         }
     </script>
 </body>

@@ -16,7 +16,7 @@
     <p class="subtext">
         Engineering Student
     </p>
-    <div class="active">
+    <div class="active" id="active">
         <a href="https://www.artstation.com/nickbosse">PORTFOLIO</a>
         <a href="https://blendermarket.com/products/focus-blender-ui-suite">STORE</a>
         <a href="../focus/">FOCUS DOCS</a>
@@ -26,30 +26,34 @@
         <!--a href="#synth">SYNTHESIZER PROJECT</a-->
     </div>
 </div>
-    <div class="content">
-        <div class="post">
-            <div class="pfp">
-                <img src="https://avatars1.githubusercontent.com/u/40079451?s=460&v=4" alt="pfp"
-                 width="16%" height="16%">
-            </div>
-            <div class="text">
-                <h2>Nick Bosse</h2>
-                <small>Electrical Engineering Student & Freelance Artist</small>
-                <p><a style="color: grey" href="mailto:nicholasjames@live.com.au">
-                nicholasjames@live.com.au</a></p>
-                <h2>Bio</h2>
-                <div class="Bio">
-                    <p style="color:whitesmoke">I'm currently studying
-                        engineering in Brisbane, Australia. I am the developer of the Focus plugin for the open source software, Blender.</p>
-                    <p style="color:whitesmoke">Both art and engineering have been a strong part of my
-                        life. I have been interested in computers ever since I was 6, and beginning my artistic journey when I was 12. Most of all, I love combining the two, working on things like synthesizers, CG software and analog technology.</p>
-                    <p style="color:whitesmoke">Growing up, I learnt many different software packages,
-                        exploring digital solutions to problems. Lately however, I have been intrigued by how traditional analog electronics can solve problems in science, engineering and art. Building analog computing modules and synthesizer circuits to create art and solve problems in a very interesting way.</p>
-                    <p><a style="color: coral" href="../focus/">Check out my Blender plugin!</a></p>
-                </div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<a href="javascript:void(0);" class="icon" id="button" onclick="menuFunction()">
+    <i class="fa fa-bars"></i>
+</a>
+<div class="content">
+    <div class="post">
+        <div class="pfp">
+            <img src="https://avatars1.githubusercontent.com/u/40079451?s=460&v=4" alt="pfp"
+             width="16%" height="16%">
+        </div>
+        <div class="text">
+            <h2>Nick Bosse</h2>
+            <small>Electrical Engineering Student & Freelance Artist</small>
+            <p><a style="color: grey" href="mailto:nicholasjames@live.com.au">
+            nicholasjames@live.com.au</a></p>
+            <h2>Bio</h2>
+            <div class="Bio">
+                <p style="color:whitesmoke">I'm currently studying
+                    engineering in Brisbane, Australia. I am the developer of the Focus plugin for the open source software, Blender.</p>
+                <p style="color:whitesmoke">Both art and engineering have been a strong part of my
+                    life. I have been interested in computers ever since I was 6, and beginning my artistic journey when I was 12. Most of all, I love combining the two, working on things like synthesizers, CG software and analog technology.</p>
+                <p style="color:whitesmoke">Growing up, I learnt many different software packages,
+                    exploring digital solutions to problems. Lately however, I have been intrigued by how traditional analog electronics can solve problems in science, engineering and art. Building analog computing modules and synthesizer circuits to create art and solve problems in a very interesting way.</p>
+                <p><a style="color: coral" href="../focus/">Check out my Blender plugin!</a></p>
             </div>
         </div>
     </div>
+</div>
     <style>
         body {
             margin: 0;
@@ -105,6 +109,24 @@
     height: 100vh;
     overflow: auto;
 }
+
+.icon {
+            display: none;
+            position: absolute;
+            background-color: transparent;
+            z-index: 1;
+            top: 8px;
+            right: 8px;
+        }
+
+        .icon i {
+            font-size: 220%;
+            color: coral;
+            background-color: transparent;
+            padding: 0;
+            margin: 0;
+            border-width: 0;
+        }
 
 .text {
     font-size: 90%;
@@ -194,30 +216,69 @@ div.content {
     font-family: arial;
 }
 
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
   .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {float: left;}
-  .sidebar p {
-        display: none;
-    }
-  div.content {margin-left: 0;}
+            width: 100%;
+            height: auto;
+            position: relative;
+          }
+          .sidebar {
+              background-color: rgba(.2, .2, .2, .8);
+              padding-top: 0.5%;
+          }
+          .sidebar p, .active {
+              display: none;
+          }
+
+          .active a {
+              text-align: center;
+              padding-top: 4%;
+              padding-bottom: 4%;
+          }
+
+          .top {
+              padding: 1%;
+          }
+
+          div.content {
+              margin-left: 0;
+          }
 }
 
 /* On screens that are less than 500px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
   .sidebar a {
     text-align: center;
-    float: left;
   }
-    .sidebar p {
-        display: none;
-    }
 }
     </style>
+<script>
+    // Functions for managing the hamburger menu
+        var x = document.getElementById("active");
+
+        function menuFunction() {
+            if (x.style.display === 'block') {
+                x.style.display = 'none';
+            } else {
+                x.style.display = 'block';
+            }
+        }
+
+        var ham = document.getElementById('button');
+        window.onresize = function() {hamburgerFunction()};
+        window.onload = function () {
+            hamburgerFunction()
+        };
+        function hamburgerFunction() {
+            if (window.innerWidth >= 1000) {
+                if (x.style.display === 'none') {
+                    x.style.display = 'block';
+                }
+                ham.style.display = 'none';
+            } else {
+                ham.style.display = 'block';
+            }
+        }
+</script>
 </body>
 </html>

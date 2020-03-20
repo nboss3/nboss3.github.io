@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Woodworking</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <style>
+        html {
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            font-family: arial, sans-serif;
+        }
+    </style>
+<div class="sidebar">
+    <a class="top" href="../home/">Nick Bosse</a>
+    <p class="subtext">
+        Engineering Student
+    </p>
+    <div class="active" id="active">
+        <a href="https://www.artstation.com/nickbosse">PORTFOLIO</a>
+        <a href="https://gumroad.com/bossedigital">STORE</a>
+        <a href="../focus/">FOCUS DOCS</a>
+        <a href="../speakers/">SPEAKERS PROJECT</a>
+        <a href="../organ/">ORGAN PROJECT</a>
+        <a href="/" style="color: coral">WOODWORKING</a>
+        <a href="../about/">ABOUT</a>
+        <!--a href="#synth">SYNTHESIZER PROJECT</a-->
+    </div>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<a href="javascript:void(0);" class="icon" id="button" onclick="menuFunction()">
+    <i class="fa fa-bars"></i>
+</a>
+<div class="content">
+<!--The first 'block' or strip-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <div class="title-block">
+       <div class="title-block-left">
+            <h1 class="main-title">Woodworking Projects</h1>
+            <p class="main-subtitle">This is a subtitle today's gadgets</p>
+            <a href="#project-list">Explore ></a>
+        </div>
+        <div class="title-block-right">
+            <div class="bubbles">
+                <div class="row1">
+                <div class="icon-bubble1">
+                </div>
+                <div class="icon-bubble2">
+                </div>
+                </div>
+                <div class="row2">
+                    <div class="icon-bubble3">
+                </div>
+                <div class="icon-bubble4">
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+<!--The second strip with the column of projects-->
+    <div class="project-list">
+        <h1 id="project-list">Project Plans</h1>
+        <div class="project1">
+            <div class="project1-container">
+                <div class="project1-left">
+                   <h2>Stool Project</h2>
+                    <p>Lots of good stoolyness mmm yum yeet *dabs*</p>
+                    <a href="stool.html">View Project</a>
+                </div>
+                <div class="project1-right">
+                </div>
+            </div>
+        </div>
+        <div class="project2">
+            <div class="project2-container">
+                <div class="project2-left">
+                </div>
+                <div class="project2-right">
+                    <h2>Clock Project</h2>
+                    <p>The clock goes tiktok, so much so it has become internet famous</p>
+                    <a href="stool.html">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+</div>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(https://cdnb.artstation.com/p/assets/images/images/015/357/369/large/nick-bosse-chess.jpg?1548045190) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        .content {
+            font-family: 'Poppins', sans-serif;
+            background-image: linear-gradient(to right, #d7a77e, #f9bb7f);
+        }
+
+        .title-block {
+            width: 100%;
+            display: table;
+            border-spacing: 50px;
+            table-layout: fixed;
+        }
+
+        .project-list {
+            background-color: white;
+            padding: 2%;
+        }
+
+        .project1 {
+            width: 80%;
+            height: 10%;
+            margin: 0 auto;
+            padding-top: 3%;
+            box-shadow: black;
+            display: table;
+        }
+
+        .project1-container {
+            display: table-row;
+            margin-top: 5%;
+            box-shadow: 6px 15px 20px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .project1-left {
+            display: table-cell;
+        }
+
+        .project1-left h2 {
+            padding-top: 5%;
+        }
+
+        .project1-left p {
+            padding: 0 5% 5% 5%;
+        }
+
+        .project1-left a {
+            border: 1px solid coral;
+            padding: 2% 6% 2% 6%;
+            border-bottom-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            color: coral;
+            margin-top: 1%;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            line-height: 40px;
+        }
+
+        .project1-left a:hover {
+            color: white;
+            background-color: coral;
+        }
+
+        .project1-right {
+            display: table-cell;
+            width: 33%;
+            height: 300px;
+            background: url("stool.png") center center no-repeat;
+            background-color: coral;
+            background-size: 70%;
+        }
+
+        .project2 {
+            width: 80%;
+            height: 10%;
+            margin: 0 auto;
+            padding-top: 3%;
+            box-shadow: black;
+            display: table;
+        }
+
+        .project2-container {
+            display: table-row;
+            margin-top: 5%;
+            box-shadow: 6px 15px 20px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .project2-left {
+            display: table-cell;
+        }
+
+        .project2-right h2 {
+            padding-top: 5%;
+        }
+
+        .project2-right p {
+            padding: 0 5% 5% 5%;
+        }
+
+        .project2-right a {
+            border: 1px solid #65aaff;
+            padding: 2% 6% 2% 6%;
+            border-bottom-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            color: #65aaff;
+            margin-top: 1%;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            line-height: 40px;
+        }
+
+        .project2-right a:hover {
+            color: white;
+            background-color: #65aaff;
+        }
+
+        .project2-left {
+            display: table-cell;
+            width: 33%;
+            height: 300px;
+            background: url("clock.png") center center no-repeat;
+            background-color: #65aaff;
+            background-size: 70%;
+        }
+
+        .title-block h1 {
+            font-size: 250%;
+            text-transform: uppercase;
+        }
+
+        .footer {
+            background-color: white;
+        }
+
+        .row1 {
+            display: table-row;
+        }
+
+        .row2 {
+            display: table-row;
+        }
+
+        .title-block-left {
+            background-size: auto;
+            color:white;
+            max-width: 50%;
+            display: table-cell;
+            text-align: left;
+        }
+
+        .title-block-left p {
+            padding-bottom: 4%;
+        }
+
+        .title-block-left h1 {
+            margin-top: 0;
+        }
+
+        .title-block-left a {
+            border: 1px solid white;
+            padding: 2% 6% 2% 6%;
+            border-bottom-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            color: white;
+            margin: 0;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            line-height: 40px;
+        }
+
+        .title-block-left a:hover {
+            background-color: #f9bb7f;
+            outline: none;
+        }
+
+        .title-block-right {
+            max-width: 50%;
+            display: table-cell;
+            text-align: right;
+        }
+
+        .bubbles {
+            display: table;
+            table-layout: fixed;
+            border-spacing: 50px;
+            margin: 0 auto;
+            /*margin-left: 30%;*/
+            /*margin-top: 5%;*/
+        }
+
+        .icon-bubble1 {
+            background: url("ripsaw.png") center center no-repeat;
+            background-size: 70%;
+            border-radius: 50%;
+            background-color: #ffc774;
+            width: 150px;
+            max-width: 150px;
+            height: 150px;
+            display: table-cell;
+        }
+
+        .icon-bubble2 {
+            background: url("marking.png") center center no-repeat;
+            background-size: 70%;
+            border-radius: 50%;
+            background-color: #ffb658;
+            width: 150px;
+            max-width: 150px;
+            height: 150px;
+            display: table-cell;
+        }
+
+        .icon-bubble3 {
+            background: url("toolbox.png") center center no-repeat;
+            background-size: 70%;
+            border-radius: 50%;
+            background-color: #ffb658;
+            width: 150px;
+            max-width: 150px;
+            height: 150px;
+            display: table-cell;
+        }
+
+        .icon-bubble4 {
+            background: url("work-bench.png") center center no-repeat;
+            background-size: 70%;
+            border-radius: 50%;
+            background-color: #ff9f38;
+            width: 150px;
+            max-width: 150px;
+            height: 150px;
+            display: table-cell;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .content {
+            background-color: white;
+            text-align: center;
+        }
+
+        figure {
+            background-color: #b3b3b3;
+            max-width: 100%;
+            margin: 0 20% 0 20%;
+        }
+
+        .icon {
+            display: none;
+            position: absolute;
+            background-color: transparent;
+            z-index: 1;
+            top: 8px;
+            right: 8px;
+        }
+
+        .icon i {
+            font-size: 220%;
+            color: coral;
+            background-color: transparent;
+            padding: 0;
+            margin: 0;
+            border-width: 0;
+        }
+
+        .sidebar {
+            margin: 0;
+            padding: 0;
+            width: 14%;
+            font-size: 120%;
+            float: left;
+            background-color: rgba(.2, .2, .2, .4);
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .sidebar a {
+            display: block;
+            background-color: transparent;
+            text-decoration: none;
+            transition-duration: 500ms;
+            transition-timing-function: ease;
+            transition-property: color;
+        }
+
+        .sidebar a:hover {
+            color: coral;
+        }
+
+        .sidebar a:focus {
+            outline: none;
+        }
+
+        .sidebar:active {
+            color: coral;
+        }
+
+        .top {
+            display: block;
+            color: #f5faff;
+            font-size: 140%;
+            padding: 64px 32px 0 24px;
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        .top:hover {
+            color: #919191;
+        }
+
+        .top:focus {
+            outline: none;
+        }
+
+        .active a {
+            color: #b4b4b4;
+            padding: 20px 32px 12px 24px;
+            display: block;
+        }
+
+        .subtext {
+            font-size: 80%;
+            color: #b4b4b4;
+            padding: 0 32px 0 24px;
+            background-color: transparent;
+        }
+
+        div.content {
+            margin-left: 14%;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            font-family: arial, sans-serif;
+        }
+
+        @media screen and (max-width: 1000px) {
+          .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+          }
+          .sidebar {
+              background-color: rgba(.2, .2, .2, .8);
+              padding-top: 0.5%;
+          }
+          .sidebar p, .active {
+              display: none;
+          }
+
+          .active a {
+              text-align: center;
+              padding-top: 4%;
+              padding-bottom: 4%;
+          }
+
+          .top {
+              padding: 1%;
+          }
+
+          div.content {
+              margin-left: 0;
+          }
+
+          .bubbles {
+              margin-left: 0;
+              border-spacing: 25px;
+              width: 33%;
+          }
+
+          .icon-bubble1, .icon-bubble2, .icon-bubble3, .icon-bubble4  {
+              width: 100px;
+              height: 100px;
+          }
+        }
+
+        /* On screens that are less than 500px, display the bar vertically, instead of horizontally */
+        @media screen and (max-width: 1000px) {
+            .sidebar a {
+            text-align: center;
+            }
+
+            #myBtn {
+                font-size: 12px;
+            }
+        }
+    </style>
+    <script>
+        // Functions for managing the hamburger menu
+        var x = document.getElementById("active");
+
+        function menuFunction() {
+            if (x.style.display === 'block') {
+                x.style.display = 'none';
+            } else {
+                x.style.display = 'block';
+            }
+        }
+
+        var ham = document.getElementById('button');
+        window.onresize = function() {hamburgerFunction()};
+        window.onload = function () {
+            hamburgerFunction()
+        };
+        function hamburgerFunction() {
+            if (window.innerWidth >= 1000) {
+                if (x.style.display === 'none') {
+                    x.style.display = 'block';
+                }
+                ham.style.display = 'none';
+            } else {
+                ham.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
