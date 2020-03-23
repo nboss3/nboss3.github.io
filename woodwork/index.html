@@ -26,7 +26,7 @@
         <a href="../focus/">FOCUS DOCS</a>
         <a href="../speakers/">SPEAKERS PROJECT</a>
         <a href="../organ/">ORGAN PROJECT</a>
-        <a href="/" style="color: coral">WOODWORKING</a>
+        <a href="../woodwork/" style="color: coral">WOODWORKING</a>
         <a href="../about/">ABOUT</a>
         <!--a href="#synth">SYNTHESIZER PROJECT</a-->
     </div>
@@ -44,7 +44,8 @@
     <div class="title-block">
        <div class="title-block-left">
             <h1 class="main-title">Woodworking Projects</h1>
-            <p class="main-subtitle">This is a subtitle today's gadgets</p>
+            <p class="main-subtitle">A collection of web pages detailing woodworking projects and plans. The stage of
+            each project is listed.</p>
             <a href="#project-list">Explore ></a>
         </div>
         <div class="title-block-right">
@@ -67,25 +68,27 @@
 <!--The second strip with the column of projects-->
     <div class="project-list">
         <h1 id="project-list">Project Plans</h1>
-        <div class="project1">
-            <div class="project1-container">
-                <div class="project1-left">
-                   <h2>Stool Project</h2>
-                    <p>Lots of good stoolyness mmm yum yeet *dabs*</p>
-                    <a href="stool/stool.html">View Project</a>
-                </div>
-                <div class="project1-right">
-                </div>
-            </div>
-        </div>
         <div class="project2">
             <div class="project2-container">
                 <div class="project2-left">
                 </div>
                 <div class="project2-right">
-                    <h2>Clock Project</h2>
-                    <p>The clock goes tiktok, so much so it has become internet famous</p>
+                    <h2>Barometer Project</h2>
+                    <p>An artistic housing for a 3-in-1 weather station.</p>
+                    <p class="progress2">Stage: In progress - Design</p>
                     <a href="stool/stool.html">View Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="project1">
+            <div class="project1-container">
+                <div class="project1-left">
+                   <h2>Stool Project</h2>
+                    <p>An upholstered stool with a storage compartment. Low-set for sitting and reading.</p>
+                    <p class="progress1">Stage: In progress - Build</p>
+                    <a href="stool/stool.html">View Project</a>
+                </div>
+                <div class="project1-right">
                 </div>
             </div>
         </div>
@@ -147,6 +150,11 @@
             padding: 0 5% 5% 5%;
         }
 
+        .progress1 {
+            color: red;
+            padding: 1% !important;
+        }
+
         .project1-left a {
             border: 1px solid coral;
             padding: 2% 6% 2% 6%;
@@ -202,14 +210,19 @@
             padding: 0 5% 5% 5%;
         }
 
+        .progress2 {
+            color: red;
+            padding: 1% !important;
+        }
+
         .project2-right a {
-            border: 1px solid #65aaff;
+            border: 1px solid #ffaf34;
             padding: 2% 6% 2% 6%;
             border-bottom-right-radius: 25px;
             border-bottom-left-radius: 25px;
             border-top-left-radius: 25px;
             border-top-right-radius: 25px;
-            color: #65aaff;
+            color: #ffaf34;
             margin-top: 1%;
             font-weight: 500;
             transition: all 0.3s ease;
@@ -218,15 +231,15 @@
 
         .project2-right a:hover {
             color: white;
-            background-color: #65aaff;
+            background-color: #ffaf34;
         }
 
         .project2-left {
             display: table-cell;
             width: 33%;
             height: 300px;
-            background: url("clock.png") center center no-repeat;
-            background-color: #65aaff;
+            background: url("thermometer.png") center center no-repeat;
+            background-color: #ffaf34;
             background-size: 70%;
         }
 
