@@ -68,6 +68,18 @@
 <!--The second strip with the column of projects-->
     <div class="project-list">
         <h1 id="project-list">Project Plans</h1>
+<!--        <div class="project3">-->
+<!--            <div class="project3-container">-->
+<!--                <div class="project3-left">-->
+<!--                   <h2>Chess Set</h2>-->
+<!--                    <p>A chess board with 2 drawers and removable top. Along with a wood-turned set of pieces.</p>-->
+<!--                    <p class="progress3">Stage: In progress - Brief</p>-->
+<!--                    <a href="stool/">View Project</a>-->
+<!--                </div>-->
+<!--                <div class="project3-right">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
         <div class="project2">
             <div class="project2-container">
                 <div class="project2-left">
@@ -75,7 +87,7 @@
                 <div class="project2-right">
                     <h2>Barometer Casing</h2>
                     <p>An artistic housing for a 3-in-1 weather station.</p>
-                    <p class="progress2">Stage: In progress - Concept</p>
+                    <p class="progress2">Stage: In progress - Design</p>
                     <a href="barometer/">View Project</a>
                 </div>
             </div>
@@ -123,7 +135,7 @@
             padding: 2%;
         }
 
-        .project1 {
+        .project1, .project3 {
             width: 80%;
             height: 10%;
             margin: 0 auto;
@@ -132,30 +144,30 @@
             display: table;
         }
 
-        .project1-container {
+        .project1-container, .project3-container {
             display: table-row;
             margin-top: 5%;
             box-shadow: 6px 15px 20px 0 rgba(0, 0, 0, 0.2);
         }
 
-        .project1-left {
+        .project1-left, .project3-left {
             display: table-cell;
         }
 
-        .project1-left h2 {
+        .project1-left h2, .project3-left h2 {
             padding-top: 5%;
         }
 
-        .project1-left p {
+        .project1-left p, .project3-left p {
             padding: 0 5% 5% 5%;
         }
 
-        .progress1 {
+        .progress1, .progress3 {
             color: red;
             padding: 1% !important;
         }
 
-        .project1-left a {
+        .project1-left a, .project3-left a {
             border: 1px solid coral;
             padding: 2% 6% 2% 6%;
             border-bottom-right-radius: 25px;
@@ -174,12 +186,40 @@
             background-color: coral;
         }
 
+        .project3-left a:hover {
+            color: white;
+            background-color: #bd7825;
+        }
+
         .project1-right {
             display: table-cell;
             width: 33%;
             height: 300px;
             background: url("stool.png") center center no-repeat;
             background-color: coral;
+            background-size: 70%;
+        }
+
+        .project3-left a {
+            border: 1px solid #bd7825;
+            padding: 2% 6% 2% 6%;
+            border-bottom-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            color: #bd7825;
+            margin-top: 1%;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            line-height: 40px;
+        }
+
+        .project3-right {
+            display: table-cell;
+            width: 33%;
+            height: 300px;
+            background: url("chess-pieces.png") center center no-repeat;
+            background-color: #bd7825;
             background-size: 70%;
         }
 
