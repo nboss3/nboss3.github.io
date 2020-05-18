@@ -68,18 +68,19 @@
 <!--The second strip with the column of projects-->
     <div class="project-list">
         <h1 id="project-list">Project Plans</h1>
-<!--        <div class="project3">-->
-<!--            <div class="project3-container">-->
-<!--                <div class="project3-left">-->
-<!--                   <h2>Chess Set</h2>-->
-<!--                    <p>A chess board with 2 drawers and removable top. Along with a wood-turned set of pieces.</p>-->
-<!--                    <p class="progress3">Stage: In progress - Brief</p>-->
-<!--                    <a href="stool/">View Project</a>-->
-<!--                </div>-->
-<!--                <div class="project3-right">-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
+        <div class="project3">
+            <div class="project3-container">
+                <div class="project3-left">
+                </div>
+                <div class="project3-right">
+                    <h2>Model Joint Box</h2>
+                    <p>A simple box containing intricate model wood joints. Ideal for practice at all wood joints types
+                    and hand crafting methods.</p>
+                    <p class="progress3">Stage: In progress - Design</p>
+                    <a href="box/">View Project</a>
+                </div>
+            </div>
+        </div>
         <div class="project4">
             <div class="project4-container">
                 <div class="project4-left">
@@ -111,7 +112,7 @@
                 <div class="project1-left">
                    <h2>Upholstered Stool</h2>
                     <p>An upholstered stool with a storage compartment. Low-set for sitting and reading.</p>
-                    <p class="progress1">Stage: In progress - Build</p>
+                    <p class="progress1">Stage: Completed - 18th May 2020</p>
                     <a href="stool/">View Project</a>
                 </div>
                 <div class="project1-right">
@@ -177,7 +178,7 @@
         }
 
         .progress1 {
-            color: red;
+            color: #00d140;
             padding: 1% !important;
         }
 
@@ -242,7 +243,7 @@
             background-size: 70%;
         }
 
-        .project2 {
+        .project2, .project3 {
             width: 80%;
             height: 10%;
             margin: 0 auto;
@@ -251,25 +252,30 @@
             display: table;
         }
 
-        .project2-container {
+        .project2-container, .project3-container {
             display: table-row;
             margin-top: 5%;
             box-shadow: 6px 15px 20px 0 rgba(0, 0, 0, 0.2);
         }
 
-        .project2-left {
+        .project2-left, .project3-left {
             display: table-cell;
         }
 
-        .project2-right h2 {
+        .project2-right h2, .project3-right h2 {
             padding-top: 5%;
         }
 
-        .project2-right p {
+        .project2-right p, .project3-right p {
             padding: 0 5% 3% 5%;
         }
 
         .progress2 {
+            color: red;
+            padding: 1% !important;
+        }
+
+        .progress3 {
             color: red;
             padding: 1% !important;
         }
@@ -288,9 +294,28 @@
             line-height: 40px;
         }
 
+        .project3-right a {
+            border: 1px solid #42baff;
+            padding: 2% 6% 2% 6%;
+            border-bottom-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            color: #42baff;
+            margin-top: 1%;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            line-height: 40px;
+        }
+
         .project2-right a:hover {
             color: white;
             background-color: #ffaf34;
+        }
+
+        .project3-right a:hover {
+            color: white;
+            background-color: #42baff;
         }
 
         .project2-left {
@@ -299,6 +324,15 @@
             height: 300px;
             background: url("thermometer.png") center center no-repeat;
             background-color: #ffaf34;
+            background-size: 65%;
+        }
+
+        .project3-left {
+            display: table-cell;
+            width: 33%;
+            height: 300px;
+            background: url("sliding_dovetail.png") center center no-repeat;
+            background-color: #42baff;
             background-size: 65%;
         }
 
