@@ -108,6 +108,35 @@
                 </div>
             </div>
         </div>
+    <!--The separation between plans and misc projects-->
+        <!--<h1 style="padding-top: 2%">Mini Projects</h1>-->
+    <!--<div class="mini-projects">-->
+        <!--<div class="mini-projects-row1">-->
+            <!--<div class="mini-project1">-->
+            <!--&lt;!&ndash;Mini 1 left&ndash;&gt;-->
+            <!--<a href="../woodwork/"><img style="background-color: red" src="caliper.png" alt="A vernier caliper logo"></a>-->
+            <!--<div class="mini1-bottom">-->
+                <!--<h3>Budget Cutting Gauge</h3>-->
+                <!--<p>A re-purposed marking gauge to use a blade instead of a pin</p>-->
+                <!--&lt;!&ndash;<a href="/">View</a>&ndash;&gt;-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="mini-project1">-->
+                <!--<a href="../"><img style="background-color: lawngreen" src="flower.png" alt="Flower icon"></a>-->
+                <!--<div class="mini1-bottom">-->
+                    <!--<h3>Flower Carving</h3>-->
+                    <!--<p>Relief carving of a simple flower in pine</p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="mini-project1">-->
+                <!--<a href="../"><img style="background-color: #42baff;" src="wood(1).png" alt="Wood file icon"></a>-->
+                <!--<div class="mini1-bottom">-->
+                    <!--<h3>File Handle</h3>-->
+                    <!--<p>Wood-turned handle for a file</p>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
     </div>
     <div class="footer">Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 </div>
@@ -139,6 +168,47 @@
             padding: 2%;
         }
 
+        .mini-projects {
+            display: table;
+            max-width: 100%;
+            border-spacing: 50px;
+        }
+
+        .mini-projects-row1 {
+            display: table-row;
+        }
+
+        .mini-project1 {
+            width: 20%;
+            color: black;
+            display: table-cell;
+            background-color: white;
+            text-align: center;
+            box-shadow: 6px 15px 20px 0 rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s;
+        }
+
+        .mini-project1 img {
+            width: 80%;
+            padding: 10%;
+        }
+
+        .mini-project1:hover {
+            box-shadow: 12px 30px 40px 0 rgba(0, 0, 0, 0.4);
+        }
+
+        .mini1-bottom {
+            background-color: white;
+        }
+
+        .mini1-bottom h3 {
+            padding: 2% 5% 0 5%;
+        }
+
+        .mini1-bottom p {
+            padding: 5% 5% 1% 5%;
+        }
+
         .project1, .project4 {
             width: 80%;
             height: 10%;
@@ -148,10 +218,15 @@
             display: table;
         }
 
-        .project1-container, .project4-container {
+        .project1-container, .project4-container, .project3-container {
             display: table-row;
             margin-top: 5%;
             box-shadow: 6px 15px 20px 0 rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s;
+        }
+
+        .project1-container:hover, .project4-container:hover, .project3-container:hover {
+            box-shadow: 12px 30px 40px 0 rgba(0, 0, 0, 0.4);
         }
 
         .project1-right, .project4-left {
@@ -236,11 +311,11 @@
             display: table;
         }
 
-        .project3-container {
-            display: table-row;
-            margin-top: 5%;
-            box-shadow: 6px 15px 20px 0 rgba(0, 0, 0, 0.2);
-        }
+        /*.project3-container {*/
+            /*display: table-row;*/
+            /*margin-top: 5%;*/
+            /*box-shadow: 6px 15px 20px 0 rgba(0, 0, 0, 0.2);*/
+        /*}*/
 
         .project3-left {
             display: table-cell;
