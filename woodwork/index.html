@@ -46,24 +46,15 @@
             <h1 class="main-title">Woodworking Projects</h1>
             <p class="main-subtitle">Woodworking projects with detailed processes and plans. The stages of
             each project is explored in a design folio style.</p>
-            <a href="#project-list">Explore ></a>
+           <div class="buttons">
+               <div class="button1">
+                   <a href="#project-list">Project Plans ></a>
+               </div>
+               <div class="button2">
+                   <a href="gallery">Project Gallery ></a>
+               </div>
+           </div>
 <!--            <a href="#project-list">Back to Main Page</a>-->
-        </div>
-        <div class="title-block-right">
-            <div class="bubbles">
-                <div class="row1">
-                <div class="icon-bubble1">
-                </div>
-                <div class="icon-bubble2">
-                </div>
-                </div>
-                <div class="row2">
-                    <div class="icon-bubble3">
-                </div>
-                <div class="icon-bubble4">
-                </div>
-            </div>
-            </div>
         </div>
     </div>
 <!--The second strip with the column of projects-->
@@ -156,16 +147,32 @@
             background-image: linear-gradient(to right, #d7a77e, #f9bb7f);
         }
 
+        .buttons {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .button1 {
+            width: 50%;
+        }
+
+        .button2 {
+            width: 50%;
+        }
+
         .title-block {
             width: 100%;
             display: table;
             border-spacing: 50px;
-            table-layout: fixed;
         }
 
         .project-list {
             background-color: white;
             padding: 2%;
+        }
+
+        #project-list {
+            text-align: center;
         }
 
         .mini-projects {
@@ -380,11 +387,9 @@
         }
 
         .title-block-left {
-            background-size: auto;
             color:white;
-            max-width: 50%;
-            display: table-cell;
-            text-align: left;
+            max-width: 100%;
+            text-align: center;
         }
 
         .title-block-left p {
@@ -397,12 +402,13 @@
 
         .title-block-left a {
             border: 1px solid white;
-            padding: 2% 6% 2% 6%;
+            padding: 4% 12% 4% 12%;
             border-bottom-right-radius: 25px;
             border-bottom-left-radius: 25px;
             border-top-left-radius: 25px;
             border-top-right-radius: 25px;
             color: white;
+            justify-content: center;
             margin: 0;
             font-weight: 500;
             transition: all 0.3s ease;
@@ -410,67 +416,8 @@
         }
 
         .title-block-left a:hover {
-            background-color: #f9bb7f;
+            background-color: #65aaff;
             outline: none;
-        }
-
-        .title-block-right {
-            max-width: 50%;
-            display: table-cell;
-            text-align: right;
-        }
-
-        .bubbles {
-            display: table;
-            table-layout: fixed;
-            border-spacing: 50px;
-            margin: 0 auto;
-            /*margin-left: 30%;*/
-            /*margin-top: 5%;*/
-        }
-
-        .icon-bubble1 {
-            background: url("ripsaw.png") center center no-repeat;
-            background-size: 70%;
-            border-radius: 50%;
-            background-color: #ffc774;
-            width: 150px;
-            max-width: 150px;
-            height: 150px;
-            display: table-cell;
-        }
-
-        .icon-bubble2 {
-            background: url("marking.png") center center no-repeat;
-            background-size: 70%;
-            border-radius: 50%;
-            background-color: #ffb658;
-            width: 150px;
-            max-width: 150px;
-            height: 150px;
-            display: table-cell;
-        }
-
-        .icon-bubble3 {
-            background: url("toolbox.png") center center no-repeat;
-            background-size: 70%;
-            border-radius: 50%;
-            background-color: #ffb658;
-            width: 150px;
-            max-width: 150px;
-            height: 150px;
-            display: table-cell;
-        }
-
-        .icon-bubble4 {
-            background: url("work-bench.png") center center no-repeat;
-            background-size: 70%;
-            border-radius: 50%;
-            background-color: #ff9f38;
-            width: 150px;
-            max-width: 150px;
-            height: 150px;
-            display: table-cell;
         }
 
         a {
