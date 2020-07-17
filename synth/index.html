@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Synthesizer Project</title>
+    <title>Pro-II</title>
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 </head>
 <body>
@@ -27,8 +27,8 @@
         <a href="../focus/">FOCUS DOCS</a>
         <a href="../speakers/">SPEAKERS PROJECT</a>
         <a href="../organ/">ORGAN PROJECT</a>
-        <a href="../woodwork/">WOODWORK</a>
         <a href="../synth" style="color: coral">SYNTH PROJECT</a>
+        <a href="../woodwork/">WOODWORK</a>
         <a href="../about/">ABOUT</a>
     </div>
 </div>
@@ -40,10 +40,11 @@
         <i class="fa fa-bars"></i>
     </a>
 <div class="content">
-    <h1>BOSSE JUPITER 6i</h1>
-    <p>Jupiter-6i; a Roland Jupiter inspired polyphonic synthesizer</p>
+    <h1>Pro - II</h1>
+    <p>The Pro II is a Sequential Pro-One inspired synthesizer. With an additional LFO, Filter and VCA with accompanying
+        envelope generators, it is a fully capable paraphonic synthesizer.</p>
     <div class="buttons">
-        <a href="#github">Github Project</a>
+        <a href="https://github.com/nboss3/Pro-2">Github Project</a>
     </div>
     <div class="table" id="navbar">
         <div class="row1">
@@ -152,20 +153,32 @@
                 </div>
             </div>
     </div>
-    <h2>BRIEF</h2>
-    <div class="border"></div>
     <h2 id="concept">CONCEPT</h2>
-    <div class="border">
-    </div>
-    <p>Ah yes excellent</p>
-    <p>Currently in prwogress</p>
-    <p>Currently in progress</p>
-    <p>Currently in progress</p>
-    <p>Currently in progress</p>
-    <p>Currently in progress</p>
-    <p>Currently in progress</p>
-    <p>Currently in progress</p>
-    <p>Currently in progress</p>
+    <div class="border"></div>
+    <p>I have wanted to build a synthesizer since I was young, but didn't know exactly what to build. Initially, a
+        polyphonic synthesizer with 8 voices was going to be built. As I bought the parts over time, I realised that
+        such a project was too expensive and time consuming to realistically complete on my own. So, after looking at
+        the parts I had already accumulated; I found that I had enough parts for 1 or 2 voices depending on
+        functionality. Using the Curtis chips used in 80s synths like the Pro-One.</p>
+    <figure>
+        <img src="proone.jpg" alt="Synthesizer">
+        <figcaption>The original Sequential Circuits Pro-One</figcaption>
+    </figure>
+    <p>I had more chips than what was required to clone the Pro-One circuitry, so, determined not to waste expensive
+    parts, I decided to make an "upgraded" pro-one with paraphonic capabilities. Making full use of all the parts I had
+    on hand.</p>
+    <h2 id="design">DESIGN</h2>
+    <div class="border"></div>
+    <p>I had enough parts for 2 Filters, 2 Oscillatiors, 2 LFOs, 4 Envelope Generators, 2 VCAs and the modulation
+        circuitry. I didn't have the parts to make an analog 1V/Oct keyboard so a MIDI interface will be used instead.</p>
+    <h2 id="production">PRODUCTION</h2>
+    <div class="border"></div>
+    <h2 id="hardware">HARDWARE</h2>
+    <div class="border"></div>
+    <h2 id="software">SOFTWARE</h2>
+    <div class="border"></div>
+    <h2 id="evaluation">EVALUATION</h2>
+    <div class="border"></div>
     <div class="footer">Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 </div>
     <style>
@@ -291,6 +304,23 @@
             transition-property: background-color;
             transition-duration: 0.5s;
             transition-timing-function: ease;
+        }
+
+        figure {
+            background-color: #E0E0E0;
+            max-width: 100%;
+            margin: 1% 20% 1% 20%;
+            padding: 1%;
+            border: 1px black solid;
+        }
+
+        figure img {
+            max-width: 100%;
+        }
+
+        figure figcaption {
+            color: black;
+            text-align: center;
         }
 
         .table {
