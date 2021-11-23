@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BSKR Design | Japanese Style Furniture and Fittings</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+</head>
+<body>
+<video class="video-test" autoplay loop playsinline preload="auto" muted>
+    <source src="architecture_animation.mp4" type="video/mp4">
+</video>
+<div class="navbar">
+    <ul>
+        <li><a>ITEM 1</a></li>
+        <li><a>Item 2</a></li>
+        <li><a>Item 3</a></li>
+        <li></li>
+        <li><img src="yoink.png" alt="Tanihata Logo"></li>
+        <li></li>
+        <li><a>Kitto</a></li>
+        <li><a>Katto</a></li>
+        <li><a>himitsudayo</a></li>
+    </ul>
+    <ol>
+        <li class="direct"><a href="#">Home</a></li>
+        <li class="direct"><svg xmlns="http://www.w3.org/2000/svg" width="9" viewBox="0 0 11 11" height="9px"><path d="m3.3 11-1.4-1.5 4.2-4-4.2-4 1.4-1.5 5.7 5.5z"></path></svg></li>
+        <li class="direct"><a href="#">Products</a></li>
+        <li class="direct"><svg xmlns="http://www.w3.org/2000/svg" width="9" viewBox="0 0 11 11" height="9px"><path d="m3.3 11-1.4-1.5 4.2-4-4.2-4 1.4-1.5 5.7 5.5z"></path></svg></li>
+        <li class="direct">Shōji</li>
+    </ol>
+</div>
+<div class="scroll-arrow">
+        <svg height="15" width="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+            <path d="m15 5.41-7.5 7.91-7.5-7.91 1.95-1.95 5.55 5.83 5.55-5.83z"></path>
+        </svg>
+</div>
+</body>
+<style>
+    body {
+        font-family: "ヒラギノ角ゴ W3 JIS2004", "YuGothic Medium", "游ゴシック Medium", "Yu Gothic Medium",
+        游ゴシック, 游ゴシック体, YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo,
+        "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .scroll-arrow {
+        position: absolute;
+        left: 48.4%;
+        top: 90%;
+        animation-duration: 1s;
+        animation-name: scroll;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        fill: white;
+    }
+
+    @keyframes scroll {
+      0%   {transform: translateY(-30px); opacity: 0}
+      20%  {opacity: 1}
+      50%  {transform: translateY(0)}
+      80%  {opacity: 1}
+      100% {transform: translateY(30px); opacity: 0}
+    }
+
+    .direct {
+        font-size: 10pt;
+        display: inline-block;
+        margin: 0 0.25em;
+    }
+
+    .navbar ol {
+        margin: 0;
+        padding-left: 20%;
+    }
+
+
+
+    .navbar ol a {
+        margin: 0 1%;
+        color: white;
+        transition: color 0.4s ease;
+    }
+
+    /* This is in here so the non links are animated also */
+    .navbar ol li {
+        color: white;
+        transition: color 0.4s ease;
+    }
+
+    .navbar:hover ol li {
+        color: black;
+    }
+
+    .navbar:hover a {
+        color: black;
+    }
+
+    .direct a {
+        text-decoration: none;
+        color: black;
+        transition: color 0.4s ease-in-out;
+    }
+
+    .direct a:hover {
+        color: #edb06b;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        transition: background-color ease 0.4s;
+        color: white;
+    }
+
+    .navbar:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .navbar:hover {
+        fill: black;
+    }
+
+    .navbar img {
+        filter: brightness(100) saturate(100);
+        transition: filter 0.4s ease;
+    }
+
+    .navbar svg {
+        fill: white;
+        transition: fill 0.4s ease;
+    }
+
+    .navbar:hover svg {
+        fill: black;
+    }
+
+    .navbar ul {
+        vertical-align: middle;
+        list-style: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar ul li {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        padding: 0 2%;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        letter-spacing: 0.1em;
+        cursor: pointer;
+        text-align: center;
+        user-select: none;
+        position: relative;
+        display: inline-block;
+        transition: color 0.4s ease;
+    }
+
+    .navbar ul li a:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        left: 0;
+        bottom: 0;
+        background-color: #edb06b;
+        transition: transform 0.25s ease-in-out;
+    }
+
+    .navbar ul li a:hover:after {
+        transform: scaleX(1);
+    }
+
+    .navbar:hover img {
+        /*filter: brightness(0) saturate(100) invert(85%) sepia(99%) saturate(591%) hue-rotate(307deg) brightness(99%) contrast(87%);*/
+        filter: none;
+    }
+
+    .video-test {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        display: block;
+    }
+</style>
+</html>
