@@ -1,240 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">
     <title>Page Not Found</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="shortcut icon" type="image/x-icon" href="blog/favicon.ico"/>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Yu Gothic UI Semibold", "Yu Gothic", sans-serif;
+    margin: 0;
+}
+
+html {
+    background-color: #f1f1f1;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 1% 0 1% 0;
+    text-align: center;
+    width: 100%;
+    overflow: auto;
+}
+
+.navbar ul {
+    top: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    font-size: medium;
+    color: black;
+    text-decoration: none;
+    background-color: #f1f1f1;
+    text-align: center;
+    float: left;
+    display: block;
+    width: 33.33333%;
+}
+
+.navbar a:hover {
+    color: #7f8081;
+}
+
+body {
+    text-align: center;
+}
+
+</style>
 </head>
 <body>
-<style>
-        html {
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            font-family: arial, sans-serif;
-        }
-    </style>
-<div class="sidebar">
-    <a class="top" href="https://nick-bosse.com">Nick Bosse</a>
-    <p class="subtext">
-        Engineering Student
-    </p>
-    <div class="active" id="active">
-        <a href="https://nick-bosse.com/focus/">FOCUS DOCS</a>
-        <a href="https://nick-bosse.com/speakers/">SPEAKERS PROJECT</a>
-        <a href="https://nick-bosse.com/organ/">ORGAN PROJECT</a>
-        <a href="https://nick-bosse.com/woodwork/">WOODWORK</a>
-        <a href="https://nick-bosse.com/about/">ABOUT</a>
-        <!--a href="#synth">SYNTHESIZER PROJECT</a-->
-    </div>
+
+<div class="navbar">
+    <ul>
+        <li><a href="home">Home</a></li>
+        <li><a href="blog">Blog</a></li>
+        <li><a href="contact">Contact</a></li>
+    </ul>
 </div>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<a href="javascript:void(0);" class="icon" id="button" onclick="menuFunction()">
-    <i class="fa fa-bars"></i>
-</a>
-<div class="content">
-    <h1>Page Not Found!</h1>
-    <h1>Check that you typed the address in correctly.</h1>
-    <img src="https://nick-bosse.com/error_gif.gif" alt="A gif of an automaton">
-    <p> </p>
-    <p> </p>
-    <p> </p>
-    <p> </p>
-    <p> </p>
-</div>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: url("home/114172347_1350670261798755_8610731592719571658_o.jpg") no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
-
-        .content {
-            background-color: white;
-            text-align: center;
-            height: 100vh !important;
-        }
-
-        .content h1 {
-            margin: 0;
-            padding: 2%;
-        }
-
-        .content img {
-            margin: 0;
-            padding: 2%;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        .icon {
-            display: none;
-            position: absolute;
-            background-color: transparent;
-            z-index: 1;
-            top: 8px;
-            right: 8px;
-        }
-
-        .icon i {
-            font-size: 250%;
-            color: coral;
-            background-color: transparent;
-            padding: 0;
-            margin: 0;
-            border-width: 0;
-        }
-
-        .sidebar {
-            margin: 0;
-            padding: 0;
-            width: 14%;
-            font-size: 120%;
-            float: left;
-            background-color: rgba(.2, .2, .2, .4);
-            position: fixed;
-            height: 100%;
-            overflow: auto;
-            top: 0;
-            left: 0;
-            z-index: 1;
-        }
-
-        .sidebar a {
-            display: block;
-            background-color: transparent;
-            text-decoration: none;
-            transition-duration: 500ms;
-            transition-timing-function: ease;
-            transition-property: color;
-        }
-
-        .sidebar a:hover {
-            color: coral;
-        }
-
-        .sidebar a:focus {
-            outline: none;
-        }
-
-        .sidebar:active {
-            color: coral;
-        }
-
-        .top {
-            display: block;
-            color: #f5faff;
-            font-size: 140%;
-            padding: 64px 32px 0 24px;
-            text-decoration: none;
-            background-color: transparent;
-        }
-
-        .top:hover {
-            color: #919191;
-        }
-
-        .top:focus {
-            outline: none;
-        }
-
-        .active a {
-            color: #b4b4b4;
-            padding: 20px 32px 12px 24px;
-            display: block;
-        }
-
-        .subtext {
-            font-size: 80%;
-            color: #b4b4b4;
-            padding: 0 32px 0 24px;
-            background-color: transparent;
-        }
-
-        div.content {
-            margin-left: 14%;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            font-family: arial, sans-serif;
-        }
-
-        @media screen and (max-width: 1000px) {
-          .sidebar {
-            width: 100%;
-            height: auto;
-            position: relative;
-          }
-          .sidebar {
-              background-color: rgba(.2, .2, .2, .8);
-              padding-top: 0.5%;
-          }
-          .sidebar p, .active {
-              display: none;
-          }
-
-          .active a {
-              text-align: center;
-              padding-top: 4%;
-              padding-bottom: 4%;
-          }
-
-          .top {
-              padding: 1%;
-          }
-
-          div.content {
-              margin-left: 0;
-          }
-        }
-
-        /* On screens that are less than 500px, display the bar vertically, instead of horizontally */
-        @media screen and (max-width: 1000px) {
-            .sidebar a {
-            text-align: center;
-            }
-
-            #myBtn {
-                font-size: 12px;
-            }
-        }
-    </style>
-    <script>
-        // Functions for managing the hamburger menu
-        var x = document.getElementById("active");
-
-        function menuFunction() {
-            if (x.style.display === 'block') {
-                x.style.display = 'none';
-            } else {
-                x.style.display = 'block';
-            }
-        }
-
-        var ham = document.getElementById('button');
-        window.onresize = function() {hamburgerFunction()};
-        window.onload = function () {
-            hamburgerFunction()
-        };
-        function hamburgerFunction() {
-            if (window.innerWidth >= 1000) {
-                if (x.style.display === 'none') {
-                    x.style.display = 'block';
-                }
-                ham.style.display = 'none';
-            } else {
-                ham.style.display = 'block';
-            }
-        }
-    </script>
-</body>
+<h1>404 Error</h1>
+<p>The page you are looking for could not be found. Please check your url to ensure it is correct.</p>
 </body>
 </html>
