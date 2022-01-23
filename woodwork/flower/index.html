@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flower Carvings</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <style>
+        html {
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            font-family: arial, sans-serif;
+        }
+    </style>
+<div class="sidebar">
+    <a class="top" href="../../home">Nick Bosse</a>
+    <p class="subtext">
+        Engineering Student
+    </p>
+    <div class="active" id="active">
+        <a href="../../focus">FOCUS DOCS</a>
+        <a href="../../speakers">SPEAKERS PROJECT</a>
+        <a href="../../organ">ORGAN PROJECT</a>
+        <a href="../" style="color: coral">WOODWORK</a>
+        <a href="../../about">ABOUT</a>
+        <!--a href="#synth">SYNTHESIZER PROJECT</a-->
+    </div>
+</div>
+    <div class="topbutton">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="up arrow"></i></button>
+    </div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<a href="javascript:void(0);" class="icon" id="button" onclick="menuFunction()">
+    <i class="fa fa-bars"></i>
+</a>
+<div class="content">
+<!--The first 'block' or strip-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <div class="title-block">
+       <div class="title-block-left">
+            <h1 class="main-title">Flower Carvings</h1>
+            <p class="main-subtitle">Flower carvings done to learn the principles of relief carving and
+            carving tools. One is a high-relief flower with two leaves and the other is a simple flower head.</p>
+            <a href="../">< Back to Main Page</a>
+        </div>
+    </div>
+    <div class="concept" id="concept">
+        <h1>Concept</h1>
+        <hr>
+        <p>I have taken a class in wood carving. As my first few projects, I was assigned to create relief
+        carvings of flowers. Here the process of making these first few carvings are documented.</p>
+    </div>
+    <div class="design" id="design">
+        <h1>Build</h1>
+        <hr>
+        <p>Although the full flower was begun intially, the simple flower head was completed first.</p>
+        <figure>
+            <img src="flower%20sketch.jpg" alt="Wood block with layout sketch">
+            <figcaption>The initial sketch for the flower head</figcaption>
+        </figure>
+        <figure>
+            <img src="flower%20complete.jpg" alt="A relief carving of a flower head">
+            <figcaption>The box assembled and glued</figcaption>
+        </figure>
+        <p>The high-relief flower with stem and two leaves;</p>
+        <figure>
+            <img src="carving1.jpg" alt="Wood carving of a flower">
+            <figcaption>The initial stock removal, mostly done with a saw</figcaption>
+        </figure>
+        <figure>
+            <img src="carving2.jpg" alt="Wood carving of a flower">
+            <figcaption>The stem was chiseled down to the desired height and the petals were shaped</figcaption>
+        </figure>
+        <figure>
+            <img src="carving3.jpg" alt="Wood carving of a flower">
+            <figcaption>The entire stem area was brought down to the correct height and the dome had begun to be shaped</figcaption>
+        </figure>
+        <figure>
+            <img src="carving4.jpg" alt="Wood carving of a flower">
+            <figcaption>The stem and dome were rounded and the leaves were gouged</figcaption>
+        </figure>
+        <figure>
+            <img src="finishedflowercarving.jpg" alt="Wood carving of a flower">
+            <figcaption>The leaves were veined and the carving was under-cut</figcaption>
+        </figure>
+        <p>These carvings turned out well as a first project. Using pine sleepers as material presented a challenge with
+            tear-out and cracks, but it has taught me to navigate unpredictable situations in carving.</p>
+    </div>
+    <div class="footer">Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+</div>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(../../home/114172347_1350670261798755_8610731592719571658_o.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        p {
+            padding-left: 10%;
+            padding-right: 10%;
+            font-size: 120%;
+        }
+
+        .content {
+            font-family: 'Poppins', sans-serif;
+            background-image: linear-gradient(to right, #90d68e, #5cd555);
+        }
+
+        .list li {
+            list-style: none;
+            font-size: 120%;
+            text-align: left;
+            padding-bottom: 5%;
+        }
+
+        .list li:before {
+            content: "■";
+            color: #f4ba74;
+            margin-right: 10px;
+        }
+
+        .list {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            padding: 2% 0 2% 0;
+        }
+
+        .tool-table, .joint-table, .cut-table {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .tool-element, .joint-element, .cut-element {
+            text-align: center;
+            max-width: 25%;
+        }
+
+        .tool-element img, .joint-element img, .cut-element img {
+            width: 20%;
+        }
+
+        .joints, .cut-list, .tools {
+            text-align: left;
+            max-width: 90%;
+            width: 90%;
+            margin: 1% auto;
+            background-color: #e0e0e0;
+            padding: .5%;
+            border: 1px black solid;
+        }
+
+        hr {
+            margin-left: 5%;
+            margin-right: 5%;
+            border-width: 1px;
+            border-image: linear-gradient(to right, #d7a77e, #f9bb7f);
+            border-image-slice: 100%;
+            border-image-slice: 1;
+        }
+
+        .brief, .design, .result {
+            color: black;
+        }
+
+        .brief, .concept h1, .design h1 , .build h1, .result h1 {
+            padding-top: 1%;
+        }
+
+        .concept {
+            background-color: white;
+        }
+
+        .build {
+            background-color: white;
+        }
+
+        .block1 img, .block2 img, .block3 img, .block4 img, .block5 img  {
+            max-width: 100%;
+            width: 30%;
+            border: 2px solid transparent;
+            padding: 5%;
+            border-image: linear-gradient(to right, #d7a77e, #f9bb7f);
+            border-image-slice: 1;
+            transition: background-color 500ms ease;
+        }
+
+        .block1 h2, .block2 h2, .block3 h2, .block4 h2, .block5 h2  {
+            max-width: 100%;
+            color: black;
+        }
+
+        .block1 img:hover, .block2 img:hover, .block3 img:hover, .block4 img:hover, .block5 img:hover {
+            background-color: #63bff4;
+        }
+
+        .title-block {
+            width: 100%;
+            text-align: center;
+            border-spacing: 50px;
+        }
+
+        .blocks {
+            display: flex;
+        }
+
+        .block1 {
+        }
+
+        .block2 {
+        }
+
+        .block3 {
+        }
+
+        .block4 {
+        }
+
+        .block5 {
+        }
+
+        .navbar {
+            background-color: white;
+        }
+
+        .title-block h1 {
+            font-size: 250%;
+            text-transform: uppercase;
+        }
+
+        .footer {
+            background-color: white;
+        }
+
+        .title-block-left {
+            background-size: auto;
+            color: black;
+            max-width: 100%;
+            text-align: center;
+            padding-bottom: 2%;
+        }
+
+        .title-block-left p {
+            padding-bottom: 4% !important;
+            max-width: 100%;
+        }
+
+        .title-block-left h1 {
+            margin-top: 0;
+            padding-top: 2%;
+        }
+
+        .title-block-left a {
+            border: 1px solid black;
+            padding: 2% 6% 2% 6%;
+            border-bottom-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            color: black;
+            margin: 0;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            line-height: 40px;
+        }
+
+        .title-block-left a:hover {
+            background-color: coral;
+            outline: none;
+        }
+
+        .title-block-right {
+            max-width: 50%;
+            display: table-cell;
+            text-align: right;
+            background: url("../stool.png") center center no-repeat;
+            background-size: 50%;
+            padding: 7% 0 10% 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .content {
+            background-color: white;
+            text-align: center;
+        }
+
+        figure {
+            background-color: #E0E0E0;
+            max-width: 100%;
+            margin: 1% 20% 1% 20%;
+            padding: 1%;
+            border: 1px black solid;
+        }
+
+        figure img {
+            max-width: 100%;
+        }
+
+        figure figcaption {
+            color: black;
+        }
+
+        .icon {
+            display: none;
+            position: absolute;
+            background-color: transparent;
+            z-index: 1;
+            top: 8px;
+            right: 8px;
+        }
+
+        .icon i {
+            font-size: 250%;
+            color: coral;
+            background-color: transparent;
+            padding: 0;
+            margin: 0;
+            border-width: 0;
+        }
+
+        .sidebar {
+            margin: 0;
+            padding: 0;
+            width: 14%;
+            font-size: 120%;
+            float: left;
+            background-color: rgba(.2, .2, .2, .4);
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .sidebar a {
+            display: block;
+            background-color: transparent;
+            text-decoration: none;
+            transition-duration: 500ms;
+            transition-timing-function: ease;
+            transition-property: color;
+        }
+
+        .sidebar a:hover {
+            color: coral;
+        }
+
+        .sidebar a:focus {
+            outline: none;
+        }
+
+        .sidebar:active {
+            color: coral;
+        }
+
+        .top {
+            display: block;
+            color: #f5faff;
+            font-size: 140%;
+            padding: 64px 32px 0 24px;
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        .top:hover {
+            color: #919191;
+        }
+
+        .top:focus {
+            outline: none;
+        }
+
+        .active a {
+            color: #b4b4b4;
+            padding: 20px 32px 12px 24px;
+            display: block;
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background: url("../up-arrow.png") center center no-repeat;
+            background-size: 70%;
+            background-color: #65aaff;
+            cursor: pointer;
+            padding: 30px;
+            font-size: 18px;
+            box-shadow: 2px 2px 3px black;
+        }
+
+        #myBtn:hover {
+            background-color: coral;
+        }
+
+        .subtext {
+            font-size: 80%;
+            color: #b4b4b4;
+            padding: 0 32px 0 24px;
+            background-color: transparent;
+        }
+
+        div.content {
+            margin-left: 14%;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            font-family: arial, sans-serif;
+        }
+
+        @media screen and (max-width: 1000px) {
+          .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+          }
+          .sidebar {
+              background-color: rgba(.2, .2, .2, .8);
+              padding-top: 0.5%;
+          }
+          .sidebar p, .active {
+              display: none;
+          }
+
+          .active a {
+              text-align: center;
+              padding-top: 4%;
+              padding-bottom: 4%;
+          }
+
+
+
+          .top {
+              padding: 1%;
+          }
+
+          div.content {
+              margin-left: 0;
+          }
+
+          .bubbles {
+              margin-left: 0;
+              border-spacing: 25px;
+              width: 33%;
+          }
+
+          .icon-bubble1, .icon-bubble2, .icon-bubble3, .icon-bubble4  {
+              width: 100px;
+              height: 100px;
+          }
+        }
+
+        /* On screens that are less than 500px, display the bar vertically, instead of horizontally */
+        @media screen and (max-width: 1000px) {
+            .sidebar a {
+            text-align: center;
+            }
+
+            .title-block-left h1 {
+
+            padding-top: 8%;
+        }
+
+            #myBtn {
+                font-size: 12px;
+            }
+        }
+    </style>
+    <script>
+        mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function() {myFunction()};
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        function myFunction() {
+            if (window.pageYOffset > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // Functions for managing the hamburger menu
+        var x = document.getElementById("active");
+
+        function menuFunction() {
+            if (x.style.display === 'block') {
+                x.style.display = 'none';
+            } else {
+                x.style.display = 'block';
+            }
+        }
+
+        var ham = document.getElementById('button');
+        window.onresize = function() {hamburgerFunction()};
+        window.onload = function () {
+            hamburgerFunction()
+        };
+        function hamburgerFunction() {
+            if (window.innerWidth >= 1000) {
+                if (x.style.display === 'none') {
+                    x.style.display = 'block';
+                }
+                ham.style.display = 'none';
+            } else {
+                ham.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

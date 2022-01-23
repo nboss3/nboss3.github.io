@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stool Project</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <style>
+        html {
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            font-family: arial, sans-serif;
+        }
+    </style>
+<div class="sidebar">
+    <a class="top" href="../../home">Nick Bosse</a>
+    <p class="subtext">
+        Engineering Student
+    </p>
+    <div class="active" id="active">
+        <a href="../../focus">FOCUS DOCS</a>
+        <a href="../../speakers">SPEAKERS PROJECT</a>
+        <a href="../../organ">ORGAN PROJECT</a>
+        <a href="../" style="color: coral">WOODWORK</a>
+        <a href="../../about">ABOUT</a>
+        <!--a href="#synth">SYNTHESIZER PROJECT</a-->
+    </div>
+</div>
+    <div class="topbutton">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="up arrow"></i></button>
+    </div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<a href="javascript:void(0);" class="icon" id="button" onclick="menuFunction()">
+    <i class="fa fa-bars"></i>
+</a>
+<div class="content">
+<!--The first 'block' or strip-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <div class="title-block">
+       <div class="title-block-left">
+            <h1 class="main-title">Upholstered Stool</h1>
+            <p class="main-subtitle">An upholstered stool for sitting. The stool has a lid to an inner compartment
+                similar to a piano stool. The legs are wood-turned and the upholstery method was studding.</p>
+<!--           <p>Completed April 13, 2020</p>-->
+           <a href="../">< Back to Main Page</a>
+        </div>
+        <div class="title-block-right">
+            <div class="bubbles">
+            </div>
+        </div>
+    </div>
+    <div class="navbar">
+        <h1>The process</h1>
+        <div class="blocks">
+            <div class="block1">
+                <a href="#brief">
+                    <img src="../brief.png" alt="a pencil">
+                    <h2>Brief</h2>
+                </a>
+            </div>
+            <div class="block2">
+                <a href="#concept">
+                <img src="../concept.png" alt="a pencil">
+                <h2>Concept</h2>
+                    </a>
+            </div>
+            <div class="block3">
+                <a href="#design">
+                <img src="../design.png" alt="a pencil">
+                <h2>Design</h2>
+                    </a>
+            </div>
+            <div class="block4">
+                <a href="#build">
+                <img src="../manufacturing.png" alt="a pencil">
+                <h2>Build</h2>
+                    </a>
+            </div>
+            <div class="block5">
+                <a href="#result">
+                <img src="../evaluate.png" alt="a pencil">
+                <h2>Evaluate</h2>
+                    </a>
+            </div>
+        </div>
+    </div>
+    <div class="brief" id="brief">
+        <h1>Brief</h1>
+        <hr>
+        <p>Before bed, I like to do a small amount of reading and writing. I dont like sitting in bed so I sit on a
+        small stool beside my bed. Currently, this stool is a plastic IKEA stool.</p>
+        <figure>
+            <img src="stool_situation.jpg" alt="A plastic stool in a bedroom">
+            <figcaption>The current IKEA stool</figcaption>
+        </figure>
+        <p>It was an adequate solution in the beginning. Now, however, I require more comfort and support from what I'm
+            sitting on. I need a stool that has a larger top and is cushioned.</p>
+        <figure>
+            <img src="stool_existing.jpg" alt="An upholstered stool">
+            <figcaption>An existing stool design similar to what I was wanting</figcaption>
+        </figure>
+        <p>I put all my books on the floor as I am sick of getting up when I want different books. I want the stool
+            to have a storage compartment so books don't need to be on the floor.</p>
+    </div>
+    <div class="concept" id="concept">
+        <h1>Concept</h1>
+        <hr>
+        <p>The guidelines for creating a concept were;</p>
+        <div class="list">
+            <ul>
+                <li>The stool must have a storage compartment</li>
+                <li>The stool needs to be low</li>
+                <li>The stool should be cushioned</li>
+            </ul>
+        </div>
+        <figure>
+            <img src="concept1.jpg" alt="A wooden upholstered stool">
+            <figcaption>Concept 1</figcaption>
+        </figure>
+        <p>The first idea was to just have a cushioned wooden stool. Focusing on aesthetics and comfort. This would suit
+        my room, however, I would still need to leave books on the floor, or need to get up to get a different book. The
+        design shown is also beyond my capabilities of manufacturing.</p>
+        <figure>
+            <img src="concept2.jpg" alt="A wooden upholstered stool">
+            <figcaption>Concept 2</figcaption>
+        </figure>
+        <p>This design has the comfort and storage but the legs are too long. The stool would need to have stubby or
+        disproportionately short legs to get the desired height. The technique of using studs for the upholstery is one
+        I will use in the design.</p>
+        <figure>
+            <img src="concept3.jpg" alt="A wooden upholstered stool">
+            <figcaption>Concept 3</figcaption>
+        </figure>
+        <p>This design matches the main criteria. Although not using studded upholstery, the leg proportions are correct
+        and the storage compartment is there.</p>
+        <p>The design of the stool will be based on concept 2 and 3.</p>
+    </div>
+    <div class="design" id="design">
+        <h1>Design</h1>
+        <hr>
+        <p>The final design criteria were;</p>
+        <div class="list">
+            <ul>
+            <li>Stool needs to be strong enough to support stored books and someone sitting</li>
+            <li>Stool needs to be built for longevity</li>
+            <li>Stool needs to have aesthetic value and 'a style'</li>
+            <li>The upholstery must be comfortable to sit on</li>
+            <li>The storage compartment needs to fit multiple books inside</li>
+            <li>Stool should be light so it is easily portable</li>
+            <li>The design should be hand-crafting and not manufactured</li>
+            <li>The craft techniques should be within the workers capabilities</li>
+        </ul>
+        </div>
+        <p>With the design criteria in mind, a mortise a tenon frame was used as the base of the design. Due to the
+        layout of my room, the stool could not extend from the wall more than 35cm. A length and width for the stool was
+         chosen to be 450mm and 350mm respectively. The material I chose for the lid frame left about 250x350mm for the
+        interior storage compartment.</p>
+        <p>Moving to the legs, I wanted to turn them rather than taper or carve them. I chose a turned pattern of an
+        ogee with 2 beads on either side, and a simple taper on the bottom. I left about 1/3 of the leg as a block for
+        the joints and to hold the bottom of the storage compartment.</p>
+        <figure>
+            <img src="Stool_Leg_Drawing.PNG" alt="Engineering Drawing of Stool Leg">
+            <figcaption>Right Leg Drawing</figcaption>
+        </figure>
+        <p>The storage compartment was given a depth of 10cm. I was going to cut a slit in the legs to sit a sheet of
+        MDF in, however, I decided to have a cut-out in each leg so that the compartment could be fully rectangular. The
+        top of the stool would be another sheet of wood over a frame for the lid. The lid would be attached with some
+        hinges to one of the frame pieces. Some foam and upholstery material would be placed over the sheet and the
+        studs would be inserted into the side of the lid frame.</p>
+        <figure>
+            <img src="Stool_Assembly_Drawing.PNG" alt="Engineering Drawing of Stool">
+            <figcaption>Main Assembly Drawing</figcaption>
+        </figure>
+        <figure>
+            <img src="render.jpg" alt="A exploded view render of a stool">
+            <figcaption>Exploded rendered view of the stool assembly</figcaption>
+        </figure>
+        <figure>
+            <img src="final%20render.jpg" alt="CAD render of a wooden stool">
+            <figcaption>Final render of the stool adjusted for chosen materials</figcaption>
+        </figure>
+    </div>
+    <div class="build" id="build">
+        <h1>Build</h1>
+        <hr>
+        <p>The tools, joints and material used are outlined below;</p>
+        <div class="tools">
+            <h3>Tools Used</h3>
+            <div class="tool-table">
+                <div class="tool-element">
+                    <img src="../lathe.png" alt="lathe icon">
+                    <p>Lathe</p>
+                </div>
+                <div class="tool-element">
+                    <img src="../drill.png" alt="drill press icon">
+                    <p>Drill Press</p>
+                </div>
+                <div class="tool-element">
+                    <img src="../sawmill.png" alt="ripsaw icon">
+                    <p>Ripsaw</p>
+                </div>
+                <div class="tool-element">
+                    <img src="../sawmill.png" alt="tablesaw icon">
+                    <p>Table Saw</p>
+                </div>
+                <div class="tool-element">
+                    <img src="../bandsaw.png" alt="bandsaw icon">
+                    <p>Bandsaw</p>
+                </div>
+                <div class="tool-element">
+                    <img src="../drop-saw.png" alt="dropsaw icon">
+                    <p>Dropsaw</p>
+                </div>
+                <div class="tool-element">
+                    <img src="../sanding-machine.png" alt="sander icon">
+                    <p>Sander</p>
+                </div>
+                <div class="tool-element">
+                    <img src="../chisel.png" alt="chisel icon">
+                    <p>Chisel</p>
+                </div>
+                <div class="tool-element">
+                    <img src="../chisel.png" alt="chisel icon">
+                    <p>Carving Chisel</p>
+                </div>
+                <div class="tool-element">
+                    <img src="../mallet.png" alt="mallet icon">
+                    <p>Mallet</p>
+                </div>
+                <div class="tool-element">
+                    <img src="../glue.png" alt="glue icon">
+                    <p>Glue</p>
+                </div>
+                <div class="tool-element">
+                    <img src="../clamp.png" alt="clamp icon">
+                    <p>Clamps</p>
+                </div>
+                <div class="tool-element">
+                    <img src="../varnish.png" alt="varnish icon">
+                    <p>Water-based Walnut Stain</p>
+                </div>
+                <div class="tool-element">
+                    <img src="../varnish.png" alt="varnish icon">
+                    <p>Water-based Polyurethane</p>
+                </div>
+            </div>
+        </div>
+        <div class="joints">
+            <h3>Joints</h3>
+            <div class="joint-table">
+                <div class="joint-element">
+                <img src="../mortise+tenon.png" alt="wood joint icon">
+                <p>Open Mortise & Tenon</p>
+            </div>
+            <div class="joint-element">
+                <img src="../screw.png" alt="wood joint icon">
+                <p>Screw</p>
+            </div>
+            <div class="joint-element">
+                <img src="../hinge(1).png" alt="wood joint icon">
+                <p>Hinge</p>
+            </div>
+            <div class="joint-element">
+                <img src="../nail(1).png" alt="wood joint icon">
+                <p>Upholstery Stud</p>
+            </div>
+            </div>
+        </div>
+        <div class="cut-list">
+            <h3>Cut List</h3>
+            <div class="cut-table">
+            <div class="cut-element">
+                <img src="../wood.png" alt="log icon">
+                <p>4 - 60x60x280mm</p>
+            </div>
+            <div class="cut-element">
+                <img src="../wood.png" alt="log icon">
+                <p>2 - 350x24x70mm</p>
+            </div>
+            <div class="cut-element">
+                <img src="../wood.png" alt="log icon">
+                <p>2 - 450x24x70mm</p>
+            </div>
+            <div class="cut-element">
+                <img src="../wood.png" alt="log icon">
+                <p>2 - 350x50x36mm</p>
+            </div>
+            <div class="cut-element">
+                <img src="../wood.png" alt="log icon">
+                <p>2 - 450x50x36mm</p>
+            </div>
+            <div class="cut-element">
+                <img src="../log.png" alt="log icon">
+                <p>1 - 250x350x4mm</p>
+            </div>
+            <div class="cut-element">
+                <img src="../log.png" alt="log icon">
+                <p>1 - 350x450x10mm</p>
+            </div>
+            </div>
+        </div>
+        <p>All material was sourced from what I had sitting in the garage. I used New Guinea Rosewood for the leg
+            blanks, Radiata Pine for the leg frame pieces, Silky Oak for the lid frame pieces and MDF and plywood for
+            the bottom and top surfaces respectively.
+        </p>
+        <figure>
+            <img src="stool_materials.jpg" alt="Wood materials">
+            <figcaption>Acquired materials for the stool</figcaption>
+        </figure>
+        <figure>
+            <img src="step1.jpg" alt="Wood planks">
+            <figcaption>Marked out the planks for cutting to size on dropsaw</figcaption>
+        </figure>
+        <figure>
+            <img src="step2.jpg" alt="Wood frame pieces">
+            <figcaption>All framing pieces cut to size</figcaption>
+        </figure>
+        <figure>
+            <img src="step3.jpg" alt="Marked wood pieces">
+            <figcaption>Mortise and tenon joints marked out</figcaption>
+        </figure>
+        <figure>
+            <img src="step4.jpg" alt="Wood pieces with mortise and tenon joints">
+            <figcaption>Mortise and tenon joints cut out on the pieces</figcaption>
+        </figure>
+        <p>The tenons for the lid frame were too large so they were sanded on the disc sander. The sanding couldn't get
+        all the way in so a carving chisel was used to cut the remaining material out.</p>
+        <figure>
+            <img src="step5.jpg" alt="Plywood sheet">
+            <figcaption>The plywood and MDF sheets were cut to size on the tablesaw</figcaption>
+        </figure>
+        <figure>
+            <img src="step8.jpg" alt="Rectangular wood frame">
+            <figcaption>The lid frame joints were so tight, clamps were not required when gluing</figcaption>
+        </figure>
+        <figure>
+            <img src="step6.jpg" alt="Wood pieces">
+            <figcaption>All components cut to size, ready for the legs to be turned</figcaption>
+        </figure>
+        <figure>
+            <img src="step7.jpg" alt="Plywood glued and clamped together">
+            <figcaption>The plywood sheet and strip were laminated before attaching to the lid frame</figcaption>
+        </figure>
+        <figure>
+            <img src="step9.jpg" alt="Plywood clamped and glued to frame">
+            <figcaption>The plywood sheet finally attached to the oak frame, the excess will be removed with a chisel</figcaption>
+        </figure>
+        <figure>
+            <img src="step10.jpg" alt="A wood turned leg on a lathe">
+            <figcaption>The first leg turned on the lathe</figcaption>
+        </figure>
+        <figure>
+            <img src="step11.jpg" alt="A wood turned leg on a lathe">
+            <figcaption>The leg was sanded and grapeseed oil was applied to finish it</figcaption>
+        </figure>
+        <figure>
+            <img src="step12.jpg" alt="Four wood turned stool legs">
+            <figcaption>All four completed legs, once turned, the leg block excess was sawed off and the edges rounded</figcaption>
+        </figure>
+        <figure>
+            <img src="step13.jpg" alt="Stained pieces of timber">
+            <figcaption>The pine beams for the frame as well as the bottom of the lid frame were stained to match the
+                legs</figcaption>
+        </figure>
+        <figure>
+            <img src="step14.jpg" alt="Two beams in a leg with mortise and tenon joints">
+            <figcaption>Two open mortises and a rebate were made into the leg and the beams test fitted</figcaption>
+        </figure>
+        <figure>
+            <img src="step15.jpg" alt="Three stool legs with two connecting beams">
+            <figcaption>When spaced, the legs don't look as inconsistent</figcaption>
+        </figure>
+        <figure>
+            <img src="step16.jpg" alt="A complete stool frame">
+            <figcaption>The completed stool frame</figcaption>
+        </figure>
+        <p>Although strong, when tested, the joints would not hold over days of use, and the beams would
+                slowly come out of the mortises. A large crack appeared in one of the legs due to a fracture from
+                chiseling, so the frame needed to be glued, however, the joints were strong enough so clamps were not
+                required.</p>
+        <figure>
+            <img src="step19.jpg" alt="A stool frame connected to another frame by hinges">
+            <figcaption>The hinges and bottom were attached to the stool, completing the woodwork</figcaption>
+        </figure>
+        <figure>
+            <img src="step20.jpg" alt="A stool full of books">
+            <figcaption>The compartment has ample sapce, this test was with five books</figcaption>
+        </figure>
+        <figure>
+            <img src="step21.jpg" alt="A stool with blue cloth laid over it">
+            <figcaption>An upholstery method was not decided, so the fabric remained folded over the cushion</figcaption>
+        </figure>
+        <figure>
+            <img src="step17.jpg" alt="The stool with initial upholstery">
+            <figcaption>The initial upholstery. Rope was sewn onto the sides and the fabric was stapled down</figcaption>
+        </figure>
+        <figure>
+            <img src="step18.jpg" alt="The completed stool with full upholstery">
+            <figcaption>The completed stool, studs were added to achieve the final look as seen in the concepts</figcaption>
+        </figure>
+    </div>
+    <div class="result" id="result">
+        <h1>Evaluation</h1>
+        <hr>
+        <p>Although the stool was manufactured and performed successfully, overall, the stool was fell short. This was
+            due to poor design, minor errors and oversights caused the final result to be less than ideal.</p>
+        <p>The most major design fault was the placement of the hinges. The legs of the stool protrude from the side
+        beams by about 10mm, which means if the hinges are attached to said beams, the stool lid cannot open. Strips of
+        MDF were added to distance the hinges from the beam, however, the offset meant that the stool lid was now
+        off-center (as can be seen in the final image with the stool legs protruding).</p>
+        <p>This project has been a lesson in design, especially for furniture and woodwork. As it turns out, the
+        dimensions are far less important than geometric tolerances, manufacturing methods and aesthetic style. In this
+        one project; I switched from manufacturing to hand-crafting, High-Speed-Steel to carbide tooling and relying on
+        glue to relying on the integrity of wood joints. This did not go well, the changes were not inherently bad, but
+        poorly timed.</p>
+        <div class="list">
+            <p>Specific lessons learned;</p>
+            <ul>
+                <li>Never make a major methodology change half-way through a project</li>
+                <li>Don't compartmentalise other elements of the design i.e. upholstery, mechanics and woodwork</li>
+                <li>Consistent wood-turning is difficult when done by hand and without proper measurement</li>
+                <li>Design based on what suits reality and available manufacturing methods, not on what is ideal</li>
+                <li>Open mortise joints are not good to use without glue</li>
+                <li>When designed correctly, a stool compartment can hold much more than anticipated</li>
+            </ul>
+        </div>
+        <figure>
+                <table cellpadding="5">
+                    <tr>
+                        <th>Criteria</th>
+                        <th>Rating</th>
+                    </tr>
+                    <tr>
+                        <td>Strength</td>
+                        <td style="background-color: #00d140">Pass</td>
+                    </tr>
+                    <tr>
+                        <td>Longevity</td>
+                        <td style="background-color: #00d140">Pass</td>
+                    </tr>
+                    <tr>
+                        <td>Aesthetic Value</td>
+                        <td style="background-color: red">Fail</td>
+                    </tr>
+                    <tr>
+                        <td>Comfort</td>
+                        <td style="background-color: #00d140">Pass</td>
+                    </tr>
+                    <tr>
+                        <td>Storage Space</td>
+                        <td style="background-color: #00d140">Pass</td>
+                    </tr>
+                    <tr>
+                        <td>Portability</td>
+                        <td style="background-color: #00d140">Pass</td>
+                    </tr>
+                    <tr>
+                        <td>Manufacturing Method</td>
+                        <td style="background-color: #ffba2a">Marginal</td>
+                    </tr>
+                    <tr>
+                        <td>Ease of Manufacturing</td>
+                        <td style="background-color: #ffba2a">Marginal</td>
+                    </tr>
+                </table>
+                <figcaption>Design Criteria Evaluation</figcaption>
+            </figure>
+    </div>
+    <div class="footer">Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+</div>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            color: black;
+            max-width: 100%;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(../../home/114172347_1350670261798755_8610731592719571658_o.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        p {
+            padding-left: 10%;
+            padding-right: 10%;
+            font-size: 120%;
+        }
+
+        .content {
+            font-family: 'Poppins', sans-serif;
+            background-image: linear-gradient(to right, #d7a77e, #f9bb7f);
+        }
+
+        .list li {
+            list-style: none;
+            font-size: 120%;
+            text-align: left;
+            padding-bottom: 2.5%;
+        }
+
+        .list li:before {
+            content: "■";
+            color: #63bff4;
+            margin-right: 10px;
+        }
+
+        .list {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            padding: 2% 0 2% 0;
+        }
+
+        .tool-table, .joint-table, .cut-table {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .tool-element, .joint-element, .cut-element {
+            text-align: center;
+            max-width: 25%;
+        }
+
+        .tool-element img, .joint-element img, .cut-element img {
+            width: 20%;
+        }
+
+        .joints, .cut-list, .tools {
+            text-align: left;
+            max-width: 90%;
+            width: 90%;
+            margin: 1% auto;
+            background-color: #e0e0e0;
+            padding: .5%;
+            border: 1px black solid;
+        }
+
+        hr {
+            margin-left: 5%;
+            margin-right: 5%;
+            border-width: 1px;
+            border-image: linear-gradient(to right, #97cef4, #63bff4);
+            border-image-slice: 100%;
+            border-image-slice: 1;
+        }
+
+        .brief, .design, .result {
+            color: white;
+        }
+
+        .brief, .concept, .design, .build, .result {
+            padding-top: 1%;
+        }
+
+        .concept {
+            background-color: white;
+        }
+
+        .build {
+            background-color: white;
+        }
+
+        .block1 img, .block2 img, .block3 img, .block4 img, .block5 img  {
+            max-width: 100%;
+            width: 30%;
+            border: 2px solid transparent;
+            padding: 5%;
+            border-image: linear-gradient(to right, #d7a77e, #f9bb7f);
+            border-image-slice: 1;
+            transition: background-color 500ms ease;
+        }
+
+        .block1 h2, .block2 h2, .block3 h2, .block4 h2, .block5 h2  {
+            max-width: 100%;
+            color: black;
+        }
+
+        .block1 img:hover, .block2 img:hover, .block3 img:hover, .block4 img:hover, .block5 img:hover {
+            background-color: #63bff4;
+        }
+
+        .title-block {
+            width: 100%;
+            display: table;
+            border-spacing: 50px;
+            table-layout: fixed;
+        }
+
+        .blocks {
+            display: flex;
+        }
+
+        .block1 {
+        }
+
+        .block2 {
+        }
+
+        .block3 {
+        }
+
+        .block4 {
+        }
+
+        .block5 {
+        }
+
+        .navbar {
+            background-color: white;
+        }
+
+        .title-block h1 {
+            font-size: 250%;
+            text-transform: uppercase;
+        }
+
+        .footer {
+            background-color: white;
+        }
+
+        .title-block-left {
+            background-size: auto;
+            color:white;
+            max-width: 50%;
+            display: table-cell;
+            text-align: left;
+        }
+
+        .main-subtitle {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
+        .title-block-left p {
+            padding-bottom: 4%;
+        }
+
+        .title-block-left h1 {
+            margin-top: 0;
+        }
+
+        .title-block-left a {
+            border: 1px solid white;
+            padding: 2% 6% 2% 6%;
+            border-bottom-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            color: white;
+            margin: 0;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            line-height: 40px;
+        }
+
+        .title-block-left a:hover {
+            background-color: #63bff4;
+            outline: none;
+        }
+
+        .title-block-right {
+            max-width: 50%;
+            display: table-cell;
+            text-align: right;
+            background: url("../stool.png") center center no-repeat;
+            background-size: 50%;
+            padding: 7% 0 10% 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .content {
+            background-color: white;
+            text-align: center;
+        }
+
+        figure {
+            background-color: #E0E0E0;
+            max-width: 100%;
+            margin: 1% 20% 1% 20%;
+            padding: 1%;
+            border: 1px black solid;
+        }
+
+        figure img {
+            max-width: 100%;
+        }
+
+        figure figcaption {
+            color: black;
+        }
+
+        .icon {
+            display: none;
+            position: absolute;
+            background-color: transparent;
+            z-index: 1;
+            top: 8px;
+            right: 8px;
+        }
+
+        .icon i {
+            font-size: 250%;
+            color: coral;
+            background-color: transparent;
+            padding: 0;
+            margin: 0;
+            border-width: 0;
+        }
+
+        .sidebar {
+            margin: 0;
+            padding: 0;
+            width: 14%;
+            font-size: 120%;
+            float: left;
+            background-color: rgba(.2, .2, .2, .4);
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .sidebar a {
+            display: block;
+            background-color: transparent;
+            text-decoration: none;
+            transition-duration: 500ms;
+            transition-timing-function: ease;
+            transition-property: color;
+        }
+
+        .sidebar a:hover {
+            color: coral;
+        }
+
+        .sidebar a:focus {
+            outline: none;
+        }
+
+        .sidebar:active {
+            color: coral;
+        }
+
+        .top {
+            display: block;
+            color: #f5faff;
+            font-size: 140%;
+            padding: 64px 32px 0 24px;
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        .top:hover {
+            color: #919191;
+        }
+
+        .top:focus {
+            outline: none;
+        }
+
+        .active a {
+            color: #b4b4b4;
+            padding: 20px 32px 12px 24px;
+            display: block;
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background: url("../up-arrow.png") center center no-repeat;
+            background-size: 70%;
+            background-color: #65aaff;
+            cursor: pointer;
+            padding: 30px;
+            font-size: 18px;
+            box-shadow: 2px 2px 3px black;
+        }
+
+        #myBtn:hover {
+            background-color: coral;
+        }
+
+        .subtext {
+            font-size: 80%;
+            color: #b4b4b4;
+            padding: 0 32px 0 24px;
+            background-color: transparent;
+        }
+
+        div.content {
+            margin-left: 14%;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            font-family: arial, sans-serif;
+        }
+
+        @media screen and (max-width: 1000px) {
+          .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+          }
+          .sidebar {
+              background-color: rgba(.2, .2, .2, .8);
+              padding-top: 0.5%;
+          }
+          .sidebar p, .active {
+              display: none;
+          }
+
+          .active a {
+              text-align: center;
+              padding-top: 4%;
+              padding-bottom: 4%;
+          }
+
+          .top {
+              padding: 1%;
+          }
+
+          div.content {
+              margin-left: 0;
+          }
+
+          .bubbles {
+              margin-left: 0;
+              border-spacing: 25px;
+              width: 33%;
+          }
+
+          .icon-bubble1, .icon-bubble2, .icon-bubble3, .icon-bubble4  {
+              width: 100px;
+              height: 100px;
+          }
+        }
+
+        /* On screens that are less than 500px, display the bar vertically, instead of horizontally */
+        @media screen and (max-width: 1000px) {
+            .sidebar a {
+            text-align: center;
+            }
+
+            #myBtn {
+                font-size: 12px;
+            }
+        }
+    </style>
+    <script>
+        mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function() {myFunction()};
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        function myFunction() {
+            if (window.pageYOffset > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // Functions for managing the hamburger menu
+        var x = document.getElementById("active");
+
+        function menuFunction() {
+            if (x.style.display === 'block') {
+                x.style.display = 'none';
+            } else {
+                x.style.display = 'block';
+            }
+        }
+
+        var ham = document.getElementById('button');
+        window.onresize = function() {hamburgerFunction()};
+        window.onload = function () {
+            hamburgerFunction()
+        };
+        function hamburgerFunction() {
+            if (window.innerWidth >= 1000) {
+                if (x.style.display === 'none') {
+                    x.style.display = 'block';
+                }
+                ham.style.display = 'none';
+            } else {
+                ham.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

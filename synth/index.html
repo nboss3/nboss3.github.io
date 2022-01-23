@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pro-II</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <style>
+        html {
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            font-family: arial, sans-serif;
+        }
+    </style>
+<div class="sidebar">
+    <a class="top" href="../home/">Nick Bosse</a>
+    <p class="subtext">
+        Engineering Student
+    </p>
+    <div class="active" id="active">
+        <a href="https://www.artstation.com/nickbosse">PORTFOLIO</a>
+        <a href="https://gumroad.com/bossedigital">STORE</a>
+        <a href="../focus/">FOCUS DOCS</a>
+        <a href="../speakers/">SPEAKERS PROJECT</a>
+        <a href="../organ/">ORGAN PROJECT</a>
+        <a href="../woodwork/">WOODWORK</a>
+        <a href="../about/">ABOUT</a>
+    </div>
+</div>
+    <div class="topbutton">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="up arrow"></i></button>
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <a href="javascript:void(0);" class="icon" id="button" onclick="menuFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+<div class="content">
+    <h1>Pro - II</h1>
+    <p>The Pro II is a Sequential Pro-One inspired synthesizer. With an additional LFO, Filter and VCA with accompanying
+        envelope generators, it is a fully capable paraphonic synthesizer.</p>
+    <div class="buttons">
+        <a href="https://github.com/nboss3/Pro-2">Github Project</a>
+    </div>
+    <div class="table" id="navbar">
+        <div class="row1">
+            <div class="nav_circles1">
+                <a href="#concept">
+                    <div class="icon-round1">
+                    </div>
+                    <h5 class="concept">CONCEPT</h5>
+                </a>
+            </div>
+            <div class="nav_circles4">
+                <a href="#concept">
+                    <div class="icon-round4">
+                    </div>
+                </a>
+                <h5>HARDWARE</h5>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="nav_circles2">
+                <a href="#concept">
+                    <div class="icon-round2">
+                    </div>
+                </a>
+                <h5>DESIGN</h5>
+            </div>
+            <div class="nav_circles5">
+                <a href="#concept">
+                    <div class="icon-round5">
+                    </div>
+                </a>
+                <h5>SOFTWARE</h5>
+            </div>
+        </div>
+        <div class="row3">
+            <div class="nav_circles3">
+                <a href="#concept">
+                    <div class="icon-round3">
+                    </div>
+                </a>
+                <h5>PRODUCTION PLAN</h5>
+            </div>
+            <div class="nav_circles6">
+                <a href="#concept">
+                    <div class="icon-round6">
+                    </div>
+                </a>
+                <h5>EVALUATION</h5>
+            </div>
+        </div>
+    </div>
+    <div class="sticky-table" id="stickybar">
+            <div class="sticky_circles1">
+                <a href="#concept">
+                    <div class="icon-sticky1">
+                    </div>
+                </a>
+                <div class="subtitle1">
+                    <h5 class="concept">CONCEPT</h5>
+                </div>
+            </div>
+            <div class="sticky_circles2">
+                <a href="#concept">
+                    <div class="icon-sticky2">
+                    </div>
+                </a>
+                <div class="subtitle2">
+                    <h5>DESIGN</h5>
+                </div>
+            </div>
+            <div class="sticky_circles3">
+                <a href="#concept">
+                    <div class="icon-sticky3">
+                    </div>
+                </a>
+                <div class="subtitle3">
+                    <h5>PRODUCTION PLAN</h5>
+                </div>
+            </div>
+            <div class="sticky_circles4">
+                <a href="#concept">
+                    <div class="icon-sticky4">
+                    </div>
+                </a>
+                <div class="subtitle4">
+                    <h5>HARDWARE</h5>
+                </div>
+            </div>
+            <div class="sticky_circles5">
+                <a href="#concept">
+                    <div class="icon-sticky5">
+                    </div>
+                </a>
+                <div class="subtitle5">
+                    <h5>SOFTWARE</h5>
+                </div>
+            </div>
+
+            <div class="sticky_circles6">
+                <a href="#concept">
+                    <div class="icon-sticky6">
+                    </div>
+                </a>
+                <div class="subtitle6">
+                    <h5>EVALUATION</h5>
+                </div>
+            </div>
+    </div>
+    <h2 id="concept">CONCEPT</h2>
+    <div class="border"></div>
+    <p>I have wanted to build a synthesizer since I was young, but didn't know exactly what to build. Initially, a
+        polyphonic synthesizer with 8 voices was going to be built. As I bought the parts over time, I realised that
+        such a project was too expensive and time consuming to realistically complete on my own. So, after looking at
+        the parts I had already accumulated; I found that I had enough parts for 1 or 2 voices depending on
+        functionality. Using the Curtis chips used in 80s synths like the Pro-One.</p>
+    <figure>
+        <img src="proone.jpg" alt="Synthesizer">
+        <figcaption>The original Sequential Circuits Pro-One</figcaption>
+    </figure>
+    <p>I had more chips than what was required to clone the Pro-One circuitry, so, determined not to waste expensive
+    parts, I decided to make an "upgraded" pro-one with paraphonic capabilities. Making full use of all the parts I had
+    on hand.</p>
+    <h2 id="design">DESIGN</h2>
+    <div class="border"></div>
+    <p>I had enough parts for 2 Filters, 2 Oscillatiors, 2 LFOs, 4 Envelope Generators, 2 VCAs and the modulation
+        circuitry. I didn't have the parts to make an analog 1V/Oct keyboard so a MIDI interface will be used instead.</p>
+    <h2 id="production">PRODUCTION</h2>
+    <div class="border"></div>
+    <h2 id="hardware">HARDWARE</h2>
+    <div class="border"></div>
+    <h2 id="software">SOFTWARE</h2>
+    <div class="border"></div>
+    <h2 id="evaluation">EVALUATION</h2>
+    <div class="border"></div>
+    <div class="footer">Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+</div>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(../home/114172347_1350670261798755_8610731592719571658_o.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        .footer a {
+            color: lightgray;
+        }
+
+        .content p {
+            font-family: 'Raleway', sans-serif;
+            font-size: 120%;
+        }
+
+        .footer {
+            color: lightgray;
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+        }
+
+        .buttons {
+            text-align: center;
+            margin: 0 auto;
+            padding: 4%;
+        }
+
+        .buttons a {
+            border: #59AED8 solid 2px;
+            color: #292929;
+            padding: 1% 5% 1% 5%;
+            margin: 0 auto;
+            text-align: center;
+            transition: background-color ease 300ms;
+            transition: color ease 300ms;
+        }
+
+        .buttons a:hover {
+            color: white;
+            background-color: #59aed8;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h5 {
+            text-align: center;
+            color: #292929;
+            font-size: 100%;
+        }
+
+        .icon {
+            display: none;
+            position: absolute;
+            background-color: transparent;
+            z-index: 1;
+            top: 8px;
+            right: 8px;
+        }
+
+        .icon i {
+            font-size: 250%;
+            color: coral;
+            background-color: transparent;
+            padding: 0;
+            margin: 0;
+            border-width: 0;
+        }
+
+        .sticky-table {
+            opacity: 0; /* Should be 0 */
+            display: table;
+            width: 80%;
+            position: fixed;
+            padding: 5px;
+            table-layout: fixed;
+            top: 5px;
+            margin: 5px auto;
+            left: 0;
+            right: 0;
+            max-width: 100%;
+            margin-left: 16.5%;
+        }
+
+        .sticky_circles1, .sticky_circles2, .sticky_circles3, .sticky_circles4, .sticky_circles5, .sticky_circles6 {
+            max-width: 100%;
+            display: table-cell;
+            text-align: center;
+        }
+
+        .icon-sticky1, .icon-sticky2, .icon-sticky3, .icon-sticky4, .icon-sticky5, .icon-sticky6 {
+            width: 75px;
+            height: 75px;
+            line-height: 130px;
+            text-align: center;
+            border-width: 2px;
+            border-color: #59AED8;
+            border-style: solid;
+            border-radius: 50%;
+            margin: auto;
+        }
+
+        .subtitle1, .subtitle2, .subtitle3, .subtitle4, .subtitle5, .subtitle6 {
+            opacity: 0;
+            transition: opacity ease 500ms;
+        }
+
+        .subtitle3 h5 {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .icon-sticky1:hover, .icon-sticky2:hover, .icon-sticky3:hover, .icon-sticky4:hover, .icon-sticky5:hover, .icon-sticky6:hover {
+            background-color: #59AED8;
+            transition-property: background-color;
+            transition-duration: 0.5s;
+            transition-timing-function: ease;
+        }
+
+        figure {
+            background-color: #E0E0E0;
+            max-width: 100%;
+            margin: 1% 20% 1% 20%;
+            padding: 1%;
+            border: 1px black solid;
+        }
+
+        figure img {
+            max-width: 100%;
+        }
+
+        figure figcaption {
+            color: black;
+            text-align: center;
+        }
+
+        .table {
+            margin: auto;
+            align-self: center;
+            align-items: center;
+            align-content: center;
+            opacity: 1;
+            display: table;
+            width: 80%;
+            padding: 10px;
+            table-layout: fixed;
+            max-width: 100%;
+        }
+
+        .row1 {
+            display: table-cell;
+        }
+
+        .row2 {
+            display: table-cell;
+        }
+
+        .row3 {
+            display: table-cell;
+        }
+
+        .nav_circles1, .nav_circles2, .nav_circles3, .nav_circles4, .nav_circles5, .nav_circles6 {
+            max-width: 100%;
+            right: 80px;
+            display: block;
+        }
+
+        .icon-round1, .icon-round2, .icon-round3, .icon-round4, .icon-round5, .icon-round6 {
+            width: 100px;
+            height: 100px;
+            line-height: 130px;
+            text-align: center;
+            border-width: 2px;
+            border-color: #59AED8;
+            border-style: solid;
+            border-radius: 50%;
+            margin: auto;
+        }
+
+        .icon-round1, .icon-sticky1 {
+            background: url("pencil.png") center center no-repeat;
+            background-size: 70%;
+        }
+
+        .icon-round1:hover, .icon-round2:hover, .icon-round3:hover, .icon-round4:hover, .icon-round5:hover, .icon-round6:hover {
+            background-color: #59AED8;
+            transition-property: background-color;
+            transition-duration: 0.5s;
+            transition-timing-function: ease;
+        }
+
+        .sticky_circles1 a:hover + .subtitle1 {
+            opacity: 1;
+        }
+
+        .sticky_circles2 a:hover + .subtitle2 {
+            opacity: 1;
+        }
+
+        .sticky_circles3 a:hover + .subtitle3 {
+            opacity: 1;
+        }
+
+        .sticky_circles4 a:hover + .subtitle4 {
+            opacity: 1;
+        }
+
+        .sticky_circles5 a:hover + .subtitle5 {
+            opacity: 1;
+        }
+
+        .sticky_circles6 a:hover + .subtitle6 {
+            opacity: 1;
+        }
+
+        .icon-round2, .icon-sticky2 {
+            background: url("blueprint.png") center center no-repeat;
+            background-size: 70%;
+        }
+
+        .icon-round3, .icon-sticky3 {
+            background: url("settings.png") center center no-repeat;
+            background-size: 70%;
+        }
+
+        .icon-round4, .icon-sticky4 {
+            background: url("spanner.png") center center no-repeat;
+            background-size: 70%;
+        }
+
+        .icon-round5, .icon-sticky5 {
+            background: url("laptop.png") center center no-repeat;
+            background-size: 70%;
+        }
+
+        .icon-round6, .icon-sticky6 {
+            background: url("clipboard.png") center center no-repeat;
+            background-size: 70%;
+        }
+
+        h1 {
+            color: #292929;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #292929;
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 1.1;
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        .border {
+            width: 40px;
+            height: 5px;
+            background: #59AED8;
+            position: relative;
+            margin: 0 auto;
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+
+        .topbutton i {
+            border: solid white;
+            border-width: 0 5px 5px 0;
+            display: inline-block;
+            padding: 3px;
+            background: #59AED8;
+        }
+
+        .up {
+            transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+        }
+
+        .content {
+            background-color: white;
+            color: #7f8081;
+        }
+
+        .content h2, h1 {
+            font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        }
+
+        .content p {
+            margin-top: 0;
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            padding: 4%;
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #59AED8;
+            color: black;
+            cursor: pointer;
+            padding: 15px;
+            font-size: 18px;
+            box-shadow: 2px 2px 3px black;
+        }
+
+        .sidebar {
+            margin: 0;
+            padding: 0;
+            width: 14%;
+            font-size: 120%;
+            float: left;
+            background-color: rgba(.2, .2, .2, .4);
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .sidebar a {
+            display: block;
+            background-color: transparent;
+            text-decoration: none;
+            transition-duration: 500ms;
+            transition-timing-function: ease;
+            transition-property: color;
+        }
+
+        .sidebar a:hover {
+            color: coral;
+        }
+
+        .sidebar a:focus {
+            outline: none;
+        }
+
+        .sidebar:active {
+            color: coral;
+        }
+
+        .top {
+            display: block;
+            color: #f5faff;
+            font-size: 140%;
+            padding: 64px 32px 0 24px;
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        .top:hover {
+            color: #919191;
+        }
+
+        .top:focus {
+            outline: none;
+        }
+
+        .active a {
+            color: #b4b4b4;
+            padding: 20px 32px 12px 24px;
+            display: block;
+        }
+
+        .subtext {
+            font-size: 80%;
+            color: #b4b4b4;
+            padding: 0 32px 0 24px;
+            background-color: transparent;
+        }
+
+        div.content {
+            margin-left: 14%;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            font-family: arial, sans-serif;
+        }
+
+    @media screen and (max-width: 1000px) {
+        .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        }
+
+        .sidebar {
+        background-color: rgba(.2, .2, .2, .8);
+            padding-top: 0.5%;
+        }
+
+        .sidebar p, .active {
+          display: none;
+        }
+
+        .active a {
+          text-align: center;
+          padding-top: 4%;
+          padding-bottom: 4%;
+        }
+
+        .top {
+            padding: 1%;
+        }
+
+        div.content {
+            margin-left: 0;
+        }
+
+        .sticky-table {
+            margin: auto;
+        }
+    }
+
+    /* On screens that are less than 500px, display the bar vertically, instead of horizontally */
+    @media screen and (max-width: 1000px) {
+        .sidebar a {
+            text-align: center;
+        }
+
+        #myBtn {
+            font-size: 12px;
+        }
+
+    }
+    </style>
+    <script>
+        mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function() {myFunction()};
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        var navbar = document.getElementById("navbar");
+
+        var stickybar = document.getElementById("stickybar");
+
+        function myFunction() {
+            if (window.pageYOffset > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+            if (window.pageYOffset >= 600) {
+                stickybar.style.opacity = '1';
+                navbar.style.opacity = '0';
+              } else {
+                stickybar.style.opacity = '0';
+                navbar.style.opacity = '1';
+              }
+        }
+
+        var x = document.getElementById("active");
+
+        function menuFunction() {
+            if (x.style.display === 'block') {
+                x.style.display = 'none';
+            } else {
+                x.style.display = 'block';
+            }
+        }
+
+        var ham = document.getElementById('button');
+        window.onresize = function() {hamburgerFunction()};
+        window.onload = function () {
+            hamburgerFunction()
+        };
+        function hamburgerFunction() {
+            if (window.innerWidth >= 1000) {
+                if (x.style.display === 'none') {
+                    x.style.display = 'block';
+                }
+                ham.style.display = 'none';
+            } else {
+                ham.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

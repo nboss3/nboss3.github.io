@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Model Joint Box</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <style>
+        html {
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            font-family: arial, sans-serif;
+        }
+    </style>
+<div class="sidebar">
+    <a class="top" href="../../home">Nick Bosse</a>
+    <p class="subtext">
+        Engineering Student
+    </p>
+    <div class="active" id="active">
+        <a href="../../focus">FOCUS DOCS</a>
+        <a href="../../speakers">SPEAKERS PROJECT</a>
+        <a href="../../organ">ORGAN PROJECT</a>
+        <a href="../" style="color: coral">WOODWORK</a>
+        <a href="../../about">ABOUT</a>
+        <!--a href="#synth">SYNTHESIZER PROJECT</a-->
+    </div>
+</div>
+    <div class="topbutton">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="up arrow"></i></button>
+    </div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<a href="javascript:void(0);" class="icon" id="button" onclick="menuFunction()">
+    <i class="fa fa-bars"></i>
+</a>
+<div class="content">
+<!--The first 'block' or strip-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <div class="title-block">
+       <div class="title-block-left">
+            <h1 class="main-title">Model Joint Box</h1>
+            <p class="main-subtitle">A small traditional wood box. Containing intricate models of wood joints.</p>
+            <a href="../">< Back to Main Page</a>
+        </div>
+        <div class="title-block-right">
+            <div class="bubbles">
+            </div>
+        </div>
+    </div>
+    <div class="navbar">
+        <h1>The process</h1>
+        <div class="blocks">
+            <div class="block1">
+                <a href="#brief">
+                    <img src="../brief.png" alt="a pencil">
+                    <h2>Brief</h2>
+                </a>
+            </div>
+            <div class="block2">
+                <a href="#concept">
+                <img src="../concept.png" alt="a pencil">
+                <h2>Concept</h2>
+                    </a>
+            </div>
+            <div class="block3">
+                <a href="#design">
+                <img src="../design.png" alt="a pencil">
+                <h2>Design</h2>
+                    </a>
+            </div>
+            <div class="block4">
+                <a href="#build">
+                <img src="../manufacturing.png" alt="a pencil">
+                <h2>Build</h2>
+                    </a>
+            </div>
+            <div class="block5">
+                <a href="#result">
+                <img src="../evaluate.png" alt="a pencil">
+                <h2>Evaluate</h2>
+                    </a>
+            </div>
+        </div>
+    </div>
+    <div class="brief" id="brief">
+        <h1>Brief</h1>
+        <hr>
+        <p>After making the Japanese <a href="../boards">planing board</a>, I found more woodworking videos on YouTube.
+        This introduced me to more woodworking principles and how I could learn them. One such video was yet another
+        documentary about the same wood joinery. A box is shown in it, containing intricate models of wood joints;</p>
+        <figure>
+            <iframe width="916" height=515 style="max-width: 100%;" src="https://www.youtube.com/embed/J4EO5L7D_NQ" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <figcaption>The model joint box can be found at the 3:16 timestamp</figcaption>
+        </figure>
+        <p>Determined to improve my craft, this was the perfect way to learn wood joinery and to refine my skill. The
+        box would act as a reference when jointing in the future. On the box I observed a full blind, double-bevelled
+        dovetail joint. Which, seems to be the ultimate joint from an aesthetic and practical standpoint.</p>
+    </div>
+    <div class="concept" id="concept">
+        <h1>Concept</h1>
+        <hr>
+        <p>As before, very little of my own designing was required as the design is shown in the documentary.
+        Nevertheless, I would still need to become acquainted with the traditional Japanese wood joints;</p>
+        <figure>
+            <img src="doubleslidedovetail.jpg" alt="blueprint icon">
+            <figcaption>An example of a traditional Japanese joint I would have to learn</figcaption>
+        </figure>
+        <p>Much of the contained joints were not shown in the video. So the layout and details of the joint models will
+        be designed.</p>
+        <figure>
+            <img src="box1.jpg" alt="A wooden box">
+            <figcaption>The box and it's joint models. A mitre, blind dovetail and mortise and tenon joints can be seen</figcaption>
+        </figure>
+        <figure>
+            <img src="box2.jpg" alt="A wood plate slotting into the bottom of a box">
+            <figcaption>Tongue and groove joints for both the lid and bottom of the box</figcaption>
+        </figure>
+        <figure>
+            <img src="box3.jpg" alt="Two wooden boards connecting">
+            <figcaption>A triple mortise and tenon, tongue and groove and a tongue and groove variant are all present on
+                this model</figcaption>
+        </figure>
+        <figure>
+            <img src="box4.jpg" alt="A mortise and tenon joint">
+            <figcaption>A mortise and tenon designed to joint into a large wood board in a cabinet</figcaption>
+        </figure>
+        <figure>
+            <img src="box5.jpg" alt="A mortise and tenon mitre joint">
+            <figcaption>Full blind mortise and tenon mitre joint</figcaption>
+        </figure>
+        <figure>
+            <img src="box6.jpg" alt="A 3-way mortise and tenon mitre joint">
+            <figcaption>A triple mortise and tenon mitre joint</figcaption>
+        </figure>
+    </div>
+    <div class="design" id="design">
+        <h1>Design</h1>
+        <hr>
+        <p>To reduce size, the several joints will be used on the one piece of wood, i.e. two end-to-end joints on one
+            block.</p>
+        <figure>
+            <table class="tg" style="border-color: black">
+                <thead>
+                  <tr>
+                    <th class="tg-0lax"><span style="font-weight:bold">End-to-end joints</span><br></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">Right-angle joints</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">Three-way joints</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-0lax">Gooseneck (arrow)</td>
+                    <td class="tg-0lax">Full-blind dovetail</td>
+                    <td class="tg-0lax">M + T mitre</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">Stub tenon scarf</td>
+                    <td class="tg-0lax">Full-blind curved box<br></td>
+                    <td class="tg-0lax">Chidori</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">Scarf with keys</td>
+                    <td class="tg-0lax">Full-blind M + T</td>
+                    <td class="tg-0lax">Open M + T</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">Kawai Tsugite</td>
+                    <td class="tg-0lax">Double pointed M + T</td>
+                    <td class="tg-0lax"></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">Pole tenon (bone)</td>
+                    <td class="tg-0lax">Through tenon with key</td>
+                    <td class="tg-0lax"></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">Shouldered M + T (panel)</td>
+                    <td class="tg-0lax">Mortise and Tenon</td>
+                    <td class="tg-0lax"></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">Bowtie</td>
+                    <td class="tg-0lax">Half-blind dovetail</td>
+                    <td class="tg-0lax"></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">Tongue + groove</td>
+                    <td class="tg-0lax">Sliding dovetail with pin</td>
+                    <td class="tg-0lax"></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">Lock rebate</td>
+                    <td class="tg-0lax">Triple M + T / dado</td>
+                    <td class="tg-0lax"></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">Double sliding dovetail<br></td>
+                    <td class="tg-0lax">Lap</td>
+                    <td class="tg-0lax"></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">Double dovetail lap joint</td>
+                    <td class="tg-0lax">Sliding bow-tie</td>
+                    <td class="tg-0lax"></td>
+                  </tr>
+                </tbody>
+            </table>
+            <figcaption>The joints to be modelled and contained in the box</figcaption>
+        </figure>
+        <p>As seen in the concept section, the lid will have wide mortise and tenon joints, the bottom will be a tongue
+        and groove joint and the corners will be curved box/dovetail joints.</p>
+        <p>There will be 20 main pieces in the box with the following joints per piece;</p>
+        <div class="list">
+            <ul>
+                <li>(2) Shouldered M + T, kawai tsugite, lap joint</li>
+                <li>(2) Pole Tenon, double dovetail lap joint, bow-tie</li>
+                <li>(1) Tongue + groove, ninety degree tongue + groove, triple M + T</li>
+                <li>(1) Tongue + groove, ninety degree tongue + groove, triple M + T, Shouldered M + T</li>
+                <li>(2) Half blind dovetail, full blind dovetail</li>
+                <li>(2) Sliding dovetail with key, double sliding dovetail</li>
+                <li>(2) Goose-neck joint, stud tenon scarf</li>
+                <li>(2) Scarf with keys, through mortise and tenon with key</li>
+                <li>(2) Full blind double M + T, three-way M + T mitre</li>
+                <li>(1) Three-way M + T mitre, double pointed M + T</li>
+                <li>(3) Three-way open M + T, chidori joint, sliding dovetail, M + T, sliding dovetail</li>
+            </ul>
+        </div>
+        <p>The curved box joint will be made by making a traditional blind box mitre joint, then adding a strip of wood
+        to the inside to create the inside bevel.</p>
+        <!--<figure>-->
+            <!--<figcaption>The sketch of the box</figcaption>-->
+        <!--</figure>-->
+        <!--<p>The size of the box was approximated from both the video and the approximate space the model would occupy.</p>-->
+        <p>Design Criteria;</p>
+        <div class="list">
+            <ul>
+                <li>Box fits models with ample space</li>
+                <li>Box is aesthetically pleasing</li>
+                <li>Box is both strong and easy to disassemble</li>
+                <li>Joint models are made to a high standard, a good reference for joint quality</li>
+                <li>Joint models are slightly loose so they can be constantly assembled and disassembled</li>
+                <li>All components are hand-made and do not require adhesives</li>
+                <li>A full box is light and portable</li>
+            </ul>
+        </div>
+        <p>Designing each of the twenty pieces down to the nearest millimetre would be unrealistic, as the available
+        wood stock may not suit many of the required piece sizes. Therefore, the subsequent drawings of the wood pieces
+        are more for defining joint proportions and illustration rather than a direct reference. Some of the dimensions
+        are oddly specific when whole number dimensions would suit. This is because full size joints were modelled, then
+        the models were scaled down to an appropriate size.</p>
+        <figure>
+            <img src="3%20way%20blind%20mortise%20diagram.jpg" alt="A diagram of a wood joint">
+            <figcaption>The drawing and diagram for the 3 way blind mortise and tenon pieces</figcaption>
+        </figure>
+        <figure>
+            <img src="Blind%20Dovetail%20diagram.jpg" alt="A diagram of a wood joint">
+            <figcaption>The drawing and diagram for the blind dovetail joint pieces</figcaption>
+        </figure>
+        <figure>
+            <img src="Chidori%20diagram.jpg" alt="A diagram of a wood joint">
+            <figcaption>The drawing and diagram for the chidori joint pieces</figcaption>
+        </figure>
+        <figure>
+            <img src="Double%20Sliding%20Dovetail%20diagram.jpg" alt="A diagram of a wood joint">
+            <figcaption>The drawing and diagram for the double sliding dovetail joint pieces</figcaption>
+        </figure>
+        <figure>
+            <img src="Kawai%20Tsugite%20diagram.jpg" alt="A diagram of a wood joint">
+            <figcaption>The drawing and diagram for the kawai tsugite joint pieces</figcaption>
+        </figure>
+        <figure>
+            <img src="Keyed%20Scarf%20diagram.jpg" alt="A diagram of a wood joint">
+            <figcaption>The drawing and diagram for the keyed scarf joint pieces</figcaption>
+        </figure>
+        <figure>
+            <img src="Pole%20Tenon%20diagram.jpg" alt="A diagram of a wood joint">
+            <figcaption>The drawing and diagram for the dovetail lap joint pieces</figcaption>
+        </figure>
+        <figure>
+            <img src="Stud%20Tenon%20Scarf%20Diagram.jpg" alt="A diagram of a wood joint">
+            <figcaption>The drawing and diagram for the stud tenon scarf joint pieces</figcaption>
+        </figure>
+        <figure>
+            <img src="Tongue%20and%20Groove%20diagram.jpg" alt="A diagram of a wood joint">
+            <figcaption>The drawing and diagram for the tongue and groove joint pieces</figcaption>
+        </figure>
+        <figure>
+            <img src="Joint%20Box%20diagram.jpg" alt="A diagram of a wooden box">
+            <figcaption>Let the illegibility and chaos of this drawing stand as a testament as to why we don't try to
+                cram several components onto one drawing</figcaption>
+        </figure>
+        <p>Using the sketch models, the required volume of the box could be calculated;</p>
+        <figure>
+            <table class="tg" style="border-color: black">
+                <thead>
+                  <tr>
+                    <th class="tg-0lax"><span style="font-weight:bold">Pieces</span><br></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">Volume (mm<sup>3</sup>)</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-0lax">3 way blind M + T pieces</td>
+                    <td class="tg-0lax">132300</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">Blind dovetail pieces</td>
+                    <td class="tg-0lax">240000</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">Chidori pieces</td>
+                    <td class="tg-0lax">259200</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">Double sliding dovetail pieces</td>
+                    <td class="tg-0lax">73728</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">Kawai tsugite pieces</td>
+                    <td class="tg-0lax">198000</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">Keyed scarf pieces</td>
+                    <td class="tg-0lax">135200</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">Pole tenon pieces</td>
+                    <td class="tg-0lax">121600</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">Stud tenon scarf pieces</td>
+                    <td class="tg-0lax">100800</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">Tongue and groove pieces</td>
+                    <td class="tg-0lax">192000</td>
+                  </tr>
+                <tr>
+                    <td class="tg-0lax">Required volume</td>
+                    <td class="tg-0lax">1452828</td>
+                </tr>
+                </tbody>
+            </table>
+            <figcaption>The volume calculation for the interior of the box</figcaption>
+        </figure>
+        <p>These joints can be comfortably contained in a 130x190x138mm box with a 12mm wall thickness.</p>
+        <figure>
+            <img src="BoxAssembly.gif" alt="An assembly animation of a wooden box" style="width:100%">
+            <figcaption>The full assembly of the box and joint models.</figcaption>
+        </figure>
+    </div>
+    <div class="build" id="build">
+        <h1>Build</h1>
+        <hr>
+        <div class="tools">
+            <h3>Tools Used</h3>
+            <p>To be completed</p>
+<!--            <div class="tool-table">-->
+<!--                <div class="tool-element">-->
+<!--                    <img src="../lathe.png" alt="lathe icon">-->
+<!--                    <p>Lathe</p>-->
+<!--                </div>-->
+<!--                <div class="tool-element">-->
+<!--                    <img src="../drill.png" alt="drill press icon">-->
+<!--                    <p>Drill Press</p>-->
+<!--                </div>-->
+<!--                <div class="tool-element">-->
+<!--                    <img src="../sawmill.png" alt="ripsaw icon">-->
+<!--                    <p>Ripsaw</p>-->
+<!--                </div>-->
+<!--                <div class="tool-element">-->
+<!--                    <img src="../bandsaw.png" alt="bandsaw icon">-->
+<!--                    <p>Bandsaw</p>-->
+<!--                </div>-->
+<!--                <div class="tool-element">-->
+<!--                    <img src="../drop-saw.png" alt="dropsaw icon">-->
+<!--                    <p>Dropsaw</p>-->
+<!--                </div>-->
+<!--                <div class="tool-element">-->
+<!--                    <img src="../sanding-machine.png" alt="sander icon">-->
+<!--                    <p>Sander</p>-->
+<!--                </div>-->
+<!--                <div class="tool-element">-->
+<!--                    <img src="../chisel.png" alt="chisel icon">-->
+<!--                    <p>Chisel</p>-->
+<!--                </div>-->
+<!--                <div class="tool-element">-->
+<!--                    <img src="../mallet.png" alt="mallet icon">-->
+<!--                    <p>Mallet</p>-->
+<!--                </div>-->
+<!--                <div class="tool-element">-->
+<!--                    <img src="../glue.png" alt="glue icon">-->
+<!--                    <p>Glue</p>-->
+<!--                </div>-->
+<!--                <div class="tool-element">-->
+<!--                    <img src="../clamp.png" alt="clamp icon">-->
+<!--                    <p>Clamps</p>-->
+<!--                </div>-->
+<!--                <div class="tool-element">-->
+<!--                    <img src="../varnish.png" alt="varnish icon">-->
+<!--                    <p>Mahogany / Walnut Dye</p>-->
+<!--                </div>-->
+<!--                <div class="tool-element">-->
+<!--                    <img src="../varnish.png" alt="varnish icon">-->
+<!--                    <p>Water-based Polyurethane</p>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+        <div class="joints">
+            <h3>Joints</h3>
+            <div class="joint-table">
+                <p>Joints have already been discussed at length</p>
+            </div>
+        </div>
+        <div class="cut-list">
+            <h3>Cut List</h3>
+            <div class="cut-table">
+            <div class="cut-element">
+                <img src="../wood.png" alt="log icon">
+                <p>3 - 21x21x100mm</p>
+            </div>
+            <div class="cut-element">
+                <img src="../wood.png" alt="log icon">
+                <p>2 - 12x100x100mm</p>
+            </div>
+            <div class="cut-element">
+                <img src="../wood.png" alt="log icon">
+                <p>3 - 24x24x150mm</p>
+            </div>
+            <div class="cut-element">
+                <img src="../wood.png" alt="log icon">
+                <p>2 - 24x24x64mm</p>
+            </div>
+            <div class="cut-element">
+                <img src="../wood.png" alt="log icon">
+                <p>2 - 30x30x100mm</p>
+            </div>
+            <div class="cut-element">
+                <img src="../wood.png" alt="log icon">
+                <p>2 - 26x26x100mm</p>
+            </div>
+            <div class="cut-element">
+                <img src="../wood.png" alt="log icon">
+                <p>2 - 12x30x60mm</p>
+            </div>
+            <div class="cut-element">
+                <img src="../wood.png" alt="log icon">
+                <p>2 - 20x20x126mm</p>
+            </div>
+            <div class="cut-element">
+                <img src="../wood.png" alt="log icon">
+                <p>2 - 12x80x100mm</p>
+            </div>
+                <div class="cut-element">
+                <img src="../wood.png" alt="log icon">
+                <p>2 - 12x126x126mm</p>
+            </div>
+                <div class="cut-element">
+                <img src="../wood.png" alt="log icon">
+                <p>2 - 12x126x186mm</p>
+            </div>
+                <div class="cut-element">
+                <img src="../log.png" alt="log icon">
+                <p>1 - 12x118x178mm</p>
+            </div>
+                <div class="cut-element">
+                <img src="../log.png" alt="log icon">
+                <p>1 - 12x130x190mm</p>
+            </div>
+            </div>
+        </div>
+        <p>To be completed</p>
+    </div>
+    <div class="result" id="result">
+        <h1>Evaluation</h1>
+        <hr>
+        <p>To be completed</p>
+    </div>
+    <div class="footer">Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+</div>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(../../home/114172347_1350670261798755_8610731592719571658_o.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            color: black;
+            max-width: 100%;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        p {
+            padding-left: 10%;
+            padding-right: 10%;
+            font-size: 120%;
+        }
+
+        .content {
+            font-family: 'Poppins', sans-serif;
+            background-image: linear-gradient(to right, #81c7d7, #42baff);
+        }
+
+        .list li {
+            list-style: none;
+            font-size: 120%;
+            text-align: left;
+            padding-bottom: 5%;
+        }
+
+        .list li:before {
+            content: "■";
+            color: #ec9245;
+            margin-right: 10px;
+        }
+
+        .list {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            padding: 2% 0 2% 0;
+        }
+
+        .tool-table, .joint-table, .cut-table {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .tool-element, .joint-element, .cut-element {
+            text-align: center;
+            max-width: 25%;
+        }
+
+        .tool-element img, .joint-element img, .cut-element img {
+            width: 20%;
+        }
+
+        .joints, .cut-list, .tools {
+            text-align: left;
+            max-width: 90%;
+            width: 90%;
+            margin: 1% auto;
+            background-color: #e0e0e0;
+            padding: .5%;
+            border: 1px black solid;
+        }
+
+        hr {
+            margin-left: 5%;
+            margin-right: 5%;
+            border-width: 1px;
+            border-image: linear-gradient(to right, #f0a56c, #ec9245);
+            border-image-slice: 100%;
+            border-image-slice: 1;
+        }
+
+        .brief, .design, .result {
+            color: white;
+        }
+
+        .brief, .concept, .design, .build, .result {
+            padding-top: 1%;
+        }
+
+        .concept {
+            background-color: white;
+        }
+
+        .build {
+            background-color: white;
+        }
+
+        .block1 img, .block2 img, .block3 img, .block4 img, .block5 img  {
+            max-width: 100%;
+            width: 30%;
+            border: 2px solid transparent;
+            padding: 5%;
+            border-image: linear-gradient(to right, #81c7d7, #42baff);
+            border-image-slice: 1;
+            transition: background-color 500ms ease;
+        }
+
+        .block1 h2, .block2 h2, .block3 h2, .block4 h2, .block5 h2  {
+            max-width: 100%;
+            color: black;
+        }
+
+        .block1 img:hover, .block2 img:hover, .block3 img:hover, .block4 img:hover, .block5 img:hover {
+            background-color: #ec9245;
+        }
+
+        .title-block {
+            width: 100%;
+            display: table;
+            border-spacing: 50px;
+            table-layout: fixed;
+        }
+
+        .blocks {
+            display: flex;
+        }
+
+        .block1 {
+        }
+
+        .block2 {
+        }
+
+        .block3 {
+        }
+
+        .block4 {
+        }
+
+        .block5 {
+        }
+
+        .navbar {
+            background-color: white;
+        }
+
+        .title-block h1 {
+            font-size: 250%;
+            text-transform: uppercase;
+        }
+
+        .footer {
+            background-color: white;
+        }
+
+        .title-block-left {
+            background-size: auto;
+            color:white;
+            max-width: 50%;
+            display: table-cell;
+            text-align: left;
+        }
+
+        .title-block-left p {
+            padding-bottom: 4% !important;
+            padding-left: 0 !important;
+        }
+
+        .title-block-left h1 {
+            margin-top: 0;
+        }
+
+        .title-block-left a {
+            border: 1px solid white;
+            padding: 2% 6% 2% 6%;
+            border-bottom-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            color: white;
+            margin: 0;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            line-height: 40px;
+        }
+
+        .title-block-left a:hover {
+            background-color: #ec9245;
+            outline: none;
+        }
+
+        .title-block-right {
+            max-width: 50%;
+            display: table-cell;
+            text-align: right;
+            background: url("../sliding_dovetail.png") center center no-repeat;
+            background-size: 50%;
+            padding: 7% 0 10% 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .content {
+            background-color: white;
+            text-align: center;
+        }
+
+        figure {
+            background-color: #E0E0E0;
+            max-width: 100%;
+            margin: 1% 20% 1% 20%;
+            padding: 1%;
+            border: 1px black solid;
+        }
+
+        figure img {
+            max-width: 100%;
+        }
+
+        figure figcaption {
+            color: black;
+        }
+
+        .icon {
+            display: none;
+            position: absolute;
+            background-color: transparent;
+            z-index: 1;
+            top: 8px;
+            right: 8px;
+        }
+
+        .icon i {
+            font-size: 250%;
+            color: coral;
+            background-color: transparent;
+            padding: 0;
+            margin: 0;
+            border-width: 0;
+        }
+
+        .sidebar {
+            margin: 0;
+            padding: 0;
+            width: 14%;
+            font-size: 120%;
+            float: left;
+            background-color: rgba(.2, .2, .2, .4);
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .sidebar a {
+            display: block;
+            background-color: transparent;
+            text-decoration: none;
+            transition-duration: 500ms;
+            transition-timing-function: ease;
+            transition-property: color;
+        }
+
+        .sidebar a:hover {
+            color: coral;
+        }
+
+        .sidebar a:focus {
+            outline: none;
+        }
+
+        .sidebar:active {
+            color: coral;
+        }
+
+        .top {
+            display: block;
+            color: #f5faff;
+            font-size: 140%;
+            padding: 64px 32px 0 24px;
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        .top:hover {
+            color: #919191;
+        }
+
+        .top:focus {
+            outline: none;
+        }
+
+        .active a {
+            color: #b4b4b4;
+            padding: 20px 32px 12px 24px;
+            display: block;
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background: url("../up-arrow.png") center center no-repeat;
+            background-size: 70%;
+            background-color: #65aaff;
+            cursor: pointer;
+            padding: 30px;
+            font-size: 18px;
+            box-shadow: 2px 2px 3px black;
+        }
+
+        #myBtn:hover {
+            background-color: coral;
+        }
+
+        .subtext {
+            font-size: 80%;
+            color: #b4b4b4;
+            padding: 0 32px 0 24px;
+            background-color: transparent;
+        }
+
+        div.content {
+            margin-left: 14%;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            font-family: arial, sans-serif;
+        }
+
+        @media screen and (max-width: 1000px) {
+          .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+          }
+          .sidebar {
+              background-color: rgba(.2, .2, .2, .8);
+              padding-top: 0.5%;
+          }
+          .sidebar p, .active {
+              display: none;
+          }
+
+          .active a {
+              text-align: center;
+              padding-top: 4%;
+              padding-bottom: 4%;
+          }
+
+          .top {
+              padding: 1%;
+          }
+
+          div.content {
+              margin-left: 0;
+          }
+
+          .bubbles {
+              margin-left: 0;
+              border-spacing: 25px;
+              width: 33%;
+          }
+
+          .icon-bubble1, .icon-bubble2, .icon-bubble3, .icon-bubble4  {
+              width: 100px;
+              height: 100px;
+          }
+        }
+
+        /* On screens that are less than 500px, display the bar vertically, instead of horizontally */
+        @media screen and (max-width: 1000px) {
+            .sidebar a {
+            text-align: center;
+            }
+
+            #myBtn {
+                font-size: 12px;
+            }
+        }
+    </style>
+    <script>
+        mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function() {myFunction()};
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        function myFunction() {
+            if (window.pageYOffset > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // Functions for managing the hamburger menu
+        var x = document.getElementById("active");
+
+        function menuFunction() {
+            if (x.style.display === 'block') {
+                x.style.display = 'none';
+            } else {
+                x.style.display = 'block';
+            }
+        }
+
+        var ham = document.getElementById('button');
+        window.onresize = function() {hamburgerFunction()};
+        window.onload = function () {
+            hamburgerFunction()
+        };
+        function hamburgerFunction() {
+            if (window.innerWidth >= 1000) {
+                if (x.style.display === 'none') {
+                    x.style.display = 'block';
+                }
+                ham.style.display = 'none';
+            } else {
+                ham.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
