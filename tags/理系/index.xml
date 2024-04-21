@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>理系 on 探求心</title>
+    <link>https://tankyuushin.neocities.org/tags/%E7%90%86%E7%B3%BB/</link>
+    <description>Recent content in 理系 on 探求心</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    
+    <lastBuildDate>Fri, 26 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://tankyuushin.neocities.org/tags/%E7%90%86%E7%B3%BB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>子供科学シリーズ</title>
+      <link>https://tankyuushin.neocities.org/posts/kodomokagaku/</link>
+      <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://tankyuushin.neocities.org/posts/kodomokagaku/</guid>
+      <description>宇宙探査  #   理系を勉強するため、宇宙探査という本に決めました。本来なにも覚えられないと思いましたが、小学生頃以来、新たな発見や計画が設けられたので、結局面白かったです！</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://tankyuushin.neocities.org/posts/kodomokagaku/featured.jpg" />
+    </item>
+    
+  </channel>
+</rss>
